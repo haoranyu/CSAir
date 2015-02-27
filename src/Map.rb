@@ -22,6 +22,7 @@ class Map < Graph
   
   def initialize_metros(metros)
     metros.each do |metro|
+      metro['flight_to'] = Array.new
       self.add_metro(metro['code'], metro)
     end
   end
@@ -29,12 +30,13 @@ class Map < Graph
   def initialize_routes(routes)
     routes.each do |route|
       self.add_route(route['ports'][0], route['ports'][1], route['distance'])
+      self.add_route(route['ports'][1], route['ports'][0], route['distance'])
     end
   end
   
   def add_route(metro1, metro2, value)
     self.add_edge(metro1, metro2, value)
-    self.add_edge(metro2, metro1, value)
+    @nodes[metro1]['flight_to'].push(metro2)
   end
   
   def metros
