@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Graph - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>src/Graph.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-add_edge">#add_edge</a>
+    
+    <li ><a href="#method-i-add_node">#add_node</a>
+    
+    <li ><a href="#method-i-clear">#clear</a>
+    
+    <li ><a href="#method-i-exist_nodes">#exist_nodes</a>
+    
+    <li ><a href="#method-i-get_edge">#get_edge</a>
+    
+    <li ><a href="#method-i-get_node">#get_node</a>
+    
+    <li ><a href="#method-i-remove_edge">#remove_edge</a>
+    
+    <li ><a href="#method-i-remove_node">#remove_node</a>
+    
+    <li ><a href="#method-i-update_edge">#update_edge</a>
+    
+    <li ><a href="#method-i-update_node">#update_node</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Graph.html">Graph</a>
+  
+    <li><a href="./Info.html">Info</a>
+  
+    <li><a href="./Map.html">Map</a>
+  
+    <li><a href="./TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Graph</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Constructor for <a href="Graph.html">Graph</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>()
+  <span class="ruby-ivar">@nodes</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@edges</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add_edge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_edge</span><span
+            class="method-args">(node_from_key, node_to_key, value)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add an edge to the value</p>
+
+<p>@param [Object, node_from_key] the from node key</p>
+
+<p>@param [Object, node_to_key] the to node key  @param [Object, value] edge
+value set</p>
+          
+          
+
+          
+          <div class="method-source-code" id="add_edge-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>, <span class="ruby-identifier">value</span>)
+  <span class="ruby-identifier">edge_key</span> = [<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>]
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">exist_nodes</span>(<span class="ruby-identifier">edge_key</span>)
+    <span class="ruby-ivar">@edges</span>[<span class="ruby-identifier">edge_key</span>] = <span class="ruby-identifier">value</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_edge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_edge-method -->
+
+    
+      <div id="method-i-add_node" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_node</span><span
+            class="method-args">(key, value)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add a node to the graph</p>
+
+<p>@param [Object, key] node key @param [Object, value] node value</p>
+          
+          
+
+          
+          <div class="method-source-code" id="add_node-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_node</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+  <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_node-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_node-method -->
+
+    
+      <div id="method-i-clear" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">clear</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Clear every thing in the graph</p>
+          
+          
+
+          
+          <div class="method-source-code" id="clear-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 107</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">clear</span>()
+  <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">clear</span>
+  <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">clear</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- clear-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- clear-method -->
+
+    
+      <div id="method-i-exist_nodes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">exist_nodes</span><span
+            class="method-args">(key_arr)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add a node to the graph</p>
+
+<p>@param [Object, key] contents the contents to reverse  @param [Object,
+value] contents the contents to reverse  @return [Boolean] whether these
+keys have nodes in the graph</p>
+          
+          
+
+          
+          <div class="method-source-code" id="exist_nodes-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exist_nodes</span>(<span class="ruby-identifier">key_arr</span>)
+  <span class="ruby-identifier">key_arr</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-keyword">not</span> <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">key</span>)
+      <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- exist_nodes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- exist_nodes-method -->
+
+    
+      <div id="method-i-get_edge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_edge</span><span
+            class="method-args">(node_from_key, node_to_key)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get a edge by from_key and to_key</p>
+
+<p>@param [Object, node_from_key] the from node key</p>
+
+<p>@param [Object, node_to_key] the to node key</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_edge-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 101</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
+  <span class="ruby-identifier">edge_key</span> = [<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>]
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@edges</span>[<span class="ruby-identifier">edge_key</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_edge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_edge-method -->
+
+    
+      <div id="method-i-get_node" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_node</span><span
+            class="method-args">(key)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get a node by key</p>
+
+<p>@param [Object, key] node key</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_node-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_node</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">key</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_node-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_node-method -->
+
+    
+      <div id="method-i-remove_edge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">remove_edge</span><span
+            class="method-args">(node_from_key, node_to_key)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Remove an edge by from_key and to_key</p>
+
+<p>@param [Object, node_from_key] the from node key</p>
+
+<p>@param [Object, node_to_key] the to node key</p>
+          
+          
+
+          
+          <div class="method-source-code" id="remove_edge-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">remove_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
+  <span class="ruby-identifier">edge_key</span> = [<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>]
+  <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">edge_key</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- remove_edge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- remove_edge-method -->
+
+    
+      <div id="method-i-remove_node" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">remove_node</span><span
+            class="method-args">(key)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Remove a node by key</p>
+
+<p>@param [Object, key] node key @param [Object, value] node value</p>
+          
+          
+
+          
+          <div class="method-source-code" id="remove_node-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">remove_node</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">key</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- remove_node-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- remove_node-method -->
+
+    
+      <div id="method-i-update_edge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_edge</span><span
+            class="method-args">(node_from_key, node_to_key, value)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Update an edge to the new value</p>
+
+<p>@param [Object, node_from_key] the from node key</p>
+
+<p>@param [Object, node_to_key] the to node key  @param [Object, value] edge
+value set</p>
+          
+          
+
+          
+          <div class="method-source-code" id="update_edge-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>, <span class="ruby-identifier">value</span>)
+  <span class="ruby-identifier">remove_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
+  <span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>, <span class="ruby-identifier">value</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_edge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_edge-method -->
+
+    
+      <div id="method-i-update_node" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_node</span><span
+            class="method-args">(key, value)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Update a node with key to the new value</p>
+
+<p>@param [Object, key] node key @param [Object, value] node value</p>
+          
+          
+
+          
+          <div class="method-source-code" id="update_node-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_node</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+  <span class="ruby-identifier">remove_node</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">add_node</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_node-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_node-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

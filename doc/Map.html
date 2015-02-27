@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Map - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>src/Map.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Graph.html">Graph</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-add_route">#add_route</a>
+    
+    <li ><a href="#method-i-initialize_metros">#initialize_metros</a>
+    
+    <li ><a href="#method-i-initialize_routes">#initialize_routes</a>
+    
+    <li ><a href="#method-i-metros">#metros</a>
+    
+    <li ><a href="#method-i-routes">#routes</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Graph.html">Graph</a>
+  
+    <li><a href="./Info.html">Info</a>
+  
+    <li><a href="./Map.html">Map</a>
+  
+    <li><a href="./TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Map</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(filename)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Constructor for <a href="Map.html">Map</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-identifier">file</span> = <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-constant">IO</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>))
+  <span class="ruby-ivar">@nodes</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@edges</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">initialize_metros</span>(<span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;metros&#39;</span>])
+  <span class="ruby-identifier">initialize_routes</span>(<span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;routes&#39;</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add_route" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_route</span><span
+            class="method-args">(metro1, metro2, distance)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add a route to the map</p>
+
+<p>@param [String, metro1] the abbreviation of starting matro @param [String,
+metro2] the abbreviation of ending matro @param [Integer, distance] the
+distance between two metros</p>
+          
+          
+
+          
+          <div class="method-source-code" id="add_route-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_route</span>(<span class="ruby-identifier">metro1</span>, <span class="ruby-identifier">metro2</span>, <span class="ruby-identifier">distance</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">metro1</span>, <span class="ruby-identifier">metro2</span>, <span class="ruby-identifier">distance</span>)
+  <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">metro1</span>][<span class="ruby-string">&#39;flight_to&#39;</span>].<span class="ruby-identifier">push</span>(<span class="ruby-identifier">metro2</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_route-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_route-method -->
+
+    
+      <div id="method-i-initialize_metros" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">initialize_metros</span><span
+            class="method-args">(metros)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add metros to the map</p>
+
+<p>@param [Array, <a href="Map.html#method-i-metros">metros</a>] the array of
+metros information</p>
+          
+          
+
+          
+          <div class="method-source-code" id="initialize_metros-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize_metros</span>(<span class="ruby-identifier">metros</span>)
+  <span class="ruby-identifier">metros</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">metro</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">metro</span>[<span class="ruby-string">&#39;flight_to&#39;</span>] = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_metro</span>(<span class="ruby-identifier">metro</span>[<span class="ruby-string">&#39;code&#39;</span>], <span class="ruby-identifier">metro</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- initialize_metros-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- initialize_metros-method -->
+
+    
+      <div id="method-i-initialize_routes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">initialize_routes</span><span
+            class="method-args">(routes)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add routes to the map</p>
+
+<p>@param [Array, <a href="Map.html#method-i-routes">routes</a>] the array of
+routes information</p>
+          
+          
+
+          
+          <div class="method-source-code" id="initialize_routes-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize_routes</span>(<span class="ruby-identifier">routes</span>)
+  <span class="ruby-identifier">routes</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">route</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_route</span>(<span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>][<span class="ruby-value">0</span>], <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>][<span class="ruby-value">1</span>], <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;distance&#39;</span>])
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_route</span>(<span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>][<span class="ruby-value">1</span>], <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>][<span class="ruby-value">0</span>], <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;distance&#39;</span>])
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- initialize_routes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- initialize_routes-method -->
+
+    
+      <div id="method-i-metros" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">metros</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return all metro objects</p>
+          
+          
+
+          
+          <div class="method-source-code" id="metros-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 58</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">metros</span>
+  <span class="ruby-ivar">@nodes</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- metros-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- metros-method -->
+
+    
+      <div id="method-i-routes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">routes</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return all route objects</p>
+          
+          
+
+          
+          <div class="method-source-code" id="routes-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 63</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">routes</span>
+  <span class="ruby-ivar">@edges</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- routes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- routes-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

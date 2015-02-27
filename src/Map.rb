@@ -12,6 +12,7 @@ class Map < Graph
   alias update_route update_edge
   alias get_route get_edge
   
+  # Constructor for Map
   def initialize(filename)
     file = JSON.parse(IO.read(filename))
     @nodes = Hash.new
@@ -20,6 +21,10 @@ class Map < Graph
     initialize_routes(file['routes'])
   end
   
+  ##
+  # Add metros to the map
+  # 
+  # @param [Array, #metros] the array of metros information
   def initialize_metros(metros)
     metros.each do |metro|
       metro['flight_to'] = Array.new
@@ -27,6 +32,10 @@ class Map < Graph
     end
   end
   
+  ##
+  # Add routes to the map
+  # 
+  # @param [Array, #routes] the array of routes information
   def initialize_routes(routes)
     routes.each do |route|
       self.add_route(route['ports'][0], route['ports'][1], route['distance'])
@@ -34,15 +43,23 @@ class Map < Graph
     end
   end
   
-  def add_route(metro1, metro2, value)
-    self.add_edge(metro1, metro2, value)
+  ##
+  # Add a route to the map
+  # 
+  # @param [String, #metro1] the abbreviation of starting matro
+  # @param [String, #metro2] the abbreviation of ending matro
+  # @param [Integer, #distance] the distance between two metros
+  def add_route(metro1, metro2, distance)
+    self.add_edge(metro1, metro2, distance)
     @nodes[metro1]['flight_to'].push(metro2)
   end
   
+  # Return all metro objects
   def metros
     @nodes
   end
   
+  # Return all route objects
   def routes
     @edges
   end
