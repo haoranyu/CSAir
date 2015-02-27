@@ -11,6 +11,8 @@ class Info
         metro(query[1])
       when 'statistic'
         statistic
+      when 'map'
+        show_map
       else
         puts "You have to follow the instruction"
     end
@@ -114,5 +116,13 @@ class Info
   def statistic_sub_city
     max = @map.metros.max_by{|key, value| value['flight_to'].length}
     return max[1]['name']<< ' - with number of direct connections ' << max[1]['flight_to'].length.to_s
+  end
+  
+  def show_map
+    routes = Array.new
+    @map.routes.each do |key, value|
+      routes.push(key.join('-'))
+    end
+    puts 'Check map at: http://www.gcmap.com/map?P=' << routes.join(',') << '&MS=wls&MR=800&MX=800x800&PM=*'
   end
 end
