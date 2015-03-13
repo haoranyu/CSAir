@@ -17,11 +17,17 @@ class Graph
   
   ##
   # Remove a node by key
+  # and it will also remove edge with an end on it
   # 
   # @param [Object, #key] node key
   # @param [Object, #value] node value
   def remove_node(key)
     @nodes.delete(key)
+    @edges.each do |edge_key, edge_value|
+      if edge_key.include?(key)
+        @edges.delete(edge_key)
+      end
+    end
   end
 
   ##
