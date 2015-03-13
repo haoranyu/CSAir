@@ -40,6 +40,4 @@ class TEST_Main < Test::Unit::TestCase
     @graph.remove_node('a')
     assert_equal(nil, @graph.get_edge('a', 'b'))
   end
-  
-  
 end

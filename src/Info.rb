@@ -66,7 +66,7 @@ class Info
     puts 'average population: ' << statistic_average_population
     puts 'continents served: '
     statistic_continents
-    puts 'hub city: ' << statistic_sub_city
+    puts 'hub city: ' << statistic_hub_city
   end
   
   ## 
@@ -154,7 +154,7 @@ class Info
   # Identifying CSAir's hub cities – the cities that have the most direct connections.
   #
   # @return [String] the cities that have the most direct connections.
-  def statistic_sub_city
+  def statistic_hub_city
     max = @map.metros.max_by{|key, value| value['flight_to'].length}
     return max[1]['name']<< ' - with number of direct connections ' << max[1]['flight_to'].length.to_s
   end
