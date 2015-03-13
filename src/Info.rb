@@ -19,6 +19,24 @@ class Info
         print_statistics
       when 'map'
         print_map
+      when 'remove'
+        if query[2] == nil
+          @map.remove_metro(query[1])
+        else
+          @map.remove_route(query[1], query[2])
+        end
+      when 'add'
+        if query[2] == nil
+          @map.add_metro(query[1])
+        else
+          @map.add_route(query[1], query[2])
+        end
+      when 'edit'
+        @map.update_metro_attibute(query[1], query[2], query[3])
+      when 'route'
+        print_route_info(query)
+      when 'path'
+        print_path_info(query[1], query[2])
       else
         puts "You have to follow the instruction"
     end
@@ -168,11 +186,27 @@ class Info
     puts 'Check map at: http://www.gcmap.com/map?P=' << routes.join(',') << '&MS=wls&MR=800&MX=800x800&PM=*'
   end
   
+  # Respond to the information of the route
+  def print_route_info(query)
+    metro_list = []
+    query.shift
+    
+    begin
+       metro = query.shift
+       if metro != nil
+         metro_list.push(metro)
+       end
+    end until metro == nil
+    
+    route_information(metro_list)
+  end
+  
   # List distance / cost / time information about a route 
   def route_information(metro_list)
     if is_route(metro_list)
-      puts "The total distance of this route is: " << self.get_route_distance(metro_list)
-      puts "The total cost of this route is: " << self.get_route_cost(metro_list)
+      puts "The total distance of this route is: " << self.get_route_distance(metro_list).to_s()
+      puts "The total cost of this route is: " << self.get_route_cost(metro_list).to_s()
+      puts "The total time of this route is: " << self.get_route_time(metro_list).to_s()
     else
       puts "Error: There is no such route possible"
       return false
@@ -244,5 +278,9 @@ class Info
       time_sum += time
     end
     return time_sum
+  end
+  
+  def print_path_info(metro1, metro2)
+    route_information(@map.get_shorest_path(metro1, metro2))
   end
 end

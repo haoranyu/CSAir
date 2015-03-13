@@ -124,6 +124,11 @@ class Graph
     @nodes.clear
   end
   
+  ##
+  # Exist edge
+  # 
+  # @param [String, #s] the start vertex
+  # @param [String, #t] the terminal vertex
   def dijkstra(s, t)
     distance = Hash.new
     previous = Hash.new
