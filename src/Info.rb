@@ -167,4 +167,6 @@ class Info
     end
     puts 'Check map at: http://www.gcmap.com/map?P=' << routes.join(',') << '&MS=wls&MR=800&MX=800x800&PM=*'
   end
+  
+
 end

@@ -19,6 +19,7 @@ class Map < Graph
     @edges = Hash.new
     initialize_metros(file['metros'])
     initialize_routes(file['routes'])
+    @data_source = file['data sources']
   end
   
   ##
@@ -77,4 +78,36 @@ class Map < Graph
       end
     end
   end
+  
+
+  def json_encode_map
+    map = Hash.new
+    map['data source'] = @data_source
+    map['metros'] = json_encode_metros
+    map['routes'] = json_encode_routes
+    return map.to_json
+  end
+  
+  def json_encode_metros
+    metros_array = []
+    @nodes.each do |key, value|
+      metros_array.push(value)
+    end
+    return metros_array
+  end
+  
+  def json_encode_routes
+     routes_array = []
+     @edges.each do |key, value|
+       route = Hash.new
+       route['ports'] = key
+       route['distance'] = value
+       routes_array.push(route)
+     end
+     return routes_array
+   end
+   
+   def output_json_map
+     IO.write("data/map_data_output.json", json_encode_map)
+   end
 end

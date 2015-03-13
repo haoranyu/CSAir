@@ -10,7 +10,7 @@ puts "map             #Show the route map"
 
 map = Map.new('data/map_data.json')
 info = Info.new(map)
-
+map.output_json_map()
 while true
   puts "-------- PLEASE QUERY --------"
   query = gets.split(' ')
