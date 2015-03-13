@@ -14,6 +14,7 @@ puts "add <metro1> <metro2>       #Add route"
 puts "edit <metro> <attr> <value> #Edit an attribute in a metro with the value"
 puts "route <metro1> <2> ... <n>  #Display the route info"
 puts "path <metro1> <metro2>      #Display the route info for path from metro1 to metro2"
+puts "merge <filename>            #Merge an other map with json into the current one"
 map = Map.new('data/map_data.json')
 info = Info.new(map)
 

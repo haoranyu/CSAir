@@ -126,11 +126,12 @@ class Map < Graph
      return routes_array
    end
    
-   # Output a json map to the disk
-   def output_json_map
-     IO.write("data/map_data_output.json", json_encode_map)
-   end
+  # Output a json map to the disk
+  def output_json_map
+    IO.write("data/map_data_output.json", json_encode_map)
+  end
    
+  # Get the shortest path from metro1 to metro2
   def get_shorest_path(metro1, metro2)
     previous = self.dijkstra(metro1, metro2)
     
@@ -142,5 +143,4 @@ class Map < Graph
     end
     return expect_route
   end
-
 end

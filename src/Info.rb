@@ -37,6 +37,8 @@ class Info
         print_route_info(query)
       when 'path'
         print_path_info(query[1], query[2])
+      when 'merge'
+        @map.merge(query[1])
       else
         puts "You have to follow the instruction"
     end
@@ -280,6 +282,7 @@ class Info
     return time_sum
   end
   
+  # Print out the information about the a path by metro1 as start and metro2
   def print_path_info(metro1, metro2)
     route_information(@map.get_shorest_path(metro1, metro2))
   end
