@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>search_index.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../data/cmi_hub_json.html">cmi_hub.json</a>
+  
+    <li class="file"><a href="../../data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="../../data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="../../doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="../../doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="../../doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="../../doc/TEST_Main_html.html">TEST_Main.html</a>
+  
+    <li class="file"><a href="../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="../../doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="../../doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="../../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../Graph.html">Graph</a>
+  
+    <li><a href="../../Info.html">Info</a>
+  
+    <li><a href="../../Map.html">Map</a>
+  
+    <li><a href="../../TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>var search_data = {“index”:{“<a
+href="http://"graph","info","map","test_main","add_edge()","add_node()","add_route()","clear()","data_source()","exist_edge()","exist_nodes()","get_edge()","get_node()","get_route_cost()","get_route_distance()","get_route_flying_time()","get_route_layover_time()","get_route_time()","initialize_metros()","initialize_routes()","is_route()","json_encode_map()","json_encode_metros()","json_encode_routes()","merge()","metros()","new()","new()","new()","output_json_map()","print_map()","print_metro_info()","print_metro_list()","print_statistics()","query()","remove_edge()","remove_node()","route_information()","routes()","setup()","statistic_average_distance()","statistic_average_population()","statistic_biggest_city()","statistic_continents()","statistic_hub_city()","statistic_longest_flight()","statistic_shortest_flight()","statistic_smallest_city()","test_average_distance()","test_average_population()","test_biggest_city()","test_hub_city()","test_insert_edges()","test_insert_nodes()","test_is_route()","test_load_map()","test_longest_flight()","test_map_merge()","test_remove_node()","test_route_cost()","test_route_distance()","test_route_flying_time()","test_route_layover_time()","test_route_time()","test_shortest_flight()","test_smallest_city()","update_edge()","update_metro_attibute()","update_node()","cmi_hub.json","map_data.json","map_data_output.json","graph.html","info.html","map.html","test_main.html","created.rid","map_data_json.html","created_rid.html","index.html","darkfish.js","jquery.js","navigation.js","search.js","search_index.js","searcher.js","rdoc.css","table_of_contents.html"">searchIndex”:</a>,“<a
+href=""graph","info","map","test_main","graph#add_edge()","graph#add_node()","map#add_route()","graph#clear()","map#data_source()","graph#exist_edge()","graph#exist_nodes()","graph#get_edge()","graph#get_node()","info#get_route_cost()","info#get_route_distance()","info#get_route_flying_time()","info#get_route_layover_time()","info#get_route_time()","map#initialize_metros()","map#initialize_routes()","info#is_route()","map#json_encode_map()","map#json_encode_metros()","map#json_encode_routes()","map#merge()","map#metros()","graph::new()","info::new()","map::new()","map#output_json_map()","info#print_map()","info#print_metro_info()","info#print_metro_list()","info#print_statistics()","info#query()","graph#remove_edge()","graph#remove_node()","info#route_information()","map#routes()","test_main#setup()","info#statistic_average_distance()","info#statistic_average_population()","info#statistic_biggest_city()","info#statistic_continents()","info#statistic_hub_city()","info#statistic_longest_flight()","info#statistic_shortest_flight()","info#statistic_smallest_city()","test_main#test_average_distance()","test_main#test_average_population()","test_main#test_biggest_city()","test_main#test_hub_city()","test_main#test_insert_edges()","test_main#test_insert_nodes()","test_main#test_is_route()","test_main#test_load_map()","test_main#test_longest_flight()","test_main#test_map_merge()","test_main#test_remove_node()","test_main#test_route_cost()","test_main#test_route_distance()","test_main#test_route_flying_time()","test_main#test_route_layover_time()","test_main#test_route_time()","test_main#test_shortest_flight()","test_main#test_smallest_city()","graph#update_edge()","map#update_metro_attibute()","graph#update_node()","","","","","","","","","","","","","","","","","","",""">longSearchIndex”:</a>,“<a
+href="http://"Graph","","Graph.html","",""">info”:[</a>,[“<a
+href="http://"Map","","Map.html","",""">Info”,“”,“Info.html”,“”,“”],</a>,[“TEST_Main”,“”,“TEST_Main.html”,“”,“”],[“add_edge”,“Graph”,“Graph.html#method-i-add_edge”,“(node_from_key,
+node_to_key, value)”,“&lt;p&gt;Add an edge to the valuen&lt;p&gt;@param
+[Object, node_from_key] the from node keyn&lt;p&gt;@param [Object,
+node_to_key …n”],[“add_node”,“Graph”,“Graph.html#method-i-add_node”,“(key,
+value)”,“&lt;p&gt;Add a node to the graphn&lt;p&gt;@param [Object, key]
+node key @param [Object, value] node
+valuen”],[“add_route”,“Map”,“Map.html#method-i-add_route”,“(metro1, metro2,
+distance)”,“&lt;p&gt;Add a route to the mapn&lt;p&gt;@param [String,
+metro1] the abbreviation of starting matro @param [String,n#metro2
+…n”],[“clear”,“Graph”,“Graph.html#method-i-clear”,“()”,“&lt;p&gt;Clear
+every thing in the
+graphn”],[“data_source”,“Map”,“Map.html#method-i-data_source”,“()”,“&lt;p&gt;Return
+all data
+sourcen”],[“exist_edge”,“Graph”,“Graph.html#method-i-exist_edge”,“(node_from_key,
+node_to_key)”,“&lt;p&gt;Exist edgen&lt;p&gt;@param [Object, node_from_key]
+the from node keyn&lt;p&gt;@param [Object, node_to_key] the to node
+…n”],[“exist_nodes”,“Graph”,“Graph.html#method-i-exist_nodes”,“(key_arr)”,“&lt;p&gt;Add
+a node to the graphn&lt;p&gt;@param [Object, key] contents the contents to
+reverse  @param [Object,n#value
+…n”],[“get_edge”,“Graph”,“Graph.html#method-i-get_edge”,“(node_from_key,
+node_to_key)”,“&lt;p&gt;Get a edge by from_key and to_keyn&lt;p&gt;@param
+[Object, node_from_key] the from node keyn&lt;p&gt;@param [Object,
+node_to_key
+…n”],[“get_node”,“Graph”,“Graph.html#method-i-get_node”,“(key)”,“&lt;p&gt;Get
+a node by keyn&lt;p&gt;@param [Object, key] node
+keyn”],[“get_route_cost”,“Info”,“Info.html#method-i-get_route_cost”,“(metro_list)”,“&lt;p&gt;Get
+the total cost of a
+routen”],[“get_route_distance”,“Info”,“Info.html#method-i-get_route_distance”,“(metro_list)”,“&lt;p&gt;Get
+the total distance of a
+routen”],[“get_route_flying_time”,“Info”,“Info.html#method-i-get_route_flying_time”,“(metro_list)”,“&lt;p&gt;Get
+the flying time of a
+routen”],[“get_route_layover_time”,“Info”,“Info.html#method-i-get_route_layover_time”,“(metro_list)”,“&lt;p&gt;Get
+the layover time of a
+routen”],[“get_route_time”,“Info”,“Info.html#method-i-get_route_time”,“(metro_list)”,“&lt;p&gt;Get
+the total time of a
+routen”],[“initialize_metros”,“Map”,“Map.html#method-i-initialize_metros”,“(metros)”,“&lt;p&gt;Add
+metros to the mapn&lt;p&gt;@param [Array, metros] the array of metros
+informationn”],[“initialize_routes”,“Map”,“Map.html#method-i-initialize_routes”,“(routes)”,“&lt;p&gt;Add
+routes to the mapn&lt;p&gt;@param [Array, routes] the array of routes
+informationn”],[“is_route”,“Info”,“Info.html#method-i-is_route”,“(metro_list)”,“&lt;p&gt;Judge
+the route is legal or
+notn”],[“json_encode_map”,“Map”,“Map.html#method-i-json_encode_map”,“()”,“&lt;p&gt;Using
+json to encode the
+mapn”],[“json_encode_metros”,“Map”,“Map.html#method-i-json_encode_metros”,“()”,“&lt;p&gt;Obtain
+the array of metros for json to
+encoden”],[“json_encode_routes”,“Map”,“Map.html#method-i-json_encode_routes”,“()”,“&lt;p&gt;Obtain
+the array of routes for json to <a
+href="http://"merge","Map","Map.html#method-i-merge","(filename)",""">encoden”],</a>,[“metros”,“Map”,“Map.html#method-i-metros”,“()”,“&lt;p&gt;Return
+all metro
+objectsn”],[“new”,“Graph”,“Graph.html#method-c-new”,“()”,“&lt;p&gt;Constructor
+for
+Graphn”],[“new”,“Info”,“Info.html#method-c-new”,“(map)”,“&lt;p&gt;Constructor
+for
+Infon”],[“new”,“Map”,“Map.html#method-c-new”,“(filename)”,“&lt;p&gt;Constructor
+for
+Mapn”],[“output_json_map”,“Map”,“Map.html#method-i-output_json_map”,“()”,“&lt;p&gt;Output
+a json map to the
+diskn”],[“print_map”,“Info”,“Info.html#method-i-print_map”,“()”,“&lt;p&gt;Show
+the routes
+mapn”],[“print_metro_info”,“Info”,“Info.html#method-i-print_metro_info”,“(code)”,“&lt;p&gt;Get
+information for specified metron&lt;p&gt;@param [String, code] the code of
+the metro from
+queryn”],[“print_metro_list”,“Info”,“Info.html#method-i-print_metro_list”,“()”,“&lt;p&gt;List
+all metros&amp;#39;
+informationn”],[“print_statistics”,“Info”,“Info.html#method-i-print_statistics”,“()”,“&lt;p&gt;Output
+all statistic
+informationn”],[“query”,“Info”,“Info.html#method-i-query”,“(query)”,“&lt;p&gt;Use
+to accept and process queriesn&lt;p&gt;@param [String, query] the query
+from
+usern”],[“remove_edge”,“Graph”,“Graph.html#method-i-remove_edge”,“(node_from_key,
+node_to_key)”,“&lt;p&gt;Remove an edge by from_key and
+to_keyn&lt;p&gt;@param [Object, node_from_key] the from node
+keyn&lt;p&gt;@param [Object,
+…n”],[“remove_node”,“Graph”,“Graph.html#method-i-remove_node”,“(key)”,“&lt;p&gt;Remove
+a node by key and it will also remove edge with an end on
+itn&lt;p&gt;@param [Object, key] node key @param
+…n”],[“route_information”,“Info”,“Info.html#method-i-route_information”,“(metro_list)”,“&lt;p&gt;List
+distance / cost / time information about a
+routen”],[“routes”,“Map”,“Map.html#method-i-routes”,“()”,“&lt;p&gt;Return
+all route
+objectsn”],[“setup”,“TEST_Main”,“TEST_Main.html#method-i-setup”,“()”,“&lt;p&gt;Test
+set
+upn”],[“statistic_average_distance”,“Info”,“Info.html#method-i-statistic_average_distance”,“()”,“&lt;p&gt;Return
+the average distance of all the flights in the networkn&lt;p&gt;@return
+[String] the average distance of
+…n”],[“statistic_average_population”,“Info”,“Info.html#method-i-statistic_average_population”,“()”,“&lt;p&gt;Return
+the average size (by population) of all the cities served by
+CSAirn&lt;p&gt;@return [String] the average
+…n”],[“statistic_biggest_city”,“Info”,“Info.html#method-i-statistic_biggest_city”,“()”,“&lt;p&gt;Return
+the biggest city (by population) served by CSAirn&lt;p&gt;@return [String]
+the biggest city (by population)
+…n”],[“statistic_continents”,“Info”,“Info.html#method-i-statistic_continents”,“()”,“&lt;p&gt;Print
+a list of the continents served by CSAir and which cities are in
+themn”],[“statistic_hub_city”,“Info”,“Info.html#method-i-statistic_hub_city”,“()”,“&lt;p&gt;Identifying
+CSAir&amp;#39;s hub cities – the cities that have the most
+directnconnections.n&lt;p&gt;@return [String]
+…n”],[“statistic_longest_flight”,“Info”,“Info.html#method-i-statistic_longest_flight”,“()”,“&lt;p&gt;Return
+the longest single flight in the networkn&lt;p&gt;@return [String] the
+longest single flight in the network
+…n”],[“statistic_shortest_flight”,“Info”,“Info.html#method-i-statistic_shortest_flight”,“()”,“&lt;p&gt;Return
+the shortest single flight in the networkn&lt;p&gt;@return [String] the
+shortest single flight in the network
+…n”],[“statistic_smallest_city”,“Info”,“Info.html#method-i-statistic_smallest_city”,“()”,“&lt;p&gt;Return
+the smallest city (by population) served by CSAirn&lt;p&gt;@return [String]
+the smallest city (by population)
+…n”],[“test_average_distance”,“TEST_Main”,“TEST_Main.html#method-i-test_average_distance”,“()”,“&lt;p&gt;Test
+statistic_average_distancen”],[“test_average_population”,“TEST_Main”,“TEST_Main.html#method-i-test_average_population”,“()”,“&lt;p&gt;Test
+statistic_average_populationn”],[“test_biggest_city”,“TEST_Main”,“TEST_Main.html#method-i-test_biggest_city”,“()”,“&lt;p&gt;Test
+statistic_biggest_cityn”],[“test_hub_city”,“TEST_Main”,“TEST_Main.html#method-i-test_hub_city”,“()”,“&lt;p&gt;Test
+statistic_hub_cityn”],[“test_insert_edges”,“TEST_Main”,“TEST_Main.html#method-i-test_insert_edges”,“()”,“&lt;p&gt;Test
+graph edges
+insertionn”],[“test_insert_nodes”,“TEST_Main”,“TEST_Main.html#method-i-test_insert_nodes”,“()”,“&lt;p&gt;Test
+graph nodes
+insertionn”],[“test_is_route”,“TEST_Main”,“TEST_Main.html#method-i-test_is_route”,“()”,“&lt;p&gt;Test
+route
+existencen”],[“test_load_map”,“TEST_Main”,“TEST_Main.html#method-i-test_load_map”,“()”,“&lt;p&gt;Test
+loading a
+mapn”],[“test_longest_flight”,“TEST_Main”,“TEST_Main.html#method-i-test_longest_flight”,“()”,“&lt;p&gt;Test
+<a
+href="http://"test_map_merge","TEST_Main","TEST_Main.html#method-i-test_map_merge","()",""">statistic_longest_flightn”],</a>,[“test_remove_node”,“TEST_Main”,“TEST_Main.html#method-i-test_remove_node”,“()”,“&lt;p&gt;Test
+graph vertex
+deletionn”],[“test_route_cost”,“TEST_Main”,“TEST_Main.html#method-i-test_route_cost”,“()”,“&lt;p&gt;Test
+route
+costn”],[“test_route_distance”,“TEST_Main”,“TEST_Main.html#method-i-test_route_distance”,“()”,“&lt;p&gt;Test
+route
+distancen”],[“test_route_flying_time”,“TEST_Main”,“TEST_Main.html#method-i-test_route_flying_time”,“()”,“&lt;p&gt;Test
+route
+flying_timen”],[“test_route_layover_time”,“TEST_Main”,“TEST_Main.html#method-i-test_route_layover_time”,“()”,“&lt;p&gt;Test
+route
+layover_timen”],[“test_route_time”,“TEST_Main”,“TEST_Main.html#method-i-test_route_time”,“()”,“&lt;p&gt;Test
+total route
+timen”],[“test_shortest_flight”,“TEST_Main”,“TEST_Main.html#method-i-test_shortest_flight”,“()”,“&lt;p&gt;Test
+statistic_shortest_flightn”],[“test_smallest_city”,“TEST_Main”,“TEST_Main.html#method-i-test_smallest_city”,“()”,“&lt;p&gt;Test
+statistic_smallest_cityn”],[“update_edge”,“Graph”,“Graph.html#method-i-update_edge”,“(node_from_key,
+node_to_key, value)”,“&lt;p&gt;Update an edge to the new
+valuen&lt;p&gt;@param [Object, node_from_key] the from node
+keyn&lt;p&gt;@param [Object, node_to_key
+…n”],[“update_metro_attibute”,“Map”,“Map.html#method-i-update_metro_attibute”,“(metro,
+attibute, new_value)”,“&lt;p&gt;Edit attribute of a
+metron”],[“update_node”,“Graph”,“Graph.html#method-i-update_node”,“(key,
+value)”,“&lt;p&gt;Update a node with key to the new valuen&lt;p&gt;@param
+[Object, key] node key @param [Object, value] node value
+…n”],[“cmi_hub.json”,“”,“data/cmi_hub_json.html”,“”,“&lt;p&gt;{nn&lt;pre&gt;&amp;quot;data
+sources&amp;quot; : [n    &amp;quot;<a
+href="http://www.gcmap.com/&quot">www.gcmap.com/&quot</a>; ,n   
+&amp;quot;<a
+href="http://www.theodora.com/country_digraphs.html&quot">www.theodora.com/country_digraphs.html&quot</a>;
+…&lt;/pre&gt;n”],[“map_data.json”,“”,“data/map_data_json.html”,“”,“&lt;p&gt;{nn&lt;pre&gt;&amp;quot;data
+sources&amp;quot; : [n    &amp;quot;<a
+href="http://www.gcmap.com/&quot">www.gcmap.com/&quot</a>; ,n   
+&amp;quot;<a
+href="http://www.theodora.com/country_digraphs.html&quot">www.theodora.com/country_digraphs.html&quot</a>;
+…&lt;/pre&gt;n”],[“map_data_output.json”,“”,“data/map_data_output_json.html”,“”,“&lt;p&gt;{“data
+source”: America“,”timezone“:-4,”coordinates“:{”S“:33,”W“:71},”
+…n”],[“Graph.html”,“”,“doc/Graph_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Info.html”,“”,“doc/Info_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Map.html”,“”,“doc/Map_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“TEST_Main.html”,“”,“doc/TEST_Main_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created.rid”,“”,“doc/created_rid.html”,“”,“&lt;p&gt;Fri, 27 Feb 2015
+05:18:19 -0600 ./data/map_data.json    Thu, 26 Feb 2015n11:47:50 -0600
+./doc/created.rid
+…n”],[“map_data_json.html”,“”,“doc/data/map_data_json_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created_rid.html”,“”,“doc/doc/created_rid_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“index.html”,“”,“doc/index_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“darkfish.js”,“”,“doc/js/darkfish_js.html”,“”,“n&lt;pre&gt;Darkfish
+Page Functionsn$Id: darkfish.js 53 2009-01-07 02:52:03Z deveiant $nnAuthor:
+Michael Granger
+…&lt;/pre&gt;n”],[“jquery.js”,“”,“doc/js/jquery_js.html”,“”,“n&lt;pre&gt;!n
+jQuery JavaScript Library v1.6.2n <a
+href="http://jquery.com/\n\n">jquery.com/nn</a> Copyright 2011, John Resign
+Dual licensed under
+…&lt;/pre&gt;n”],[“navigation.js”,“”,“doc/js/navigation_js.html”,“”,“n&lt;pre&gt;Navigation
+allows movement using the arrow keys through the search results.nnWhen
+using this library
+…&lt;/pre&gt;n”],[“search.js”,“”,“doc/js/search_js.html”,“”,“&lt;p&gt;Search
+= function(data, input, result) {nn&lt;pre&gt;this.data = data;nthis.$input
+= $(input);nthis.$result = $(result);
+…&lt;/pre&gt;n”],[“search_index.js”,“”,“doc/js/search_index_js.html”,“”,“&lt;p&gt;var
+search_data = {“index”:{“searchIndex”:,“longSearchIndex”:,“info”:[,[“
+…n”],[“searcher.js”,“”,“doc/js/searcher_js.html”,“”,“&lt;p&gt;Searcher =
+function(data) {nn&lt;pre&gt;this.data = data;nthis.handlers =
+[];&lt;/pre&gt;n&lt;p&gt;}n”],[“rdoc.css”,“”,“doc/rdoc_css.html”,“”,“n&lt;pre&gt;&amp;quot;Darkfish&amp;quot;
+Rdoc CSSn$Id: rdoc.css 54 2009-01-27 01:09:48Z deveiant $nnAuthor: Michael
+Granger &amp;lt;ged@FaerieMUD.org&amp;gt;
+…&lt;/pre&gt;n”],[“table_of_contents.html”,“”,“doc/table_of_contents_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8” …n”]]}}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>Map.html - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../data/cmi_hub_json.html">cmi_hub.json</a>
+  
+    <li class="file"><a href="../data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="../data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="../doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="../doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="../doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="../doc/TEST_Main_html.html">TEST_Main.html</a>
+  
+    <li class="file"><a href="../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="../doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="../doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="../doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Graph.html">Graph</a>
+  
+    <li><a href="../Info.html">Info</a>
+  
+    <li><a href="../Map.html">Map</a>
+  
+    <li><a href="../TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta content=“text/html; charset=UTF-8”
+http-equiv=“Content-Type”&gt;</p>
+
+<p>&lt;title&gt;class <a href="../Map.html">Map</a> - RDoc
+Documentation&lt;/title&gt;</p>
+
+<p>&lt;link type=“text/css” media=“screen” href=“./rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;./&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script type=“text/javascript” charset=“utf-8”
+src=“./js/jquery.js”&gt;&lt;/script&gt; &lt;script type=“text/javascript”
+charset=“utf-8” src=“./js/navigation.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“./js/search_index.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“./js/search.js”&gt;&lt;/script&gt; &lt;script type=“text/javascript”
+charset=“utf-8” src=“./js/searcher.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“./js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body id=“top” class=“class”&gt; &lt;nav id=“metadata”&gt;</p>
+
+<pre>&lt;nav id=&quot;home-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;
+  &lt;a href=&quot;./index.html&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/h3&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;nav id=&quot;search-section&quot; class=&quot;section project-section&quot; class=&quot;initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/h3&gt;
+&lt;/form&gt;
+
+&lt;ul id=&quot;search-results&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;div id=&quot;file-metadata&quot;&gt;
+  &lt;nav id=&quot;file-list-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Defined In&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;src/Map.rb
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;class-metadata&quot;&gt;
+
+  &lt;nav id=&quot;parent-class-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Parent&lt;/h3&gt;
+
+&lt;p class=&quot;link&quot;&gt;&lt;a href=&quot;Graph.html&quot;&gt;Graph&lt;/a&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;!-- Method Quickref --&gt;</pre>
+
+<p>&lt;nav id=“method-list-section” class=“section”&gt;</p>
+
+<pre>&lt;h3 class=&quot;section-header&quot;&gt;Methods&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-c-new&quot;&gt;::new&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-add_route&quot;&gt;#add_route&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-data_source&quot;&gt;#data_source&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-initialize_metros&quot;&gt;#initialize_metros&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-initialize_routes&quot;&gt;#initialize_routes&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-json_encode_map&quot;&gt;#json_encode_map&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-json_encode_metros&quot;&gt;#json_encode_metros&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-json_encode_routes&quot;&gt;#json_encode_routes&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-merge&quot;&gt;#merge&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-metros&quot;&gt;#metros&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-output_json_map&quot;&gt;#output_json_map&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-routes&quot;&gt;#routes&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-update_metro_attibute&quot;&gt;#update_metro_attibute&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;project-metadata&quot;&gt;
+  &lt;nav id=&quot;fileindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Pages&lt;/h3&gt;
+
+&lt;ul&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./data/cmi_hub_json.html&quot;&gt;cmi_hub.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./data/map_data_json.html&quot;&gt;map_data.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./data/map_data_output_json.html&quot;&gt;map_data_output.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/Graph_html.html&quot;&gt;Graph.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/Info_html.html&quot;&gt;Info.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/Map_html.html&quot;&gt;Map.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/TEST_Main_html.html&quot;&gt;TEST_Main.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/created_rid.html&quot;&gt;created.rid&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/data/map_data_json_html.html&quot;&gt;map_data_json.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/doc/created_rid_html.html&quot;&gt;created_rid.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/index_html.html&quot;&gt;index.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/js/darkfish_js.html&quot;&gt;darkfish.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/js/jquery_js.html&quot;&gt;jquery.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/js/navigation_js.html&quot;&gt;navigation.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/js/search_js.html&quot;&gt;search.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/js/search_index_js.html&quot;&gt;search_index.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/js/searcher_js.html&quot;&gt;searcher.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/rdoc_css.html&quot;&gt;rdoc.css&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/table_of_contents_html.html&quot;&gt;table_of_contents.html&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>  &lt;nav id=&quot;classindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Class and Module Index&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Graph.html&quot;&gt;Graph&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Info.html&quot;&gt;Info&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Map.html&quot;&gt;Map&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./TEST_Main.html&quot;&gt;TEST_Main&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;div id=“documentation”&gt;</p>
+
+<pre class="ruby"><span class="ruby-operator">&lt;</span><span class="ruby-identifier">h1</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;class&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">class</span> <span class="ruby-constant">Map</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h1&gt;
+
+&lt;div id=&quot;description&quot; class=&quot;description&quot;&gt;
+
+&lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-identifier">description</span> <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-identifier">section</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;5Buntitled-5D&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;documentation-section&quot;</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Methods</span> <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+   <span class="ruby-operator">&lt;</span><span class="ruby-identifier">section</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;public-class-5Buntitled-5D-method-details&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-section section&quot;</span><span class="ruby-operator">&gt;</span>
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">h3</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;section-header&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-constant">Public</span> <span class="ruby-constant">Class</span> <span class="ruby-constant">Methods</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h3&gt;
+
+    &lt;div id=&quot;method-c-new&quot; class=&quot;method-detail &quot;&gt;
+
+      &lt;div class=&quot;method-heading&quot;&gt;
+        &lt;span class=&quot;method-name&quot;&gt;new&lt;/</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+          <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>(<span class="ruby-identifier">filename</span>)<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+        &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+      <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+      &lt;div class=&quot;method-description&quot;&gt;
+
+        &lt;p&gt;Constructor for &lt;a href=&quot;Map.html&quot;&gt;Map&lt;/</span><span class="ruby-identifier">a</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-node">/p&gt;
+
+        &lt;div class=&quot;method-source-code&quot; id=&quot;new-source&quot;&gt;
+          &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/</span><span class="ruby-constant">Map</span>.<span class="ruby-identifier">rb</span>, <span class="ruby-identifier">line</span> <span class="ruby-value">17</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+</span></pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;initialize&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;filename&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;JSON&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;parse&lt;/span&gt;(&lt;span class=&quot;ruby-constant&quot;&gt;IO&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;read&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;filename&lt;/span&gt;))
+&lt;span class=&quot;ruby-ivar&quot;&gt;@nodes&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;Hash&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;ruby-ivar&quot;&gt;@edges&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;Hash&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;initialize_metros&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;metros&amp;#39;&lt;/span&gt;])
+&lt;span class=&quot;ruby-identifier&quot;&gt;initialize_routes&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;routes&amp;#39;&lt;/span&gt;])
+&lt;span class=&quot;ruby-ivar&quot;&gt;@data_source&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;data sources&amp;#39;&lt;/span&gt;]</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>      &lt;/div&gt;&lt;!-- new-source --&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;!-- new-method --&gt;
+
+&lt;/section&gt;&lt;!-- public-class-method-details --&gt;
+
+ &lt;section id=&quot;public-instance-5Buntitled-5D-method-details&quot; class=&quot;method-section section&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;Public Instance Methods&lt;/h3&gt;
+
+  &lt;div id=&quot;method-i-add_route&quot; class=&quot;method-detail &quot;&gt;
+
+    &lt;div class=&quot;method-heading&quot;&gt;
+      &lt;span class=&quot;method-name&quot;&gt;add_route&lt;/span&gt;&lt;span
+        class=&quot;method-args&quot;&gt;(metro1, metro2, distance)&lt;/span&gt;
+
+      &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;method-description&quot;&gt;
+
+      &lt;p&gt;Add a route to the map&lt;/p&gt;</pre>
+
+<p>&lt;p&gt;@param [String, metro1] the abbreviation of starting matro @param
+[String, metro2] the abbreviation of ending matro @param [Integer,
+distance] the distance between two metros&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;add_route-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 61&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;add_route&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;metro1&lt;/span&gt;, &lt;span
+class=“ruby-identifier”&gt;metro2&lt;/span&gt;, &lt;span
+class=“ruby-identifier”&gt;distance&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;exist_nodes&lt;/span&gt;([&lt;span class=&quot;ruby-identifier&quot;&gt;metro1&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;metro2&lt;/span&gt;])
+  &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;add_edge&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;metro1&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;metro2&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;distance&lt;/span&gt;)
+  &lt;span class=&quot;ruby-ivar&quot;&gt;@nodes&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;metro1&lt;/span&gt;][&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;flight_to&amp;#39;&lt;/span&gt;].&lt;span class=&quot;ruby-identifier&quot;&gt;push&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;metro2&lt;/span&gt;)
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- add_route-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- add_route-method --&gt;
+
+&lt;div id=&quot;method-i-data_source&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;data_source&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Return all data source&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;data_source-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 79&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;data_source&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@data_source&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- data_source-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- data_source-method --&gt;
+
+&lt;div id=&quot;method-i-initialize_metros&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;initialize_metros&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;(metros)&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Add metros to the map&lt;/p&gt;</pre>
+
+<p>&lt;p&gt;@param [Array, &lt;a
+href=“Map.html#method-i-metros”&gt;metros&lt;/a&gt;] the array of metros
+information&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;initialize_metros-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 37&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;initialize_metros&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;metros&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;metros&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;metro&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;ruby-identifier&quot;&gt;metro&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;flight_to&amp;#39;&lt;/span&gt;] = &lt;span class=&quot;ruby-constant&quot;&gt;Array&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;add_metro&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;metro&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;code&amp;#39;&lt;/span&gt;], &lt;span class=&quot;ruby-identifier&quot;&gt;metro&lt;/span&gt;)
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- initialize_metros-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- initialize_metros-method --&gt;
+
+&lt;div id=&quot;method-i-initialize_routes&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;initialize_routes&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;(routes)&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Add routes to the map&lt;/p&gt;</pre>
+
+<p>&lt;p&gt;@param [Array, &lt;a
+href=“Map.html#method-i-routes”&gt;routes&lt;/a&gt;] the array of routes
+information&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;initialize_routes-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 48&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;initialize_routes&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;routes&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;routes&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;add_route&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;ports&amp;#39;&lt;/span&gt;][&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;], &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;ports&amp;#39;&lt;/span&gt;][&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;], &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;distance&amp;#39;&lt;/span&gt;])
+  &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;add_route&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;ports&amp;#39;&lt;/span&gt;][&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;], &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;ports&amp;#39;&lt;/span&gt;][&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;], &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;distance&amp;#39;&lt;/span&gt;])
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- initialize_routes-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- initialize_routes-method --&gt;
+
+&lt;div id=&quot;method-i-json_encode_map&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;json_encode_map&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Using json to encode the map&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;json_encode_map-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 98&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;json_encode_map&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;map&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;Hash&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;map&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;data source&amp;#39;&lt;/span&gt;] = &lt;span class=&quot;ruby-ivar&quot;&gt;@data_source&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;map&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;metros&amp;#39;&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;json_encode_metros&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;map&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;routes&amp;#39;&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;json_encode_routes&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;map&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;to_json&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- json_encode_map-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- json_encode_map-method --&gt;
+
+&lt;div id=&quot;method-i-json_encode_metros&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;json_encode_metros&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Obtain the array of metros for json to encode&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;json_encode_metros-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 107&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;json_encode_metros&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;metros_array&lt;/span&gt; = []
+&lt;span class=&quot;ruby-ivar&quot;&gt;@nodes&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;key&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;ruby-identifier&quot;&gt;metros_array&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;push&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;value&lt;/span&gt;)
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;metros_array&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- json_encode_metros-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- json_encode_metros-method --&gt;
+
+&lt;div id=&quot;method-i-json_encode_routes&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;json_encode_routes&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Obtain the array of routes for json to encode&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;json_encode_routes-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 116&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;json_encode_routes&lt;/span&gt;</p>
+
+<pre>  &lt;span class=&quot;ruby-identifier&quot;&gt;routes_array&lt;/span&gt; = []
+  &lt;span class=&quot;ruby-ivar&quot;&gt;@edges&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;key&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;Hash&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;
+    &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;ports&amp;#39;&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;key&lt;/span&gt;
+    &lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;distance&amp;#39;&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;value&lt;/span&gt;
+    &lt;span class=&quot;ruby-identifier&quot;&gt;routes_array&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;push&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;route&lt;/span&gt;)
+  &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;routes_array&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;
+         &lt;/div&gt;&lt;!-- json_encode_routes-source --&gt;
+
+       &lt;/div&gt;
+
+     &lt;/div&gt;&lt;!-- json_encode_routes-method --&gt;
+
+     &lt;div id=&quot;method-i-merge&quot; class=&quot;method-detail &quot;&gt;
+
+       &lt;div class=&quot;method-heading&quot;&gt;
+         &lt;span class=&quot;method-name&quot;&gt;merge&lt;/span&gt;&lt;span
+           class=&quot;method-args&quot;&gt;(filename)&lt;/span&gt;
+
+         &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+       &lt;/div&gt;
+
+       &lt;div class=&quot;method-description&quot;&gt;
+
+         &lt;div class=&quot;method-source-code&quot; id=&quot;merge-source&quot;&gt;
+           &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 26&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;merge&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;filename&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;JSON&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;parse&lt;/span&gt;(&lt;span class=&quot;ruby-constant&quot;&gt;IO&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;read&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;filename&lt;/span&gt;))
+&lt;span class=&quot;ruby-identifier&quot;&gt;initialize_metros&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;metros&amp;#39;&lt;/span&gt;])
+&lt;span class=&quot;ruby-identifier&quot;&gt;initialize_routes&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;routes&amp;#39;&lt;/span&gt;])
+&lt;span class=&quot;ruby-ivar&quot;&gt;@data_source&lt;/span&gt; = &lt;span class=&quot;ruby-ivar&quot;&gt;@data_source&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;file&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;data sources&amp;#39;&lt;/span&gt;]</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- merge-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- merge-method --&gt;
+
+&lt;div id=&quot;method-i-metros&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;metros&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Return all metro objects&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;metros-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 69&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;metros&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@nodes&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- metros-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- metros-method --&gt;
+
+&lt;div id=&quot;method-i-output_json_map&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;output_json_map&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Output a json map to the disk&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;output_json_map-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 128&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;output_json_map&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-constant&quot;&gt;IO&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;write&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;data/map_data_output.json&amp;quot;&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;json_encode_map&lt;/span&gt;)</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- output_json_map-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- output_json_map-method --&gt;
+
+&lt;div id=&quot;method-i-routes&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;routes&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Return all route objects&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;routes-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 74&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;routes&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@edges&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;&lt;!-- routes-source --&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- routes-method --&gt;
+
+&lt;div id=&quot;method-i-update_metro_attibute&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;update_metro_attibute&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;(metro, attibute, new_value)&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Edit attribute of a metro&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;update_metro_attibute-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File src/Map.rb, line 84&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;update_metro_attibute&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;metro&lt;/span&gt;, &lt;span
+class=“ruby-identifier”&gt;attibute&lt;/span&gt;, &lt;span
+class=“ruby-identifier”&gt;new_value&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;attibute&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;code&amp;#39;&lt;/span&gt;, &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;, &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;country&amp;#39;&lt;/span&gt;, &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;continent&amp;#39;&lt;/span&gt;, &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;timezone&amp;#39;&lt;/span&gt;, &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;coordinates&amp;#39;&lt;/span&gt;, &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;region&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;ruby-ivar&quot;&gt;@nodes&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;metro&lt;/span&gt;][&lt;span class=&quot;ruby-identifier&quot;&gt;attibute&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;new_value&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;#39;population&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;new_value&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;ruby-ivar&quot;&gt;@nodes&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;metro&lt;/span&gt;][&lt;span class=&quot;ruby-identifier&quot;&gt;attibute&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;new_value&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Error: population can not be negative&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>        &lt;/div&gt;&lt;!-- update_metro_attibute-source --&gt;
+
+      &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- update_metro_attibute-method --&gt;
+
+  &lt;/section&gt;&lt;!-- public-instance-method-details --&gt;
+
+&lt;/section&gt;&lt;!-- 5Buntitled-5D --&gt;</pre>
+
+<p>&lt;/div&gt;&lt;!– documentation –&gt;</p>
+
+<p>&lt;footer id=“validator-badges”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;[Validate]&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;https://github.com/rdoc/rdoc&quot;&gt;RDoc&lt;/a&gt; 4.0.0.
+&lt;p&gt;Generated with the &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish Rdoc Generator&lt;/a&gt; 3.</pre>
+
+<p>&lt;/footer&gt;</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

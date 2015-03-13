@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>search_index_js.html - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../../index.html">Home</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../../data/cmi_hub_json.html">cmi_hub.json</a>
+  
+    <li class="file"><a href="../../../data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="../../../data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="../../../doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="../../../doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="../../../doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="../../../doc/TEST_Main_html.html">TEST_Main.html</a>
+  
+    <li class="file"><a href="../../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../../doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="../../../doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="../../../doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="../../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Graph.html">Graph</a>
+  
+    <li><a href="../../../Info.html">Info</a>
+  
+    <li><a href="../../../Map.html">Map</a>
+  
+    <li><a href="../../../TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta content=“text/html; charset=UTF-8”
+http-equiv=“Content-Type”&gt;</p>
+
+<p>&lt;title&gt;search_index.js - RDoc Documentation&lt;/title&gt;</p>
+
+<p>&lt;link type=“text/css” media=“screen” href=“../../rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;../../&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script type=“text/javascript” charset=“utf-8”
+src=“../../js/jquery.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/navigation.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/search_index.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/search.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/searcher.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body class=“file”&gt; &lt;nav id=“metadata”&gt;</p>
+
+<pre>&lt;nav id=&quot;home-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;
+  &lt;a href=&quot;../../index.html&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;../../table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;../../table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/h3&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;nav id=&quot;search-section&quot; class=&quot;section project-section&quot; class=&quot;initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/h3&gt;
+&lt;/form&gt;
+
+&lt;ul id=&quot;search-results&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;div id=&quot;project-metadata&quot;&gt;
+  &lt;nav id=&quot;fileindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Pages&lt;/h3&gt;
+
+&lt;ul&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../data/cmi_hub_json.html&quot;&gt;cmi_hub.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../data/map_data_json.html&quot;&gt;map_data.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../data/map_data_output_json.html&quot;&gt;map_data_output.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/Graph_html.html&quot;&gt;Graph.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/Info_html.html&quot;&gt;Info.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/Map_html.html&quot;&gt;Map.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/TEST_Main_html.html&quot;&gt;TEST_Main.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/created_rid.html&quot;&gt;created.rid&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/data/map_data_json_html.html&quot;&gt;map_data_json.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/doc/created_rid_html.html&quot;&gt;created_rid.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/index_html.html&quot;&gt;index.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/darkfish_js.html&quot;&gt;darkfish.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/jquery_js.html&quot;&gt;jquery.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/navigation_js.html&quot;&gt;navigation.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/search_js.html&quot;&gt;search.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/search_index_js.html&quot;&gt;search_index.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/searcher_js.html&quot;&gt;searcher.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/rdoc_css.html&quot;&gt;rdoc.css&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/table_of_contents_html.html&quot;&gt;table_of_contents.html&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>  &lt;nav id=&quot;classindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Class and Module Index&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../Graph.html&quot;&gt;Graph&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../Info.html&quot;&gt;Info&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../Map.html&quot;&gt;Map&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../TEST_Main.html&quot;&gt;TEST_Main&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;div id=“documentation” class=“description”&gt;</p>
+
+<p>&lt;p&gt;var search_data = {“index”:{“&lt;a href=“<a
+href="http://"graph","info","map","test_main","add_edge()","add_node()","add_route()","clear()","exist_nodes()","get_edge()","get_node()","initialize_metros()","initialize_routes()","list()","metro()","metros()","new()","new()","new()","query()","remove_edge()","remove_node()","routes()","setup()","show_map()","statistic()","statistic_average_distance()","statistic_average_population()","statistic_biggest_city()","statistic_continents()","statistic_longest()","statistic_shortest()","statistic_smallest_city()","statistic_sub_city()","test_insert_edges()","test_insert_nodes()","test_load_map()","update_edge()","update_node()","map_data.json","created.rid"">searchIndex”:</a>,“<a">”graph“,”info“,”map“,”test_main“,”add_edge()“,”add_node()“,”add_route()“,”clear()“,”exist_nodes()“,”get_edge()“,”get_node()“,”initialize_metros()“,”initialize_routes()“,”list()“,”metro()“,”metros()“,”new()“,”new()“,”new()“,”query()“,”remove_edge()“,”remove_node()“,”routes()“,”setup()“,”show_map()“,”statistic()“,”statistic_average_distance()“,”statistic_average_population()“,”statistic_biggest_city()“,”statistic_continents()“,”statistic_longest()“,”statistic_shortest()“,”statistic_smallest_city()“,”statistic_sub_city()“,”test_insert_edges()“,”test_insert_nodes()“,”test_load_map()“,”update_edge()“,”update_node()“,”map_data.json“,”created.rid“”>searchIndex”:</a>,“<a</a>
+href=“”graph“,”info“,”map“,”test_main“,”graph#add_edge()“,”graph#add_node()“,”map#add_route()“,”graph#clear()“,”graph#exist_nodes()“,”graph#get_edge()“,”graph#get_node()“,”map#initialize_metros()“,”map#initialize_routes()“,”info#list()“,”info#metro()“,”map#metros()“,”graph::new()“,”info::new()“,”map::new()“,”info#query()“,”graph#remove_edge()“,”graph#remove_node()“,”map#routes()“,”test_main#setup()“,”info#show_map()“,”info#statistic()“,”info#statistic_average_distance()“,”info#statistic_average_population()“,”info#statistic_biggest_city()“,”info#statistic_continents()“,”info#statistic_longest()“,”info#statistic_shortest()“,”info#statistic_smallest_city()“,”info#statistic_sub_city()“,”test_main#test_insert_edges()“,”test_main#test_insert_nodes()“,”test_main#test_load_map()“,”graph#update_edge()“,”graph#update_node()“,”“,”“”&gt;longSearchIndex”:&lt;/a&gt;,“&lt;a
+href=“<a
+href="http://"Graph","","Graph.html","",""">info”:[</a>,[“<a">”Graph“,”“,”Graph.html“,”“,”“”>info”:[</a>,[“<a</a>
+<a
+href="http://“TEST_Main”,“”,“TEST_Main.html”,“”,“”">href=“http://”Map“,”“,”Map.html“,”“,”“”>Info”,“”,“Info.html”,“”,“”],</a>,</a>,
+node_to_key, value)”,“&amp;lt;p&amp;gt;Add an edge to the
+valuen&amp;lt;p&amp;gt;@param</p>
+<dl class="rdoc-list label-list"><dt>Object, node_from_key
+<dd>
+<p>the from node keyn&amp;lt;p&amp;gt;@param [Object,</p>
+</dd></dl>
+
+<p>node_to_key …n”],[“add_node”,“Graph”,“Graph.html#method-i-add_node”,“(key,
+value)”,“&amp;lt;p&amp;gt;Add a node to the graphn&amp;lt;p&amp;gt;@param
+[Object, key] node key @param [Object, value] node
+valuen”],[“add_route”,“Map”,“Map.html#method-i-add_route”,“(metro1, metro2,
+distance)”,“&amp;lt;p&amp;gt;Add a route to the mapn&amp;lt;p&amp;gt;@param
+[String, metro1] the abbreviation of starting matro @param [String,n#metro2
+…n”],[“clear”,“Graph”,“Graph.html#method-i-clear”,“()”,“&amp;lt;p&amp;gt;Clear
+every thing in the
+graphn”],[“exist_nodes”,“Graph”,“Graph.html#method-i-exist_nodes”,“(key_arr)”,“&amp;lt;p&amp;gt;Add
+a node to the graphn&amp;lt;p&amp;gt;@param [Object, key] contents the
+contents to reverse  @param [Object,n#value
+…n”],[“get_edge”,“Graph”,“Graph.html#method-i-get_edge”,“(node_from_key,
+node_to_key)”,“&amp;lt;p&amp;gt;Get a edge by from_key and
+to_keyn&amp;lt;p&amp;gt;@param</p>
+<dl class="rdoc-list label-list"><dt>Object, node_from_key
+<dd>
+<p>the from node keyn&amp;lt;p&amp;gt;@param [Object,</p>
+</dd></dl>
+
+<p>node_to_key
+…n”],[“get_node”,“Graph”,“Graph.html#method-i-get_node”,“(key)”,“&amp;lt;p&amp;gt;Get
+a node by keyn&amp;lt;p&amp;gt;@param [Object, key] node
+keyn”],[“initialize_metros”,“Map”,“Map.html#method-i-initialize_metros”,“(metros)”,“&amp;lt;p&amp;gt;Add
+metros to the mapn&amp;lt;p&amp;gt;@param [Array, metros] the array of
+metros
+informationn”],[“initialize_routes”,“Map”,“Map.html#method-i-initialize_routes”,“(routes)”,“&amp;lt;p&amp;gt;Add
+routes to the mapn&amp;lt;p&amp;gt;@param [Array, routes] the array of
+routes
+informationn”],[“list”,“Info”,“Info.html#method-i-list”,“()”,“&amp;lt;p&amp;gt;List
+all metros&amp;amp;#39;
+informationn”],[“metro”,“Info”,“Info.html#method-i-metro”,“(code)”,“&amp;lt;p&amp;gt;Get
+information for specified metron&amp;lt;p&amp;gt;@param [String, code] the
+code of the metro from
+queryn”],[“metros”,“Map”,“Map.html#method-i-metros”,“()”,“&amp;lt;p&amp;gt;Return
+all metro
+objectsn”],[“new”,“Graph”,“Graph.html#method-c-new”,“()”,“&amp;lt;p&amp;gt;Constructor
+for
+Graphn”],[“new”,“Info”,“Info.html#method-c-new”,“(map)”,“&amp;lt;p&amp;gt;Constructor
+for
+Infon”],[“new”,“Map”,“Map.html#method-c-new”,“(filename)”,“&amp;lt;p&amp;gt;Constructor
+for
+Mapn”],[“query”,“Info”,“Info.html#method-i-query”,“(query)”,“&amp;lt;p&amp;gt;Use
+to accept and process queriesn&amp;lt;p&amp;gt;@param [String, query] the
+query from
+usern”],[“remove_edge”,“Graph”,“Graph.html#method-i-remove_edge”,“(node_from_key,
+node_to_key)”,“&amp;lt;p&amp;gt;Remove an edge by from_key and
+to_keyn&amp;lt;p&amp;gt;@param [Object, node_from_key] the from node
+keyn&amp;lt;p&amp;gt;@param [Object,
+…n”],[“remove_node”,“Graph”,“Graph.html#method-i-remove_node”,“(key)”,“&amp;lt;p&amp;gt;Remove
+a node by keyn&amp;lt;p&amp;gt;@param [Object, key] node key @param
+[Object, value] node
+valuen”],[“routes”,“Map”,“Map.html#method-i-routes”,“()”,“&amp;lt;p&amp;gt;Return
+all route
+objectsn”],[“setup”,“TEST_Main”,“TEST_Main.html#method-i-setup”,“()”,“&amp;lt;p&amp;gt;Test
+set
+upn”],[“show_map”,“Info”,“Info.html#method-i-show_map”,“()”,“&amp;lt;p&amp;gt;Show
+the routes
+mapn”],[“statistic”,“Info”,“Info.html#method-i-statistic”,“()”,“&amp;lt;p&amp;gt;Output
+all statistic
+informationn”],[“statistic_average_distance”,“Info”,“Info.html#method-i-statistic_average_distance”,“()”,“&amp;lt;p&amp;gt;Return
+the average distance of all the flights in the
+networkn&amp;lt;p&amp;gt;@return</p>
+<dl class="rdoc-list label-list"><dt>String
+<dd>
+<p>the average distance of</p>
+</dd></dl>
+
+<p>…n”],[“statistic_average_population”,“Info”,“Info.html#method-i-statistic_average_population”,“()”,“&amp;lt;p&amp;gt;Return
+the average size (by population) of all the cities served by
+CSAirn&amp;lt;p&amp;gt;@return [String] the average
+…n”],[“statistic_biggest_city”,“Info”,“Info.html#method-i-statistic_biggest_city”,“()”,“&amp;lt;p&amp;gt;Return
+the biggest city (by population) served by CSAirn&amp;lt;p&amp;gt;@return
+[String] the biggest city (by population)
+…n”],[“statistic_continents”,“Info”,“Info.html#method-i-statistic_continents”,“()”,“&amp;lt;p&amp;gt;Print
+a list of the continents served by CSAir and which cities are in
+themn”],[“statistic_longest”,“Info”,“Info.html#method-i-statistic_longest”,“()”,“&amp;lt;p&amp;gt;Return
+the longest single flight in the networkn&amp;lt;p&amp;gt;@return [String]
+the longest single flight in the network
+…n”],[“statistic_shortest”,“Info”,“Info.html#method-i-statistic_shortest”,“()”,“&amp;lt;p&amp;gt;Return
+the shortest single flight in the networkn&amp;lt;p&amp;gt;@return [String]
+the shortest single flight in the network
+…n”],[“statistic_smallest_city”,“Info”,“Info.html#method-i-statistic_smallest_city”,“()”,“&amp;lt;p&amp;gt;Return
+the smallest city (by population) served by CSAirn&amp;lt;p&amp;gt;@return
+[String] the smallest city (by population)
+…n”],[“statistic_sub_city”,“Info”,“Info.html#method-i-statistic_sub_city”,“()”,“&amp;lt;p&amp;gt;Identifying
+CSAir&amp;amp;#39;s hub cities – the cities that have the most
+directnconnections.n&amp;lt;p&amp;gt;@return [String]
+…n”],[“test_insert_edges”,“TEST_Main”,“TEST_Main.html#method-i-test_insert_edges”,“()”,“&amp;lt;p&amp;gt;Test
+graph edges
+insertionn”],[“test_insert_nodes”,“TEST_Main”,“TEST_Main.html#method-i-test_insert_nodes”,“()”,“&amp;lt;p&amp;gt;Test
+graph nodes
+insertionn”],[“test_load_map”,“TEST_Main”,“TEST_Main.html#method-i-test_load_map”,“()”,“&amp;lt;p&amp;gt;Test
+loading a
+mapn”],[“update_edge”,“Graph”,“Graph.html#method-i-update_edge”,“(node_from_key,
+node_to_key, value)”,“&amp;lt;p&amp;gt;Update an edge to the new
+valuen&amp;lt;p&amp;gt;@param [Object, node_from_key] the from node
+keyn&amp;lt;p&amp;gt;@param [Object, node_to_key
+…n”],[“update_node”,“Graph”,“Graph.html#method-i-update_node”,“(key,
+value)”,“&amp;lt;p&amp;gt;Update a node with key to the new
+valuen&amp;lt;p&amp;gt;@param</p>
+<dl class="rdoc-list label-list"><dt>Object, key
+<dd>
+<p>node key @param [Object, value] node value</p>
+</dd></dl>
+
+<p>…n”],[“map_data.json”,“”,“data/map_data_json.html”,“”,“&amp;lt;p&amp;gt;{nn&amp;lt;pre&amp;gt;&amp;amp;quot;data
+sources&amp;amp;quot; : [n    &amp;amp;quot;&lt;a href=“<a
+href="http://www.gcmap.com/&quot">www.gcmap.com/&quot</a">www.gcmap.com/&quot”>www.gcmap.com/&quot</a</a>&gt;;
+,n</p>
+
+<p>&amp;amp;quot;&lt;a href=“<a
+href="http://www.theodora.com/country_digraphs.html&quot">www.theodora.com/country_digraphs.html&quot</a">www.theodora.com/country_digraphs.html&quot”>www.theodora.com/country_digraphs.html&quot</a</a>&gt;;
+…&amp;lt;/&lt;a href=“<a
+href="http://"created.rid","","doc/created_rid.html","",""">pre>n”],</a>]}}</p">”created.rid“,”“,”doc/created_rid.html“,”“,”“”>pre>n”],</a>]}}</p</a>&gt;</p>
+
+<p>&lt;/div&gt;</p>
+
+<p>&lt;footer id=“validator-badges”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;[Validate]&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;https://github.com/rdoc/rdoc&quot;&gt;RDoc&lt;/a&gt; 4.0.0.
+&lt;p&gt;Generated with the &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish Rdoc Generator&lt;/a&gt; 3.</pre>
+
+<p>&lt;/footer&gt;</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

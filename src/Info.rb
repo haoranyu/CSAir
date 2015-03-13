@@ -168,7 +168,7 @@ class Info
     puts 'Check map at: http://www.gcmap.com/map?P=' << routes.join(',') << '&MS=wls&MR=800&MX=800x800&PM=*'
   end
   
-  
+  # List distance / cost / time information about a route 
   def route_information(metro_list)
     if is_route(metro_list)
       puts "The total distance of this route is: " << self.get_route_distance(metro_list)
@@ -179,6 +179,7 @@ class Info
     end
   end
   
+  # Judge the route is legal or not
   def is_route(metro_list)
     metro_list.each_cons(2) do |metro1, metro2|
       if not @map.exist_route(metro1, metro2)
@@ -188,6 +189,7 @@ class Info
     return true
   end
   
+  # Get the total distance of a route
   def get_route_distance(metro_list)
     distance_sum = 0
     metro_list.each_cons(2) do |metro1, metro2|
@@ -195,7 +197,8 @@ class Info
     end
     return distance_sum
   end
-  
+
+  # Get the total cost of a route  
   def get_route_cost(metro_list)
     unit_cost = 0.35
     cost_sum = 0
@@ -209,11 +212,13 @@ class Info
     end
     return cost_sum
   end
-
+  
+  # Get the total time of a route  
   def get_route_time(metro_list)
     return self.get_route_layover_time(metro_list) + self.get_route_flying_time(metro_list)
   end
-  
+
+  # Get the layover time of a route    
   def get_route_layover_time(metro_list)
     time_sum = 0
     metro_list.each do |metro|
@@ -226,6 +231,7 @@ class Info
     return time_sum
   end
   
+  # Get the flying time of a route    
   def get_route_flying_time(metro_list)
     time_sum = 0
     metro_list.each_cons(2) do |metro1, metro2|

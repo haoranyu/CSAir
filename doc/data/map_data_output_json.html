@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>map_data_output.json - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../data/cmi_hub_json.html">cmi_hub.json</a>
+  
+    <li class="file"><a href="../data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="../data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="../doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="../doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="../doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="../doc/TEST_Main_html.html">TEST_Main.html</a>
+  
+    <li class="file"><a href="../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="../doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="../doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="../doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Graph.html">Graph</a>
+  
+    <li><a href="../Info.html">Info</a>
+  
+    <li><a href="../Map.html">Map</a>
+  
+    <li><a href="../TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>{“data <a
+href=""http://www.gcmap.com/","http://www.theodora.com/country_digraphs.html","http://www.citypopulation.de/world/Agglomerations.html","http://www.mongabay.com/cities_urban_01.htm","http://en.wikipedia.org/wiki/Urban_agglomeration","http://www.worldtimezone.com/standard.html"">source”:</a>
+America“,”timezone“:-4,”coordinates“:{”S“:33,”W“:71},”<a
+href="http://"LIM"">population“:6000000,”region“:1,”flight_to“:</a>},{”code“:”LIM“,”name“:”Lima“,”country“:”PE“,”continent“:”South
+America“,”timezone“:-5,”coordinates“:{”S“:12,”W“:77},”<a
+href="http://"SCL","MEX","BOG"">population“:9050000,”region“:1,”flight_to“:</a>},{”code“:”MEX“,”name“:”Mexico
+City“,”country“:”MX“,”continent“:”North
+America“,”timezone“:-6,”coordinates“:{”N“:19,”W“:99},”<a
+href="http://"LIM","LAX","CHI","MIA","BOG","CMI"">population“:23400000,”region“:1,”flight_to“:</a>},{”code“:”BOG“,”name“:”Bogota“,”country“:”CO“,”continent“:”South
+America“,”timezone“:-5,”coordinates“:{”N“:5,”W“:74},”<a
+href="http://"LIM","MEX","MIA","SAO","BUE"">population“:8600000,”region“:1,”flight_to“:</a>},{”code“:”BUE“,”name“:”Buenos
+Aires“,”country“:”AR“,”continent“:”South
+America“,”timezone“:-3,”coordinates“:{”S“:35,”W“:58},”<a
+href="http://"BOG","SAO"">population“:13300000,”region“:1,”flight_to“:</a>},{”code“:”SAO“,”name“:”Sao
+Paulo“,”country“:”BR“,”continent“:”South
+America“,”timezone“:-3,”coordinates“:{”S“:24,”W“:47},”<a
+href="http://"BOG","BUE","MAD","LOS"">population“:20900000,”region“:1,”flight_to“:</a>},{”code“:”LOS“,”name“:”Lagos“,”country“:”NG“,”continent“:”Africa“,”timezone“:1,”coordinates“:{”N“:7,”E“:19},”<a
+href="http://"SAO","KRT","FIH"">population“:11800000,”region“:1,”flight_to“:</a>},{”code“:”FIH“,”name“:”Kinshasa“,”country“:”CD“,”continent“:”Africa“,”timezone“:1,”coordinates“:{”S“:4,”E“:15},”<a
+href="http://"LOS","KRT","JNB"">population“:8900000,”region“:1,”flight_to“:</a>},{”code“:”JNB“,”name“:”Johannesburg“,”country“:”ZA“,”continent“:”Africa“,”timezone“:2,”coordinates“:{”S“:26,”E“:28},”<a
+href="http://"FIH","KRT"">population“:7550000,”region“:1,”flight_to“:</a>},{”code“:”KRT“,”name“:”Khartoum“,”country“:”SD“,”continent“:”Africa“,”timezone“:3,”coordinates“:{”N“:16,”E“:33},”<a
+href="http://"LOS","FIH","JNB","CAI"">population“:4975000,”region“:1,”flight_to“:</a>},{”code“:”CAI“,”name“:”Cairo“,”country“:”EG“,”continent“:”Africa“,”timezone“:2,”coordinates“:{”N“:30,”E“:31},”<a
+href="http://"KRT","ALG","IST","BGW","RUH"">population“:15200000,”region“:2,”flight_to“:</a>},{”code“:”ALG“,”name“:”Algiers“,”country“:”DZ“,”continent“:”Africa“,”timezone“:1,”coordinates“:{”N“:37,”E“:3},”<a
+href="http://"CAI","MAD","PAR","IST"">population“:3175000,”region“:2,”flight_to“:</a>},{”code“:”MAD“,”name“:”Madrid“,”country“:”ES“,”continent“:”Europe“,”timezone“:1,”coordinates“:{”N“:40,”W“:4},”<a
+href="http://"SAO","ALG","NYC","LON","PAR"">population“:6200000,”region“:3,”flight_to“:</a>},{”code“:”LON“,”name“:”London“,”country“:”UK“,”continent“:”Europe“,”timezone“:0,”coordinates“:{”N“:52,”W“:0},”<a
+href="http://"MAD","NYC","ESS","PAR"">population“:12400000,”region“:3,”flight_to“:</a>},{”code“:”PAR“,”name“:”Paris“,”country“:”FR“,”continent“:”Europe“,”timezone“:1,”coordinates“:{”N“:49,”E“:2},”<a
+href="http://"ALG","MAD","LON","ESS","MIL"">population“:10400000,”region“:3,”flight_to“:</a>},{”code“:”MIL“,”name“:”Milan“,”country“:”IT“,”continent“:”Europe“,”timezone“:1,”coordinates“:{”N“:45,”E“:9},”<a
+href="http://"PAR","ESS","IST"">population“:3575000,”region“:3,”flight_to“:</a>},{”code“:”ESS“,”name“:”Essen“,”country“:”DE“,”continent“:”Europe“,”timezone“:1,”coordinates“:{”N“:51,”E“:7},”<a
+href="http://"LON","PAR","MIL","LED"">population“:589900,”region“:3,”flight_to“:</a>},{”code“:”LED“,”name“:”St.
+Petersburg“,”country“:”RU“,”continent“:”Europe“,”timezone“:3,”coordinates“:{”N“:60,”E“:30},”<a
+href="http://"ESS","MOW","IST"">population“:4775000,”region“:3,”flight_to“:</a>},{”code“:”MOW“,”name“:”Moscow“,”country“:”RU“,”continent“:”Europe“,”timezone“:3,”coordinates“:{”N“:56,”E“:38},”<a
+href="http://"LED","THR","IST"">population“:13600000,”region“:2,”flight_to“:</a>},{”code“:”IST“,”name“:”Istanbul“,”country“:”TR“,”continent“:”Europe“,”timezone“:2,”coordinates“:{”N“:41,”E“:29},”<a
+href="http://"CAI","ALG","MIL","LED","MOW","BGW"">population“:12800000,”region“:2,”flight_to“:</a>},{”code“:”BGW“,”name“:”Bagdad“,”country“:”IQ“,”continent“:”Asia“,”timezone“:3.5,”coordinates“:{”N“:33,”E“:44},”<a
+href="http://"CAI","IST","THR","KHI","RUH"">population“:6600000,”region“:2,”flight_to“:</a>},{”code“:”THR“,”name“:”Tehrah“,”country“:”IR“,”continent“:”Asia“,”timezone“:4.5,”coordinates“:{”N“:36,”E“:51},”<a
+href="http://"MOW","BGW","DEL","KHI","RUH"">population“:12800000,”region“:2,”flight_to“:</a>},{”code“:”RUH“,”name“:”Riyadh“,”country“:”SA“,”continent“:”Asia“,”timezone“:3,”coordinates“:{”N“:25,”E“:47},”<a
+href="http://"CAI","BGW","THR","KHI"">population“:5100000,”region“:2,”flight_to“:</a>},{”code“:”KHI“,”name“:”Karachi“,”country“:”PK“,”continent“:”Asia“,”timezone“:5,”coordinates“:{”N“:25,”E“:67},”<a
+href="http://"BGW","THR","RUH","DEL","BOM"">population“:16200000,”region“:2,”flight_to“:</a>},{”code“:”DEL“,”name“:”Delhi“,”country“:”IN“,”continent“:”Asia“,”timezone“:5.5,”coordinates“:{”N“:29,”E“:77},”<a
+href="http://"THR","KHI","CCU","MAA","BOM"">population“:23200000,”region“:2,”flight_to“:</a>},{”code“:”BOM“,”name“:”Mumbai“,”country“:”IN“,”continent“:”Asia“,”timezone“:5.5,”coordinates“:{”N“:19,”E“:73},”<a
+href="http://"KHI","DEL","MAA"">population“:22800000,”region“:2,”flight_to“:</a>},{”code“:”MAA“,”name“:”Chennai“,”country“:”IN“,”continent“:”Asia“,”timezone“:5.5,”coordinates“:{”N“:13,”E“:80},”<a
+href="http://"DEL","BOM","CCU","BKK","JKT"">population“:8200000,”region“:2,”flight_to“:</a>},{”code“:”CCU“,”name“:”Calcutta“,”country“:”IN“,”continent“:”Asia“,”timezone“:5.5,”coordinates“:{”N“:24,”E“:88},”<a
+href="http://"DEL","MAA","HKG","BKK"">population“:16300000,”region“:2,”flight_to“:</a>},{”code“:”BKK“,”name“:”Bangkok“,”country“:”TH“,”continent“:”Asia“,”timezone“:7,”coordinates“:{”N“:14,”E“:101},”<a
+href="http://"MAA","CCU","HKG","SGN","JKT"">population“:8900000,”region“:4,”flight_to“:</a>},{”code“:”HKG“,”name“:”Hong
+Kong“,”country“:”CH“,”continent“:”Asia“,”timezone“:8,”coordinates“:{”N“:22,”E“:114},”<a
+href="http://"CCU","BKK","SHA","TPE","MNL","SGN"">population“:7050000,”region“:4,”flight_to“:</a>},{”code“:”SHA“,”name“:”Shanghai“,”country“:”CH“,”continent“:”Asia“,”timezone“:8,”coordinates“:{”N“:31,”E“:121},”<a
+href="http://"HKG","PEK","ICN","TYO","TPE"">population“:18400000,”region“:4,”flight_to“:</a>},{”code“:”PEK“,”name“:”Beijing“,”country“:”CH“,”continent“:”Asia“,”timezone“:8,”coordinates“:{”N“:40,”E“:117},”<a
+href="http://"SHA","ICN"">population“:13600000,”region“:4,”flight_to“:</a>},{”code“:”ICN“,”name“:”Seoul“,”country“:”KR“,”continent“:”Asia“,”timezone“:9,”coordinates“:{”N“:37,”E“:126},”<a
+href="http://"SHA","PEK","TYO"">population“:24200000,”region“:4,”flight_to“:</a>},{”code“:”TYO“,”name“:”Tokyo“,”country“:”JP“,”continent“:”Asia“,”timezone“:9,”coordinates“:{”N“:36,”E“:140},”<a
+href="http://"SHA","ICN","SFO","OSA"">population“:34000000,”region“:4,”flight_to“:</a>},{”code“:”OSA“,”name“:”Osaka“,”country“:”JP“,”continent“:”Asia“,”timezone“:9,”coordinates“:{”N“:35,”E“:135},”<a
+href="http://"TYO","TPE"">population“:16800000,”region“:4,”flight_to“:</a>},{”code“:”TPE“,”name“:”Taipei“,”country“:”TW“,”continent“:”Asia“,”timezone“:8,”coordinates“:{”N“:25,”E“:121},”<a
+href="http://"HKG","SHA","OSA","MNL"">population“:6800000,”region“:4,”flight_to“:</a>},{”code“:”MNL“,”name“:”Manila“,”country“:”PH“,”continent“:”Asia“,”timezone“:8,”coordinates“:{”N“:15,”E“:121},”<a
+href="http://"HKG","TPE","SFO","SYD","SGN"">population“:19600000,”region“:4,”flight_to“:</a>},{”code“:”SGN“,”name“:”Ho
+Chi Minh
+City“,”country“:”VN“,”continent“:”Asia“,”timezone“:7,”coordinates“:{”N“:11,”E“:107},”<a
+href="http://"BKK","HKG","MNL","JKT"">population“:6100000,”region“:4,”flight_to“:</a>},{”code“:”JKT“,”name“:”Jakarta“,”country“:”ID“,”continent“:”Asia“,”timezone“:7,”coordinates“:{”S“:6,”E“:107},”<a
+href="http://"MAA","BKK","SGN","SYD"">population“:15400000,”region“:4,”flight_to“:</a>},{”code“:”SYD“,”name“:”Sydney“,”country“:”AU“,”continent“:”Australia“,”timezone“:10,”coordinates“:{”S“:34,”E“:151},”<a
+href="http://"MNL","JKT","LAX"">population“:4475000,”region“:4,”flight_to“:</a>},{”code“:”LAX“,”name“:”Los
+Angeles“,”country“:”US“,”continent“:”North
+America“,”timezone“:-8,”coordinates“:{”N“:34,”W“:118},”<a
+href="http://"MEX","SYD","SFO","CHI","CMI"">population“:17900000,”region“:1,”flight_to“:</a>},{”code“:”SFO“,”name“:”San
+Francisco“,”country“:”US“,”continent“:”North
+America“,”timezone“:-8,”coordinates“:{”N“:38,”W“:122},”<a
+href="http://"TYO","MNL","LAX","CHI","CMI"">population“:7450000,”region“:3,”flight_to“:</a>},{”code“:”CHI“,”name“:”Chicago“,”country“:”US“,”continent“:”North
+America“,”timezone“:-6,”coordinates“:{”N“:42,”W“:88},”<a
+href="http://"MEX","LAX","SFO","YYZ","ATL","CMI"">population“:9850000,”region“:3,”flight_to“:</a>},{”code“:”ATL“,”name“:”Atlanta“,”country“:”US“,”continent“:”North
+America“,”timezone“:-5,”coordinates“:{”N“:34,”W“:84},”<a
+href="http://"CHI","WAS","MIA","CMI"">population“:5700000,”region“:3,”flight_to“:</a>},{”code“:”MIA“,”name“:”Miami“,”country“:”US“,”continent“:”North
+America“,”timezone“:-5,”coordinates“:{”N“:26,”W“:80},”<a
+href="http://"MEX","BOG","ATL","WAS","CMI"">population“:5400000,”region“:1,”flight_to“:</a>},{”code“:”WAS“,”name“:”Washington“,”country“:”US“,”continent“:”North
+America“,”timezone“:-5,”coordinates“:{”N“:39,”W“:77},”<a
+href="http://"ATL","MIA","YYZ","NYC","CMI"">population“:8250000,”region“:3,”flight_to“:</a>},{”code“:”NYC“,”name“:”New
+York“,”country“:”US“,”continent“:”North
+America“,”timezone“:-5,”coordinates“:{”N“:41,”W“:74},”<a
+href="http://"MAD","LON","WAS","YYZ","CMI"">population“:22200000,”region“:3,”flight_to“:</a>},{”code“:”YYZ“,”name“:”Toronto“,”country“:”CA“,”continent“:”North
+America“,”timezone“:-5,”coordinates“:{”N“:44,”W“:80},”<a
+href="http://"CHI","WAS","NYC","CMI"">population“:5750000,”region“:3,”flight_to“:</a>},{”code“:”CMI“,”name“:”Champaign“,”country“:”US“,”continent“:”North
+America“,”timezone“:-6,”coordinates“:{”N“:40,”W“:88},”<a
+href="http://"LAX","SFO","MEX","MIA","ATL","WAS","YYZ","NYC","CHI"">population“:226000,”region“:1,”flight_to“:</a>}],”<a
+href="http://"SCL","LIM"">routes“:[{”ports“:</a>,”distance“:2453},{”<a
+href="http://"LIM","SCL"">ports“:</a>,”distance“:2453},{”<a
+href="http://"LIM","MEX"">ports“:</a>,”distance“:4231},{”<a
+href="http://"MEX","LIM"">ports“:</a>,”distance“:4231},{”<a
+href="http://"LIM","BOG"">ports“:</a>,”distance“:1879},{”<a
+href="http://"BOG","LIM"">ports“:</a>,”distance“:1879},{”<a
+href="http://"MEX","LAX"">ports“:</a>,”distance“:2499},{”<a
+href="http://"LAX","MEX"">ports“:</a>,”distance“:2499},{”<a
+href="http://"MEX","CHI"">ports“:</a>,”distance“:2714},{”<a
+href="http://"CHI","MEX"">ports“:</a>,”distance“:2714},{”<a
+href="http://"MEX","MIA"">ports“:</a>,”distance“:2053},{”<a
+href="http://"MIA","MEX"">ports“:</a>,”distance“:2053},{”<a
+href="http://"MEX","BOG"">ports“:</a>,”distance“:3158},{”<a
+href="http://"BOG","MEX"">ports“:</a>,”distance“:3158},{”<a
+href="http://"BOG","MIA"">ports“:</a>,”distance“:2425},{”<a
+href="http://"MIA","BOG"">ports“:</a>,”distance“:2425},{”<a
+href="http://"BOG","SAO"">ports“:</a>,”distance“:4323},{”<a
+href="http://"SAO","BOG"">ports“:</a>,”distance“:4323},{”<a
+href="http://"BOG","BUE"">ports“:</a>,”distance“:4651},{”<a
+href="http://"BUE","BOG"">ports“:</a>,”distance“:4651},{”<a
+href="http://"BUE","SAO"">ports“:</a>,”distance“:1680},{”<a
+href="http://"SAO","BUE"">ports“:</a>,”distance“:1680},{”<a
+href="http://"SAO","MAD"">ports“:</a>,”distance“:8373},{”<a
+href="http://"MAD","SAO"">ports“:</a>,”distance“:8373},{”<a
+href="http://"SAO","LOS"">ports“:</a>,”distance“:6367},{”<a
+href="http://"LOS","SAO"">ports“:</a>,”distance“:6367},{”<a
+href="http://"LOS","KRT"">ports“:</a>,”distance“:3341},{”<a
+href="http://"KRT","LOS"">ports“:</a>,”distance“:3341},{”<a
+href="http://"LOS","FIH"">ports“:</a>,”distance“:1812},{”<a
+href="http://"FIH","LOS"">ports“:</a>,”distance“:1812},{”<a
+href="http://"FIH","KRT"">ports“:</a>,”distance“:2904},{”<a
+href="http://"KRT","FIH"">ports“:</a>,”distance“:2904},{”<a
+href="http://"FIH","JNB"">ports“:</a>,”distance“:2767},{”<a
+href="http://"JNB","FIH"">ports“:</a>,”distance“:2767},{”<a
+href="http://"JNB","KRT"">ports“:</a>,”distance“:4640},{”<a
+href="http://"KRT","JNB"">ports“:</a>,”distance“:4640},{”<a
+href="http://"KRT","CAI"">ports“:</a>,”distance“:1614},{”<a
+href="http://"CAI","KRT"">ports“:</a>,”distance“:1614},{”<a
+href="http://"CAI","ALG"">ports“:</a>,”distance“:2710},{”<a
+href="http://"ALG","CAI"">ports“:</a>,”distance“:2710},{”<a
+href="http://"CAI","IST"">ports“:</a>,”distance“:1227},{”<a
+href="http://"IST","CAI"">ports“:</a>,”distance“:1227},{”<a
+href="http://"CAI","BGW"">ports“:</a>,”distance“:1264},{”<a
+href="http://"BGW","CAI"">ports“:</a>,”distance“:1264},{”<a
+href="http://"CAI","RUH"">ports“:</a>,”distance“:1614},{”<a
+href="http://"RUH","CAI"">ports“:</a>,”distance“:1614},{”<a
+href="http://"ALG","MAD"">ports“:</a>,”distance“:726},{”<a
+href="http://"MAD","ALG"">ports“:</a>,”distance“:726},{”<a
+href="http://"ALG","PAR"">ports“:</a>,”distance“:1354},{”<a
+href="http://"PAR","ALG"">ports“:</a>,”distance“:1354},{”<a
+href="http://"ALG","IST"">ports“:</a>,”distance“:1354},{”<a
+href="http://"IST","ALG"">ports“:</a>,”distance“:1354},{”<a
+href="http://"MAD","NYC"">ports“:</a>,”distance“:5786},{”<a
+href="http://"NYC","MAD"">ports“:</a>,”distance“:5786},{”<a
+href="http://"MAD","LON"">ports“:</a>,”distance“:5786},{”<a
+href="http://"LON","MAD"">ports“:</a>,”distance“:5786},{”<a
+href="http://"MAD","PAR"">ports“:</a>,”distance“:1041},{”<a
+href="http://"PAR","MAD"">ports“:</a>,”distance“:1041},{”<a
+href="http://"LON","NYC"">ports“:</a>,”distance“:5579},{”<a
+href="http://"NYC","LON"">ports“:</a>,”distance“:5579},{”<a
+href="http://"LON","ESS"">ports“:</a>,”distance“:494},{”<a
+href="http://"ESS","LON"">ports“:</a>,”distance“:494},{”<a
+href="http://"LON","PAR"">ports“:</a>,”distance“:343},{”<a
+href="http://"PAR","LON"">ports“:</a>,”distance“:343},{”<a
+href="http://"PAR","ESS"">ports“:</a>,”distance“:433},{”<a
+href="http://"ESS","PAR"">ports“:</a>,”distance“:433},{”<a
+href="http://"PAR","MIL"">ports“:</a>,”distance“:643},{”<a
+href="http://"MIL","PAR"">ports“:</a>,”distance“:643},{”<a
+href="http://"MIL","ESS"">ports“:</a>,”distance“:681},{”<a
+href="http://"ESS","MIL"">ports“:</a>,”distance“:681},{”<a
+href="http://"MIL","IST"">ports“:</a>,”distance“:1665},{”<a
+href="http://"IST","MIL"">ports“:</a>,”distance“:1665},{”<a
+href="http://"ESS","LED"">ports“:</a>,”distance“:1728},{”<a
+href="http://"LED","ESS"">ports“:</a>,”distance“:1728},{”<a
+href="http://"LED","MOW"">ports“:</a>,”distance“:626},{”<a
+href="http://"MOW","LED"">ports“:</a>,”distance“:626},{”<a
+href="http://"LED","IST"">ports“:</a>,”distance“:2096},{”<a
+href="http://"IST","LED"">ports“:</a>,”distance“:2096},{”<a
+href="http://"MOW","THR"">ports“:</a>,”distance“:2462},{”<a
+href="http://"THR","MOW"">ports“:</a>,”distance“:2462},{”<a
+href="http://"MOW","IST"">ports“:</a>,”distance“:1763},{”<a
+href="http://"IST","MOW"">ports“:</a>,”distance“:1763},{”<a
+href="http://"IST","BGW"">ports“:</a>,”distance“:1612},{”<a
+href="http://"BGW","IST"">ports“:</a>,”distance“:1612},{”<a
+href="http://"BGW","THR"">ports“:</a>,”distance“:704},{”<a
+href="http://"THR","BGW"">ports“:</a>,”distance“:704},{”<a
+href="http://"BGW","KHI"">ports“:</a>,”distance“:2410},{”<a
+href="http://"KHI","BGW"">ports“:</a>,”distance“:2410},{”<a
+href="http://"BGW","RUH"">ports“:</a>,”distance“:951},{”<a
+href="http://"RUH","BGW"">ports“:</a>,”distance“:951},{”<a
+href="http://"THR","DEL"">ports“:</a>,”distance“:2550},{”<a
+href="http://"DEL","THR"">ports“:</a>,”distance“:2550},{”<a
+href="http://"THR","KHI"">ports“:</a>,”distance“:1933},{”<a
+href="http://"KHI","THR"">ports“:</a>,”distance“:1933},{”<a
+href="http://"THR","RUH"">ports“:</a>,”distance“:1269},{”<a
+href="http://"RUH","THR"">ports“:</a>,”distance“:1269},{”<a
+href="http://"RUH","KHI"">ports“:</a>,”distance“:2065},{”<a
+href="http://"KHI","RUH"">ports“:</a>,”distance“:2065},{”<a
+href="http://"KHI","DEL"">ports“:</a>,”distance“:1069},{”<a
+href="http://"DEL","KHI"">ports“:</a>,”distance“:1069},{”<a
+href="http://"KHI","BOM"">ports“:</a>,”distance“:873},{”<a
+href="http://"BOM","KHI"">ports“:</a>,”distance“:873},{”<a
+href="http://"DEL","CCU"">ports“:</a>,”distance“:1313},{”<a
+href="http://"CCU","DEL"">ports“:</a>,”distance“:1313},{”<a
+href="http://"DEL","MAA"">ports“:</a>,”distance“:1753},{”<a
+href="http://"MAA","DEL"">ports“:</a>,”distance“:1753},{”<a
+href="http://"DEL","BOM"">ports“:</a>,”distance“:1135},{”<a
+href="http://"BOM","DEL"">ports“:</a>,”distance“:1135},{”<a
+href="http://"BOM","MAA"">ports“:</a>,”distance“:1033},{”<a
+href="http://"MAA","BOM"">ports“:</a>,”distance“:1033},{”<a
+href="http://"MAA","CCU"">ports“:</a>,”distance“:1382},{”<a
+href="http://"CCU","MAA"">ports“:</a>,”distance“:1382},{”<a
+href="http://"MAA","BKK"">ports“:</a>,”distance“:2229},{”<a
+href="http://"BKK","MAA"">ports“:</a>,”distance“:2229},{”<a
+href="http://"MAA","JKT"">ports“:</a>,”distance“:3627},{”<a
+href="http://"JKT","MAA"">ports“:</a>,”distance“:3627},{”<a
+href="http://"CCU","HKG"">ports“:</a>,”distance“:2618},{”<a
+href="http://"HKG","CCU"">ports“:</a>,”distance“:2618},{”<a
+href="http://"CCU","BKK"">ports“:</a>,”distance“:1636},{”<a
+href="http://"BKK","CCU"">ports“:</a>,”distance“:1636},{”<a
+href="http://"BKK","HKG"">ports“:</a>,”distance“:1688},{”<a
+href="http://"HKG","BKK"">ports“:</a>,”distance“:1688},{”<a
+href="http://"BKK","SGN"">ports“:</a>,”distance“:716},{”<a
+href="http://"SGN","BKK"">ports“:</a>,”distance“:716},{”<a
+href="http://"BKK","JKT"">ports“:</a>,”distance“:2295},{”<a
+href="http://"JKT","BKK"">ports“:</a>,”distance“:2295},{”<a
+href="http://"HKG","SHA"">ports“:</a>,”distance“:1230},{”<a
+href="http://"SHA","HKG"">ports“:</a>,”distance“:1230},{”<a
+href="http://"HKG","TPE"">ports“:</a>,”distance“:807},{”<a
+href="http://"TPE","HKG"">ports“:</a>,”distance“:807},{”<a
+href="http://"HKG","MNL"">ports“:</a>,”distance“:1144},{”<a
+href="http://"MNL","HKG"">ports“:</a>,”distance“:1144},{”<a
+href="http://"HKG","SGN"">ports“:</a>,”distance“:1488},{”<a
+href="http://"SGN","HKG"">ports“:</a>,”distance“:1488},{”<a
+href="http://"SHA","PEK"">ports“:</a>,”distance“:1075},{”<a
+href="http://"PEK","SHA"">ports“:</a>,”distance“:1075},{”<a
+href="http://"SHA","ICN"">ports“:</a>,”distance“:840},{”<a
+href="http://"ICN","SHA"">ports“:</a>,”distance“:840},{”<a
+href="http://"SHA","TYO"">ports“:</a>,”distance“:1782},{”<a
+href="http://"TYO","SHA"">ports“:</a>,”distance“:1782},{”<a
+href="http://"SHA","TPE"">ports“:</a>,”distance“:678},{”<a
+href="http://"TPE","SHA"">ports“:</a>,”distance“:678},{”<a
+href="http://"PEK","ICN"">ports“:</a>,”distance“:904},{”<a
+href="http://"ICN","PEK"">ports“:</a>,”distance“:904},{”<a
+href="http://"ICN","TYO"">ports“:</a>,”distance“:1207},{”<a
+href="http://"TYO","ICN"">ports“:</a>,”distance“:1207},{”<a
+href="http://"TYO","SFO"">ports“:</a>,”distance“:8296},{”<a
+href="http://"SFO","TYO"">ports“:</a>,”distance“:8296},{”<a
+href="http://"TYO","OSA"">ports“:</a>,”distance“:407},{”<a
+href="http://"OSA","TYO"">ports“:</a>,”distance“:407},{”<a
+href="http://"OSA","TPE"">ports“:</a>,”distance“:1740},{”<a
+href="http://"TPE","OSA"">ports“:</a>,”distance“:1740},{”<a
+href="http://"TPE","MNL"">ports“:</a>,”distance“:1170},{”<a
+href="http://"MNL","TPE"">ports“:</a>,”distance“:1170},{”<a
+href="http://"MNL","SFO"">ports“:</a>,”distance“:11244},{”<a
+href="http://"SFO","MNL"">ports“:</a>,”distance“:11244},{”<a
+href="http://"MNL","SYD"">ports“:</a>,”distance“:6243},{”<a
+href="http://"SYD","MNL"">ports“:</a>,”distance“:6243},{”<a
+href="http://"MNL","SGN"">ports“:</a>,”distance“:1613},{”<a
+href="http://"SGN","MNL"">ports“:</a>,”distance“:1613},{”<a
+href="http://"SGN","JKT"">ports“:</a>,”distance“:1878},{”<a
+href="http://"JKT","SGN"">ports“:</a>,”distance“:1878},{”<a
+href="http://"JKT","SYD"">ports“:</a>,”distance“:5502},{”<a
+href="http://"SYD","JKT"">ports“:</a>,”distance“:5502},{”<a
+href="http://"SYD","LAX"">ports“:</a>,”distance“:12051},{”<a
+href="http://"LAX","SYD"">ports“:</a>,”distance“:12051},{”<a
+href="http://"LAX","SFO"">ports“:</a>,”distance“:543},{”<a
+href="http://"SFO","LAX"">ports“:</a>,”distance“:543},{”<a
+href="http://"LAX","CHI"">ports“:</a>,”distance“:2828},{”<a
+href="http://"CHI","LAX"">ports“:</a>,”distance“:2828},{”<a
+href="http://"SFO","CHI"">ports“:</a>,”distance“:2994},{”<a
+href="http://"CHI","SFO"">ports“:</a>,”distance“:2994},{”<a
+href="http://"CHI","YYZ"">ports“:</a>,”distance“:684},{”<a
+href="http://"YYZ","CHI"">ports“:</a>,”distance“:684},{”<a
+href="http://"CHI","ATL"">ports“:</a>,”distance“:958},{”<a
+href="http://"ATL","CHI"">ports“:</a>,”distance“:958},{”<a
+href="http://"ATL","WAS"">ports“:</a>,”distance“:883},{”<a
+href="http://"WAS","ATL"">ports“:</a>,”distance“:883},{”<a
+href="http://"ATL","MIA"">ports“:</a>,”distance“:957},{”<a
+href="http://"MIA","ATL"">ports“:</a>,”distance“:957},{”<a
+href="http://"MIA","WAS"">ports“:</a>,”distance“:1483},{”<a
+href="http://"WAS","MIA"">ports“:</a>,”distance“:1483},{”<a
+href="http://"WAS","YYZ"">ports“:</a>,”distance“:575},{”<a
+href="http://"YYZ","WAS"">ports“:</a>,”distance“:575},{”<a
+href="http://"WAS","NYC"">ports“:</a>,”distance“:334},{”<a
+href="http://"NYC","WAS"">ports“:</a>,”distance“:334},{”<a
+href="http://"NYC","YYZ"">ports“:</a>,”distance“:568},{”<a
+href="http://"YYZ","NYC"">ports“:</a>,”distance“:568},{”<a
+href="http://"CMI","LAX"">ports“:</a>,”distance“:2736},{”<a
+href="http://"LAX","CMI"">ports“:</a>,”distance“:2736},{”<a
+href="http://"CMI","SFO"">ports“:</a>,”distance“:2955},{”<a
+href="http://"SFO","CMI"">ports“:</a>,”distance“:2955},{”<a
+href="http://"CMI","MEX"">ports“:</a>,”distance“:2518},{”<a
+href="http://"MEX","CMI"">ports“:</a>,”distance“:2518},{”<a
+href="http://"CMI","MIA"">ports“:</a>,”distance“:1757},{”<a
+href="http://"MIA","CMI"">ports“:</a>,”distance“:1757},{”<a
+href="http://"CMI","ATL"">ports“:</a>,”distance“:785},{”<a
+href="http://"ATL","CMI"">ports“:</a>,”distance“:785},{”<a
+href="http://"CMI","WAS"">ports“:</a>,”distance“:975},{”<a
+href="http://"WAS","CMI"">ports“:</a>,”distance“:975},{”<a
+href="http://"CMI","YYZ"">ports“:</a>,”distance“:831},{”<a
+href="http://"YYZ","CMI"">ports“:</a>,”distance“:831},{”<a
+href="http://"CMI","NYC"">ports“:</a>,”distance“:1208},{”<a
+href="http://"NYC","CMI"">ports“:</a>,”distance“:1208},{”<a
+href="http://"CMI","CHI"">ports“:</a>,”distance“:198},{”<a
+href="http://"CHI","CMI"">ports“:</a>,”distance“:198}]}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

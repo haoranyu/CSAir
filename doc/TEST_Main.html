@@ -49,7 +49,8 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>tests.rb
+    <li>test/graphTest.rb
+    <li>test/queryTest.rb
   </ul>
 </nav>
 
@@ -75,11 +76,41 @@
     
     <li ><a href="#method-i-setup">#setup</a>
     
+    <li ><a href="#method-i-test_average_distance">#test_average_distance</a>
+    
+    <li ><a href="#method-i-test_average_population">#test_average_population</a>
+    
+    <li ><a href="#method-i-test_biggest_city">#test_biggest_city</a>
+    
+    <li ><a href="#method-i-test_hub_city">#test_hub_city</a>
+    
     <li ><a href="#method-i-test_insert_edges">#test_insert_edges</a>
     
     <li ><a href="#method-i-test_insert_nodes">#test_insert_nodes</a>
     
+    <li ><a href="#method-i-test_is_route">#test_is_route</a>
+    
     <li ><a href="#method-i-test_load_map">#test_load_map</a>
+    
+    <li ><a href="#method-i-test_longest_flight">#test_longest_flight</a>
+    
+    <li ><a href="#method-i-test_map_merge">#test_map_merge</a>
+    
+    <li ><a href="#method-i-test_remove_node">#test_remove_node</a>
+    
+    <li ><a href="#method-i-test_route_cost">#test_route_cost</a>
+    
+    <li ><a href="#method-i-test_route_distance">#test_route_distance</a>
+    
+    <li ><a href="#method-i-test_route_flying_time">#test_route_flying_time</a>
+    
+    <li ><a href="#method-i-test_route_layover_time">#test_route_layover_time</a>
+    
+    <li ><a href="#method-i-test_route_time">#test_route_time</a>
+    
+    <li ><a href="#method-i-test_shortest_flight">#test_shortest_flight</a>
+    
+    <li ><a href="#method-i-test_smallest_city">#test_smallest_city</a>
     
   </ul>
 </nav>
@@ -92,9 +123,77 @@
 
   <ul>
   
+    <li class="file"><a href="./data/cmi_hub_json.html">cmi_hub.json</a>
+  
     <li class="file"><a href="./data/map_data_json.html">map_data.json</a>
   
+    <li class="file"><a href="./data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="./doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="./doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="./doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="./doc/TEST_Main_html.html">TEST_Main.html</a>
+  
     <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="./doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="./doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="./doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="./doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="./doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="./doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="./doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="./doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="./doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="./doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="./doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="./doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="./doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="./doc/table_of_contents_html.html">table_of_contents.html</a>
   
   </ul>
 </nav>
@@ -162,11 +261,11 @@
 
           
           <div class="method-source-code" id="setup-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 7</span>
+            <pre><span class="ruby-comment"># File test/graphTest.rb, line 7</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">setup</span>
-  <span class="ruby-ivar">@graph</span> = <span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>();
-  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-value">100</span>);
-  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;b&#39;</span>, <span class="ruby-value">500</span>);
+  <span class="ruby-ivar">@graph</span> = <span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>()
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-value">100</span>)
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;b&#39;</span>, <span class="ruby-value">500</span>)
 <span class="ruby-keyword">end</span></pre>
           </div><!-- setup-source -->
           
@@ -176,6 +275,138 @@
 
         
       </div><!-- setup-method -->
+
+    
+      <div id="method-i-test_average_distance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_average_distance</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_average_distance</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_average_distance-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_average_distance</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;2300&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_average_distance</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_average_distance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_average_distance-method -->
+
+    
+      <div id="method-i-test_average_population" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_average_population</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_average_population</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_average_population-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_average_population</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;11796143&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_average_population</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_average_population-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_average_population-method -->
+
+    
+      <div id="method-i-test_biggest_city" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_biggest_city</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_biggest_city</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_biggest_city-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_biggest_city</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;Tokyo - with population 34000000&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_biggest_city</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_biggest_city-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_biggest_city-method -->
+
+    
+      <div id="method-i-test_hub_city" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_hub_city</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_hub_city</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_hub_city-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_hub_city</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;Istanbul - with number of direct connections 6&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_hub_city</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_hub_city-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_hub_city-method -->
 
     
       <div id="method-i-test_insert_edges" class="method-detail ">
@@ -197,10 +428,10 @@
 
           
           <div class="method-source-code" id="test_insert_edges-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 25</span>
+            <pre><span class="ruby-comment"># File test/graphTest.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_insert_edges</span>
-  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_edge</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-string">&#39;b&#39;</span>, <span class="ruby-value">100</span>);
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">100</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_edge</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-string">&#39;b&#39;</span>));
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_edge</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-string">&#39;b&#39;</span>, <span class="ruby-value">100</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">100</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_edge</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-string">&#39;b&#39;</span>))
 <span class="ruby-keyword">end</span></pre>
           </div><!-- test_insert_edges-source -->
           
@@ -231,15 +462,15 @@
 
           
           <div class="method-source-code" id="test_insert_nodes-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 14</span>
+            <pre><span class="ruby-comment"># File test/graphTest.rb, line 14</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_insert_nodes</span>
-  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;x&#39;</span>, <span class="ruby-value">200</span>);
-  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;y&#39;</span>, <span class="ruby-value">300</span>);
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">exist_nodes</span>([<span class="ruby-string">&#39;x&#39;</span>]));
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">exist_nodes</span>([<span class="ruby-string">&#39;y&#39;</span>]));
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">exist_nodes</span>([<span class="ruby-string">&#39;x&#39;</span>,<span class="ruby-string">&#39;y&#39;</span>]));
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">200</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_node</span>(<span class="ruby-string">&#39;x&#39;</span>));
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">300</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_node</span>(<span class="ruby-string">&#39;y&#39;</span>));
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;x&#39;</span>, <span class="ruby-value">200</span>)
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_node</span>(<span class="ruby-string">&#39;y&#39;</span>, <span class="ruby-value">300</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">exist_nodes</span>([<span class="ruby-string">&#39;x&#39;</span>]))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">exist_nodes</span>([<span class="ruby-string">&#39;y&#39;</span>]))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">exist_nodes</span>([<span class="ruby-string">&#39;x&#39;</span>,<span class="ruby-string">&#39;y&#39;</span>]))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">200</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_node</span>(<span class="ruby-string">&#39;x&#39;</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">300</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_node</span>(<span class="ruby-string">&#39;y&#39;</span>))
 <span class="ruby-keyword">end</span></pre>
           </div><!-- test_insert_nodes-source -->
           
@@ -249,6 +480,39 @@
 
         
       </div><!-- test_insert_nodes-method -->
+
+    
+      <div id="method-i-test_is_route" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_is_route</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test route existence</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_is_route-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_is_route</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">is_route</span>([<span class="ruby-string">&quot;MNL&quot;</span>, <span class="ruby-string">&quot;SFO&quot;</span>, <span class="ruby-string">&quot;CHI&quot;</span>]))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_is_route-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_is_route-method -->
 
     
       <div id="method-i-test_load_map" class="method-detail ">
@@ -270,11 +534,11 @@
 
           
           <div class="method-source-code" id="test_load_map-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 31</span>
+            <pre><span class="ruby-comment"># File test/graphTest.rb, line 31</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_load_map</span>
   <span class="ruby-ivar">@map</span> = <span class="ruby-constant">Map</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&#39;data/map_data.json&#39;</span>)
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&#39;Santiago&#39;</span>, <span class="ruby-ivar">@map</span>.<span class="ruby-identifier">get_metro</span>(<span class="ruby-string">&#39;SCL&#39;</span>)[<span class="ruby-string">&#39;name&#39;</span>]);
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">2425</span>, <span class="ruby-ivar">@map</span>.<span class="ruby-identifier">get_route</span>(<span class="ruby-string">&#39;BOG&#39;</span>, <span class="ruby-string">&#39;MIA&#39;</span>));
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&#39;Santiago&#39;</span>, <span class="ruby-ivar">@map</span>.<span class="ruby-identifier">get_metro</span>(<span class="ruby-string">&#39;SCL&#39;</span>)[<span class="ruby-string">&#39;name&#39;</span>])
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">2425</span>, <span class="ruby-ivar">@map</span>.<span class="ruby-identifier">get_route</span>(<span class="ruby-string">&#39;BOG&#39;</span>, <span class="ruby-string">&#39;MIA&#39;</span>))
 <span class="ruby-keyword">end</span></pre>
           </div><!-- test_load_map-source -->
           
@@ -284,6 +548,339 @@
 
         
       </div><!-- test_load_map-method -->
+
+    
+      <div id="method-i-test_longest_flight" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_longest_flight</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_longest_flight</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_longest_flight-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_longest_flight</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;between SYD and LAX - with distance 12051&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_longest_flight</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_longest_flight-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_longest_flight-method -->
+
+    
+      <div id="method-i-test_map_merge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_map_merge</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test the merge of a new map</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_map_merge-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_map_merge</span>
+  <span class="ruby-ivar">@map</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-string">&#39;data/cmi_hub.json&#39;</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&#39;{&quot;data source&quot;:[&quot;http://www.gcmap.com/&quot;,&quot;http://www.theodora.com/country_digraphs.html&quot;,&quot;http://www.citypopulation.de/world/Agglomerations.html&quot;,&quot;http://www.mongabay.com/cities_urban_01.htm&quot;,&quot;http://en.wikipedia.org/wiki/Urban_agglomeration&quot;,&quot;http://www.worldtimezone.com/standard.html&quot;],&quot;metros&quot;:[{&quot;code&quot;:&quot;SCL&quot;,&quot;name&quot;:&quot;Santiago&quot;,&quot;country&quot;:&quot;CL&quot;,&quot;continent&quot;:&quot;South America&quot;,&quot;timezone&quot;:-4,&quot;coordinates&quot;:{&quot;S&quot;:33,&quot;W&quot;:71},&quot;population&quot;:6000000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;LIM&quot;]},{&quot;code&quot;:&quot;LIM&quot;,&quot;name&quot;:&quot;Lima&quot;,&quot;country&quot;:&quot;PE&quot;,&quot;continent&quot;:&quot;South America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;S&quot;:12,&quot;W&quot;:77},&quot;population&quot;:9050000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;SCL&quot;,&quot;MEX&quot;,&quot;BOG&quot;]},{&quot;code&quot;:&quot;MEX&quot;,&quot;name&quot;:&quot;Mexico City&quot;,&quot;country&quot;:&quot;MX&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-6,&quot;coordinates&quot;:{&quot;N&quot;:19,&quot;W&quot;:99},&quot;population&quot;:23400000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;LIM&quot;,&quot;LAX&quot;,&quot;CHI&quot;,&quot;MIA&quot;,&quot;BOG&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;BOG&quot;,&quot;name&quot;:&quot;Bogota&quot;,&quot;country&quot;:&quot;CO&quot;,&quot;continent&quot;:&quot;South America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;N&quot;:5,&quot;W&quot;:74},&quot;population&quot;:8600000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;LIM&quot;,&quot;MEX&quot;,&quot;MIA&quot;,&quot;SAO&quot;,&quot;BUE&quot;]},{&quot;code&quot;:&quot;BUE&quot;,&quot;name&quot;:&quot;Buenos Aires&quot;,&quot;country&quot;:&quot;AR&quot;,&quot;continent&quot;:&quot;South America&quot;,&quot;timezone&quot;:-3,&quot;coordinates&quot;:{&quot;S&quot;:35,&quot;W&quot;:58},&quot;population&quot;:13300000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;BOG&quot;,&quot;SAO&quot;]},{&quot;code&quot;:&quot;SAO&quot;,&quot;name&quot;:&quot;Sao Paulo&quot;,&quot;country&quot;:&quot;BR&quot;,&quot;continent&quot;:&quot;South America&quot;,&quot;timezone&quot;:-3,&quot;coordinates&quot;:{&quot;S&quot;:24,&quot;W&quot;:47},&quot;population&quot;:20900000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;BOG&quot;,&quot;BUE&quot;,&quot;MAD&quot;,&quot;LOS&quot;]},{&quot;code&quot;:&quot;LOS&quot;,&quot;name&quot;:&quot;Lagos&quot;,&quot;country&quot;:&quot;NG&quot;,&quot;continent&quot;:&quot;Africa&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;N&quot;:7,&quot;E&quot;:19},&quot;population&quot;:11800000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;SAO&quot;,&quot;KRT&quot;,&quot;FIH&quot;]},{&quot;code&quot;:&quot;FIH&quot;,&quot;name&quot;:&quot;Kinshasa&quot;,&quot;country&quot;:&quot;CD&quot;,&quot;continent&quot;:&quot;Africa&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;S&quot;:4,&quot;E&quot;:15},&quot;population&quot;:8900000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;LOS&quot;,&quot;KRT&quot;,&quot;JNB&quot;]},{&quot;code&quot;:&quot;JNB&quot;,&quot;name&quot;:&quot;Johannesburg&quot;,&quot;country&quot;:&quot;ZA&quot;,&quot;continent&quot;:&quot;Africa&quot;,&quot;timezone&quot;:2,&quot;coordinates&quot;:{&quot;S&quot;:26,&quot;E&quot;:28},&quot;population&quot;:7550000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;FIH&quot;,&quot;KRT&quot;]},{&quot;code&quot;:&quot;KRT&quot;,&quot;name&quot;:&quot;Khartoum&quot;,&quot;country&quot;:&quot;SD&quot;,&quot;continent&quot;:&quot;Africa&quot;,&quot;timezone&quot;:3,&quot;coordinates&quot;:{&quot;N&quot;:16,&quot;E&quot;:33},&quot;population&quot;:4975000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;LOS&quot;,&quot;FIH&quot;,&quot;JNB&quot;,&quot;CAI&quot;]},{&quot;code&quot;:&quot;CAI&quot;,&quot;name&quot;:&quot;Cairo&quot;,&quot;country&quot;:&quot;EG&quot;,&quot;continent&quot;:&quot;Africa&quot;,&quot;timezone&quot;:2,&quot;coordinates&quot;:{&quot;N&quot;:30,&quot;E&quot;:31},&quot;population&quot;:15200000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;KRT&quot;,&quot;ALG&quot;,&quot;IST&quot;,&quot;BGW&quot;,&quot;RUH&quot;]},{&quot;code&quot;:&quot;ALG&quot;,&quot;name&quot;:&quot;Algiers&quot;,&quot;country&quot;:&quot;DZ&quot;,&quot;continent&quot;:&quot;Africa&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;N&quot;:37,&quot;E&quot;:3},&quot;population&quot;:3175000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;CAI&quot;,&quot;MAD&quot;,&quot;PAR&quot;,&quot;IST&quot;]},{&quot;code&quot;:&quot;MAD&quot;,&quot;name&quot;:&quot;Madrid&quot;,&quot;country&quot;:&quot;ES&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;N&quot;:40,&quot;W&quot;:4},&quot;population&quot;:6200000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;SAO&quot;,&quot;ALG&quot;,&quot;NYC&quot;,&quot;LON&quot;,&quot;PAR&quot;]},{&quot;code&quot;:&quot;LON&quot;,&quot;name&quot;:&quot;London&quot;,&quot;country&quot;:&quot;UK&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:0,&quot;coordinates&quot;:{&quot;N&quot;:52,&quot;W&quot;:0},&quot;population&quot;:12400000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;MAD&quot;,&quot;NYC&quot;,&quot;ESS&quot;,&quot;PAR&quot;]},{&quot;code&quot;:&quot;PAR&quot;,&quot;name&quot;:&quot;Paris&quot;,&quot;country&quot;:&quot;FR&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;N&quot;:49,&quot;E&quot;:2},&quot;population&quot;:10400000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;ALG&quot;,&quot;MAD&quot;,&quot;LON&quot;,&quot;ESS&quot;,&quot;MIL&quot;]},{&quot;code&quot;:&quot;MIL&quot;,&quot;name&quot;:&quot;Milan&quot;,&quot;country&quot;:&quot;IT&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;N&quot;:45,&quot;E&quot;:9},&quot;population&quot;:3575000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;PAR&quot;,&quot;ESS&quot;,&quot;IST&quot;]},{&quot;code&quot;:&quot;ESS&quot;,&quot;name&quot;:&quot;Essen&quot;,&quot;country&quot;:&quot;DE&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:1,&quot;coordinates&quot;:{&quot;N&quot;:51,&quot;E&quot;:7},&quot;population&quot;:589900,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;LON&quot;,&quot;PAR&quot;,&quot;MIL&quot;,&quot;LED&quot;]},{&quot;code&quot;:&quot;LED&quot;,&quot;name&quot;:&quot;St. Petersburg&quot;,&quot;country&quot;:&quot;RU&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:3,&quot;coordinates&quot;:{&quot;N&quot;:60,&quot;E&quot;:30},&quot;population&quot;:4775000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;ESS&quot;,&quot;MOW&quot;,&quot;IST&quot;]},{&quot;code&quot;:&quot;MOW&quot;,&quot;name&quot;:&quot;Moscow&quot;,&quot;country&quot;:&quot;RU&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:3,&quot;coordinates&quot;:{&quot;N&quot;:56,&quot;E&quot;:38},&quot;population&quot;:13600000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;LED&quot;,&quot;THR&quot;,&quot;IST&quot;]},{&quot;code&quot;:&quot;IST&quot;,&quot;name&quot;:&quot;Istanbul&quot;,&quot;country&quot;:&quot;TR&quot;,&quot;continent&quot;:&quot;Europe&quot;,&quot;timezone&quot;:2,&quot;coordinates&quot;:{&quot;N&quot;:41,&quot;E&quot;:29},&quot;population&quot;:12800000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;CAI&quot;,&quot;ALG&quot;,&quot;MIL&quot;,&quot;LED&quot;,&quot;MOW&quot;,&quot;BGW&quot;]},{&quot;code&quot;:&quot;BGW&quot;,&quot;name&quot;:&quot;Bagdad&quot;,&quot;country&quot;:&quot;IQ&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:3.5,&quot;coordinates&quot;:{&quot;N&quot;:33,&quot;E&quot;:44},&quot;population&quot;:6600000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;CAI&quot;,&quot;IST&quot;,&quot;THR&quot;,&quot;KHI&quot;,&quot;RUH&quot;]},{&quot;code&quot;:&quot;THR&quot;,&quot;name&quot;:&quot;Tehrah&quot;,&quot;country&quot;:&quot;IR&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:4.5,&quot;coordinates&quot;:{&quot;N&quot;:36,&quot;E&quot;:51},&quot;population&quot;:12800000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;MOW&quot;,&quot;BGW&quot;,&quot;DEL&quot;,&quot;KHI&quot;,&quot;RUH&quot;]},{&quot;code&quot;:&quot;RUH&quot;,&quot;name&quot;:&quot;Riyadh&quot;,&quot;country&quot;:&quot;SA&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:3,&quot;coordinates&quot;:{&quot;N&quot;:25,&quot;E&quot;:47},&quot;population&quot;:5100000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;CAI&quot;,&quot;BGW&quot;,&quot;THR&quot;,&quot;KHI&quot;]},{&quot;code&quot;:&quot;KHI&quot;,&quot;name&quot;:&quot;Karachi&quot;,&quot;country&quot;:&quot;PK&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:5,&quot;coordinates&quot;:{&quot;N&quot;:25,&quot;E&quot;:67},&quot;population&quot;:16200000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;BGW&quot;,&quot;THR&quot;,&quot;RUH&quot;,&quot;DEL&quot;,&quot;BOM&quot;]},{&quot;code&quot;:&quot;DEL&quot;,&quot;name&quot;:&quot;Delhi&quot;,&quot;country&quot;:&quot;IN&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:5.5,&quot;coordinates&quot;:{&quot;N&quot;:29,&quot;E&quot;:77},&quot;population&quot;:23200000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;THR&quot;,&quot;KHI&quot;,&quot;CCU&quot;,&quot;MAA&quot;,&quot;BOM&quot;]},{&quot;code&quot;:&quot;BOM&quot;,&quot;name&quot;:&quot;Mumbai&quot;,&quot;country&quot;:&quot;IN&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:5.5,&quot;coordinates&quot;:{&quot;N&quot;:19,&quot;E&quot;:73},&quot;population&quot;:22800000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;KHI&quot;,&quot;DEL&quot;,&quot;MAA&quot;]},{&quot;code&quot;:&quot;MAA&quot;,&quot;name&quot;:&quot;Chennai&quot;,&quot;country&quot;:&quot;IN&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:5.5,&quot;coordinates&quot;:{&quot;N&quot;:13,&quot;E&quot;:80},&quot;population&quot;:8200000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;DEL&quot;,&quot;BOM&quot;,&quot;CCU&quot;,&quot;BKK&quot;,&quot;JKT&quot;]},{&quot;code&quot;:&quot;CCU&quot;,&quot;name&quot;:&quot;Calcutta&quot;,&quot;country&quot;:&quot;IN&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:5.5,&quot;coordinates&quot;:{&quot;N&quot;:24,&quot;E&quot;:88},&quot;population&quot;:16300000,&quot;region&quot;:2,&quot;flight_to&quot;:[&quot;DEL&quot;,&quot;MAA&quot;,&quot;HKG&quot;,&quot;BKK&quot;]},{&quot;code&quot;:&quot;BKK&quot;,&quot;name&quot;:&quot;Bangkok&quot;,&quot;country&quot;:&quot;TH&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:7,&quot;coordinates&quot;:{&quot;N&quot;:14,&quot;E&quot;:101},&quot;population&quot;:8900000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;MAA&quot;,&quot;CCU&quot;,&quot;HKG&quot;,&quot;SGN&quot;,&quot;JKT&quot;]},{&quot;code&quot;:&quot;HKG&quot;,&quot;name&quot;:&quot;Hong Kong&quot;,&quot;country&quot;:&quot;CH&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:8,&quot;coordinates&quot;:{&quot;N&quot;:22,&quot;E&quot;:114},&quot;population&quot;:7050000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;CCU&quot;,&quot;BKK&quot;,&quot;SHA&quot;,&quot;TPE&quot;,&quot;MNL&quot;,&quot;SGN&quot;]},{&quot;code&quot;:&quot;SHA&quot;,&quot;name&quot;:&quot;Shanghai&quot;,&quot;country&quot;:&quot;CH&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:8,&quot;coordinates&quot;:{&quot;N&quot;:31,&quot;E&quot;:121},&quot;population&quot;:18400000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;HKG&quot;,&quot;PEK&quot;,&quot;ICN&quot;,&quot;TYO&quot;,&quot;TPE&quot;]},{&quot;code&quot;:&quot;PEK&quot;,&quot;name&quot;:&quot;Beijing&quot;,&quot;country&quot;:&quot;CH&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:8,&quot;coordinates&quot;:{&quot;N&quot;:40,&quot;E&quot;:117},&quot;population&quot;:13600000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;SHA&quot;,&quot;ICN&quot;]},{&quot;code&quot;:&quot;ICN&quot;,&quot;name&quot;:&quot;Seoul&quot;,&quot;country&quot;:&quot;KR&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:9,&quot;coordinates&quot;:{&quot;N&quot;:37,&quot;E&quot;:126},&quot;population&quot;:24200000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;SHA&quot;,&quot;PEK&quot;,&quot;TYO&quot;]},{&quot;code&quot;:&quot;TYO&quot;,&quot;name&quot;:&quot;Tokyo&quot;,&quot;country&quot;:&quot;JP&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:9,&quot;coordinates&quot;:{&quot;N&quot;:36,&quot;E&quot;:140},&quot;population&quot;:34000000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;SHA&quot;,&quot;ICN&quot;,&quot;SFO&quot;,&quot;OSA&quot;]},{&quot;code&quot;:&quot;OSA&quot;,&quot;name&quot;:&quot;Osaka&quot;,&quot;country&quot;:&quot;JP&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:9,&quot;coordinates&quot;:{&quot;N&quot;:35,&quot;E&quot;:135},&quot;population&quot;:16800000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;TYO&quot;,&quot;TPE&quot;]},{&quot;code&quot;:&quot;TPE&quot;,&quot;name&quot;:&quot;Taipei&quot;,&quot;country&quot;:&quot;TW&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:8,&quot;coordinates&quot;:{&quot;N&quot;:25,&quot;E&quot;:121},&quot;population&quot;:6800000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;HKG&quot;,&quot;SHA&quot;,&quot;OSA&quot;,&quot;MNL&quot;]},{&quot;code&quot;:&quot;MNL&quot;,&quot;name&quot;:&quot;Manila&quot;,&quot;country&quot;:&quot;PH&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:8,&quot;coordinates&quot;:{&quot;N&quot;:15,&quot;E&quot;:121},&quot;population&quot;:19600000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;HKG&quot;,&quot;TPE&quot;,&quot;SFO&quot;,&quot;SYD&quot;,&quot;SGN&quot;]},{&quot;code&quot;:&quot;SGN&quot;,&quot;name&quot;:&quot;Ho Chi Minh City&quot;,&quot;country&quot;:&quot;VN&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:7,&quot;coordinates&quot;:{&quot;N&quot;:11,&quot;E&quot;:107},&quot;population&quot;:6100000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;BKK&quot;,&quot;HKG&quot;,&quot;MNL&quot;,&quot;JKT&quot;]},{&quot;code&quot;:&quot;JKT&quot;,&quot;name&quot;:&quot;Jakarta&quot;,&quot;country&quot;:&quot;ID&quot;,&quot;continent&quot;:&quot;Asia&quot;,&quot;timezone&quot;:7,&quot;coordinates&quot;:{&quot;S&quot;:6,&quot;E&quot;:107},&quot;population&quot;:15400000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;MAA&quot;,&quot;BKK&quot;,&quot;SGN&quot;,&quot;SYD&quot;]},{&quot;code&quot;:&quot;SYD&quot;,&quot;name&quot;:&quot;Sydney&quot;,&quot;country&quot;:&quot;AU&quot;,&quot;continent&quot;:&quot;Australia&quot;,&quot;timezone&quot;:10,&quot;coordinates&quot;:{&quot;S&quot;:34,&quot;E&quot;:151},&quot;population&quot;:4475000,&quot;region&quot;:4,&quot;flight_to&quot;:[&quot;MNL&quot;,&quot;JKT&quot;,&quot;LAX&quot;]},{&quot;code&quot;:&quot;LAX&quot;,&quot;name&quot;:&quot;Los Angeles&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-8,&quot;coordinates&quot;:{&quot;N&quot;:34,&quot;W&quot;:118},&quot;population&quot;:17900000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;MEX&quot;,&quot;SYD&quot;,&quot;SFO&quot;,&quot;CHI&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;SFO&quot;,&quot;name&quot;:&quot;San Francisco&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-8,&quot;coordinates&quot;:{&quot;N&quot;:38,&quot;W&quot;:122},&quot;population&quot;:7450000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;TYO&quot;,&quot;MNL&quot;,&quot;LAX&quot;,&quot;CHI&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;CHI&quot;,&quot;name&quot;:&quot;Chicago&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-6,&quot;coordinates&quot;:{&quot;N&quot;:42,&quot;W&quot;:88},&quot;population&quot;:9850000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;MEX&quot;,&quot;LAX&quot;,&quot;SFO&quot;,&quot;YYZ&quot;,&quot;ATL&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;ATL&quot;,&quot;name&quot;:&quot;Atlanta&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;N&quot;:34,&quot;W&quot;:84},&quot;population&quot;:5700000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;CHI&quot;,&quot;WAS&quot;,&quot;MIA&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;MIA&quot;,&quot;name&quot;:&quot;Miami&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;N&quot;:26,&quot;W&quot;:80},&quot;population&quot;:5400000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;MEX&quot;,&quot;BOG&quot;,&quot;ATL&quot;,&quot;WAS&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;WAS&quot;,&quot;name&quot;:&quot;Washington&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;N&quot;:39,&quot;W&quot;:77},&quot;population&quot;:8250000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;ATL&quot;,&quot;MIA&quot;,&quot;YYZ&quot;,&quot;NYC&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;NYC&quot;,&quot;name&quot;:&quot;New York&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;N&quot;:41,&quot;W&quot;:74},&quot;population&quot;:22200000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;MAD&quot;,&quot;LON&quot;,&quot;WAS&quot;,&quot;YYZ&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;YYZ&quot;,&quot;name&quot;:&quot;Toronto&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-5,&quot;coordinates&quot;:{&quot;N&quot;:44,&quot;W&quot;:80},&quot;population&quot;:5750000,&quot;region&quot;:3,&quot;flight_to&quot;:[&quot;CHI&quot;,&quot;WAS&quot;,&quot;NYC&quot;,&quot;CMI&quot;]},{&quot;code&quot;:&quot;CMI&quot;,&quot;name&quot;:&quot;Champaign&quot;,&quot;country&quot;:&quot;US&quot;,&quot;continent&quot;:&quot;North America&quot;,&quot;timezone&quot;:-6,&quot;coordinates&quot;:{&quot;N&quot;:40,&quot;W&quot;:88},&quot;population&quot;:226000,&quot;region&quot;:1,&quot;flight_to&quot;:[&quot;LAX&quot;,&quot;SFO&quot;,&quot;MEX&quot;,&quot;MIA&quot;,&quot;ATL&quot;,&quot;WAS&quot;,&quot;YYZ&quot;,&quot;NYC&quot;,&quot;CHI&quot;]}],&quot;routes&quot;:[{&quot;ports&quot;:[&quot;SCL&quot;,&quot;LIM&quot;],&quot;distance&quot;:2453},{&quot;ports&quot;:[&quot;LIM&quot;,&quot;SCL&quot;],&quot;distance&quot;:2453},{&quot;ports&quot;:[&quot;LIM&quot;,&quot;MEX&quot;],&quot;distance&quot;:4231},{&quot;ports&quot;:[&quot;MEX&quot;,&quot;LIM&quot;],&quot;distance&quot;:4231},{&quot;ports&quot;:[&quot;LIM&quot;,&quot;BOG&quot;],&quot;distance&quot;:1879},{&quot;ports&quot;:[&quot;BOG&quot;,&quot;LIM&quot;],&quot;distance&quot;:1879},{&quot;ports&quot;:[&quot;MEX&quot;,&quot;LAX&quot;],&quot;distance&quot;:2499},{&quot;ports&quot;:[&quot;LAX&quot;,&quot;MEX&quot;],&quot;distance&quot;:2499},{&quot;ports&quot;:[&quot;MEX&quot;,&quot;CHI&quot;],&quot;distance&quot;:2714},{&quot;ports&quot;:[&quot;CHI&quot;,&quot;MEX&quot;],&quot;distance&quot;:2714},{&quot;ports&quot;:[&quot;MEX&quot;,&quot;MIA&quot;],&quot;distance&quot;:2053},{&quot;ports&quot;:[&quot;MIA&quot;,&quot;MEX&quot;],&quot;distance&quot;:2053},{&quot;ports&quot;:[&quot;MEX&quot;,&quot;BOG&quot;],&quot;distance&quot;:3158},{&quot;ports&quot;:[&quot;BOG&quot;,&quot;MEX&quot;],&quot;distance&quot;:3158},{&quot;ports&quot;:[&quot;BOG&quot;,&quot;MIA&quot;],&quot;distance&quot;:2425},{&quot;ports&quot;:[&quot;MIA&quot;,&quot;BOG&quot;],&quot;distance&quot;:2425},{&quot;ports&quot;:[&quot;BOG&quot;,&quot;SAO&quot;],&quot;distance&quot;:4323},{&quot;ports&quot;:[&quot;SAO&quot;,&quot;BOG&quot;],&quot;distance&quot;:4323},{&quot;ports&quot;:[&quot;BOG&quot;,&quot;BUE&quot;],&quot;distance&quot;:4651},{&quot;ports&quot;:[&quot;BUE&quot;,&quot;BOG&quot;],&quot;distance&quot;:4651},{&quot;ports&quot;:[&quot;BUE&quot;,&quot;SAO&quot;],&quot;distance&quot;:1680},{&quot;ports&quot;:[&quot;SAO&quot;,&quot;BUE&quot;],&quot;distance&quot;:1680},{&quot;ports&quot;:[&quot;SAO&quot;,&quot;MAD&quot;],&quot;distance&quot;:8373},{&quot;ports&quot;:[&quot;MAD&quot;,&quot;SAO&quot;],&quot;distance&quot;:8373},{&quot;ports&quot;:[&quot;SAO&quot;,&quot;LOS&quot;],&quot;distance&quot;:6367},{&quot;ports&quot;:[&quot;LOS&quot;,&quot;SAO&quot;],&quot;distance&quot;:6367},{&quot;ports&quot;:[&quot;LOS&quot;,&quot;KRT&quot;],&quot;distance&quot;:3341},{&quot;ports&quot;:[&quot;KRT&quot;,&quot;LOS&quot;],&quot;distance&quot;:3341},{&quot;ports&quot;:[&quot;LOS&quot;,&quot;FIH&quot;],&quot;distance&quot;:1812},{&quot;ports&quot;:[&quot;FIH&quot;,&quot;LOS&quot;],&quot;distance&quot;:1812},{&quot;ports&quot;:[&quot;FIH&quot;,&quot;KRT&quot;],&quot;distance&quot;:2904},{&quot;ports&quot;:[&quot;KRT&quot;,&quot;FIH&quot;],&quot;distance&quot;:2904},{&quot;ports&quot;:[&quot;FIH&quot;,&quot;JNB&quot;],&quot;distance&quot;:2767},{&quot;ports&quot;:[&quot;JNB&quot;,&quot;FIH&quot;],&quot;distance&quot;:2767},{&quot;ports&quot;:[&quot;JNB&quot;,&quot;KRT&quot;],&quot;distance&quot;:4640},{&quot;ports&quot;:[&quot;KRT&quot;,&quot;JNB&quot;],&quot;distance&quot;:4640},{&quot;ports&quot;:[&quot;KRT&quot;,&quot;CAI&quot;],&quot;distance&quot;:1614},{&quot;ports&quot;:[&quot;CAI&quot;,&quot;KRT&quot;],&quot;distance&quot;:1614},{&quot;ports&quot;:[&quot;CAI&quot;,&quot;ALG&quot;],&quot;distance&quot;:2710},{&quot;ports&quot;:[&quot;ALG&quot;,&quot;CAI&quot;],&quot;distance&quot;:2710},{&quot;ports&quot;:[&quot;CAI&quot;,&quot;IST&quot;],&quot;distance&quot;:1227},{&quot;ports&quot;:[&quot;IST&quot;,&quot;CAI&quot;],&quot;distance&quot;:1227},{&quot;ports&quot;:[&quot;CAI&quot;,&quot;BGW&quot;],&quot;distance&quot;:1264},{&quot;ports&quot;:[&quot;BGW&quot;,&quot;CAI&quot;],&quot;distance&quot;:1264},{&quot;ports&quot;:[&quot;CAI&quot;,&quot;RUH&quot;],&quot;distance&quot;:1614},{&quot;ports&quot;:[&quot;RUH&quot;,&quot;CAI&quot;],&quot;distance&quot;:1614},{&quot;ports&quot;:[&quot;ALG&quot;,&quot;MAD&quot;],&quot;distance&quot;:726},{&quot;ports&quot;:[&quot;MAD&quot;,&quot;ALG&quot;],&quot;distance&quot;:726},{&quot;ports&quot;:[&quot;ALG&quot;,&quot;PAR&quot;],&quot;distance&quot;:1354},{&quot;ports&quot;:[&quot;PAR&quot;,&quot;ALG&quot;],&quot;distance&quot;:1354},{&quot;ports&quot;:[&quot;ALG&quot;,&quot;IST&quot;],&quot;distance&quot;:1354},{&quot;ports&quot;:[&quot;IST&quot;,&quot;ALG&quot;],&quot;distance&quot;:1354},{&quot;ports&quot;:[&quot;MAD&quot;,&quot;NYC&quot;],&quot;distance&quot;:5786},{&quot;ports&quot;:[&quot;NYC&quot;,&quot;MAD&quot;],&quot;distance&quot;:5786},{&quot;ports&quot;:[&quot;MAD&quot;,&quot;LON&quot;],&quot;distance&quot;:5786},{&quot;ports&quot;:[&quot;LON&quot;,&quot;MAD&quot;],&quot;distance&quot;:5786},{&quot;ports&quot;:[&quot;MAD&quot;,&quot;PAR&quot;],&quot;distance&quot;:1041},{&quot;ports&quot;:[&quot;PAR&quot;,&quot;MAD&quot;],&quot;distance&quot;:1041},{&quot;ports&quot;:[&quot;LON&quot;,&quot;NYC&quot;],&quot;distance&quot;:5579},{&quot;ports&quot;:[&quot;NYC&quot;,&quot;LON&quot;],&quot;distance&quot;:5579},{&quot;ports&quot;:[&quot;LON&quot;,&quot;ESS&quot;],&quot;distance&quot;:494},{&quot;ports&quot;:[&quot;ESS&quot;,&quot;LON&quot;],&quot;distance&quot;:494},{&quot;ports&quot;:[&quot;LON&quot;,&quot;PAR&quot;],&quot;distance&quot;:343},{&quot;ports&quot;:[&quot;PAR&quot;,&quot;LON&quot;],&quot;distance&quot;:343},{&quot;ports&quot;:[&quot;PAR&quot;,&quot;ESS&quot;],&quot;distance&quot;:433},{&quot;ports&quot;:[&quot;ESS&quot;,&quot;PAR&quot;],&quot;distance&quot;:433},{&quot;ports&quot;:[&quot;PAR&quot;,&quot;MIL&quot;],&quot;distance&quot;:643},{&quot;ports&quot;:[&quot;MIL&quot;,&quot;PAR&quot;],&quot;distance&quot;:643},{&quot;ports&quot;:[&quot;MIL&quot;,&quot;ESS&quot;],&quot;distance&quot;:681},{&quot;ports&quot;:[&quot;ESS&quot;,&quot;MIL&quot;],&quot;distance&quot;:681},{&quot;ports&quot;:[&quot;MIL&quot;,&quot;IST&quot;],&quot;distance&quot;:1665},{&quot;ports&quot;:[&quot;IST&quot;,&quot;MIL&quot;],&quot;distance&quot;:1665},{&quot;ports&quot;:[&quot;ESS&quot;,&quot;LED&quot;],&quot;distance&quot;:1728},{&quot;ports&quot;:[&quot;LED&quot;,&quot;ESS&quot;],&quot;distance&quot;:1728},{&quot;ports&quot;:[&quot;LED&quot;,&quot;MOW&quot;],&quot;distance&quot;:626},{&quot;ports&quot;:[&quot;MOW&quot;,&quot;LED&quot;],&quot;distance&quot;:626},{&quot;ports&quot;:[&quot;LED&quot;,&quot;IST&quot;],&quot;distance&quot;:2096},{&quot;ports&quot;:[&quot;IST&quot;,&quot;LED&quot;],&quot;distance&quot;:2096},{&quot;ports&quot;:[&quot;MOW&quot;,&quot;THR&quot;],&quot;distance&quot;:2462},{&quot;ports&quot;:[&quot;THR&quot;,&quot;MOW&quot;],&quot;distance&quot;:2462},{&quot;ports&quot;:[&quot;MOW&quot;,&quot;IST&quot;],&quot;distance&quot;:1763},{&quot;ports&quot;:[&quot;IST&quot;,&quot;MOW&quot;],&quot;distance&quot;:1763},{&quot;ports&quot;:[&quot;IST&quot;,&quot;BGW&quot;],&quot;distance&quot;:1612},{&quot;ports&quot;:[&quot;BGW&quot;,&quot;IST&quot;],&quot;distance&quot;:1612},{&quot;ports&quot;:[&quot;BGW&quot;,&quot;THR&quot;],&quot;distance&quot;:704},{&quot;ports&quot;:[&quot;THR&quot;,&quot;BGW&quot;],&quot;distance&quot;:704},{&quot;ports&quot;:[&quot;BGW&quot;,&quot;KHI&quot;],&quot;distance&quot;:2410},{&quot;ports&quot;:[&quot;KHI&quot;,&quot;BGW&quot;],&quot;distance&quot;:2410},{&quot;ports&quot;:[&quot;BGW&quot;,&quot;RUH&quot;],&quot;distance&quot;:951},{&quot;ports&quot;:[&quot;RUH&quot;,&quot;BGW&quot;],&quot;distance&quot;:951},{&quot;ports&quot;:[&quot;THR&quot;,&quot;DEL&quot;],&quot;distance&quot;:2550},{&quot;ports&quot;:[&quot;DEL&quot;,&quot;THR&quot;],&quot;distance&quot;:2550},{&quot;ports&quot;:[&quot;THR&quot;,&quot;KHI&quot;],&quot;distance&quot;:1933},{&quot;ports&quot;:[&quot;KHI&quot;,&quot;THR&quot;],&quot;distance&quot;:1933},{&quot;ports&quot;:[&quot;THR&quot;,&quot;RUH&quot;],&quot;distance&quot;:1269},{&quot;ports&quot;:[&quot;RUH&quot;,&quot;THR&quot;],&quot;distance&quot;:1269},{&quot;ports&quot;:[&quot;RUH&quot;,&quot;KHI&quot;],&quot;distance&quot;:2065},{&quot;ports&quot;:[&quot;KHI&quot;,&quot;RUH&quot;],&quot;distance&quot;:2065},{&quot;ports&quot;:[&quot;KHI&quot;,&quot;DEL&quot;],&quot;distance&quot;:1069},{&quot;ports&quot;:[&quot;DEL&quot;,&quot;KHI&quot;],&quot;distance&quot;:1069},{&quot;ports&quot;:[&quot;KHI&quot;,&quot;BOM&quot;],&quot;distance&quot;:873},{&quot;ports&quot;:[&quot;BOM&quot;,&quot;KHI&quot;],&quot;distance&quot;:873},{&quot;ports&quot;:[&quot;DEL&quot;,&quot;CCU&quot;],&quot;distance&quot;:1313},{&quot;ports&quot;:[&quot;CCU&quot;,&quot;DEL&quot;],&quot;distance&quot;:1313},{&quot;ports&quot;:[&quot;DEL&quot;,&quot;MAA&quot;],&quot;distance&quot;:1753},{&quot;ports&quot;:[&quot;MAA&quot;,&quot;DEL&quot;],&quot;distance&quot;:1753},{&quot;ports&quot;:[&quot;DEL&quot;,&quot;BOM&quot;],&quot;distance&quot;:1135},{&quot;ports&quot;:[&quot;BOM&quot;,&quot;DEL&quot;],&quot;distance&quot;:1135},{&quot;ports&quot;:[&quot;BOM&quot;,&quot;MAA&quot;],&quot;distance&quot;:1033},{&quot;ports&quot;:[&quot;MAA&quot;,&quot;BOM&quot;],&quot;distance&quot;:1033},{&quot;ports&quot;:[&quot;MAA&quot;,&quot;CCU&quot;],&quot;distance&quot;:1382},{&quot;ports&quot;:[&quot;CCU&quot;,&quot;MAA&quot;],&quot;distance&quot;:1382},{&quot;ports&quot;:[&quot;MAA&quot;,&quot;BKK&quot;],&quot;distance&quot;:2229},{&quot;ports&quot;:[&quot;BKK&quot;,&quot;MAA&quot;],&quot;distance&quot;:2229},{&quot;ports&quot;:[&quot;MAA&quot;,&quot;JKT&quot;],&quot;distance&quot;:3627},{&quot;ports&quot;:[&quot;JKT&quot;,&quot;MAA&quot;],&quot;distance&quot;:3627},{&quot;ports&quot;:[&quot;CCU&quot;,&quot;HKG&quot;],&quot;distance&quot;:2618},{&quot;ports&quot;:[&quot;HKG&quot;,&quot;CCU&quot;],&quot;distance&quot;:2618},{&quot;ports&quot;:[&quot;CCU&quot;,&quot;BKK&quot;],&quot;distance&quot;:1636},{&quot;ports&quot;:[&quot;BKK&quot;,&quot;CCU&quot;],&quot;distance&quot;:1636},{&quot;ports&quot;:[&quot;BKK&quot;,&quot;HKG&quot;],&quot;distance&quot;:1688},{&quot;ports&quot;:[&quot;HKG&quot;,&quot;BKK&quot;],&quot;distance&quot;:1688},{&quot;ports&quot;:[&quot;BKK&quot;,&quot;SGN&quot;],&quot;distance&quot;:716},{&quot;ports&quot;:[&quot;SGN&quot;,&quot;BKK&quot;],&quot;distance&quot;:716},{&quot;ports&quot;:[&quot;BKK&quot;,&quot;JKT&quot;],&quot;distance&quot;:2295},{&quot;ports&quot;:[&quot;JKT&quot;,&quot;BKK&quot;],&quot;distance&quot;:2295},{&quot;ports&quot;:[&quot;HKG&quot;,&quot;SHA&quot;],&quot;distance&quot;:1230},{&quot;ports&quot;:[&quot;SHA&quot;,&quot;HKG&quot;],&quot;distance&quot;:1230},{&quot;ports&quot;:[&quot;HKG&quot;,&quot;TPE&quot;],&quot;distance&quot;:807},{&quot;ports&quot;:[&quot;TPE&quot;,&quot;HKG&quot;],&quot;distance&quot;:807},{&quot;ports&quot;:[&quot;HKG&quot;,&quot;MNL&quot;],&quot;distance&quot;:1144},{&quot;ports&quot;:[&quot;MNL&quot;,&quot;HKG&quot;],&quot;distance&quot;:1144},{&quot;ports&quot;:[&quot;HKG&quot;,&quot;SGN&quot;],&quot;distance&quot;:1488},{&quot;ports&quot;:[&quot;SGN&quot;,&quot;HKG&quot;],&quot;distance&quot;:1488},{&quot;ports&quot;:[&quot;SHA&quot;,&quot;PEK&quot;],&quot;distance&quot;:1075},{&quot;ports&quot;:[&quot;PEK&quot;,&quot;SHA&quot;],&quot;distance&quot;:1075},{&quot;ports&quot;:[&quot;SHA&quot;,&quot;ICN&quot;],&quot;distance&quot;:840},{&quot;ports&quot;:[&quot;ICN&quot;,&quot;SHA&quot;],&quot;distance&quot;:840},{&quot;ports&quot;:[&quot;SHA&quot;,&quot;TYO&quot;],&quot;distance&quot;:1782},{&quot;ports&quot;:[&quot;TYO&quot;,&quot;SHA&quot;],&quot;distance&quot;:1782},{&quot;ports&quot;:[&quot;SHA&quot;,&quot;TPE&quot;],&quot;distance&quot;:678},{&quot;ports&quot;:[&quot;TPE&quot;,&quot;SHA&quot;],&quot;distance&quot;:678},{&quot;ports&quot;:[&quot;PEK&quot;,&quot;ICN&quot;],&quot;distance&quot;:904},{&quot;ports&quot;:[&quot;ICN&quot;,&quot;PEK&quot;],&quot;distance&quot;:904},{&quot;ports&quot;:[&quot;ICN&quot;,&quot;TYO&quot;],&quot;distance&quot;:1207},{&quot;ports&quot;:[&quot;TYO&quot;,&quot;ICN&quot;],&quot;distance&quot;:1207},{&quot;ports&quot;:[&quot;TYO&quot;,&quot;SFO&quot;],&quot;distance&quot;:8296},{&quot;ports&quot;:[&quot;SFO&quot;,&quot;TYO&quot;],&quot;distance&quot;:8296},{&quot;ports&quot;:[&quot;TYO&quot;,&quot;OSA&quot;],&quot;distance&quot;:407},{&quot;ports&quot;:[&quot;OSA&quot;,&quot;TYO&quot;],&quot;distance&quot;:407},{&quot;ports&quot;:[&quot;OSA&quot;,&quot;TPE&quot;],&quot;distance&quot;:1740},{&quot;ports&quot;:[&quot;TPE&quot;,&quot;OSA&quot;],&quot;distance&quot;:1740},{&quot;ports&quot;:[&quot;TPE&quot;,&quot;MNL&quot;],&quot;distance&quot;:1170},{&quot;ports&quot;:[&quot;MNL&quot;,&quot;TPE&quot;],&quot;distance&quot;:1170},{&quot;ports&quot;:[&quot;MNL&quot;,&quot;SFO&quot;],&quot;distance&quot;:11244},{&quot;ports&quot;:[&quot;SFO&quot;,&quot;MNL&quot;],&quot;distance&quot;:11244},{&quot;ports&quot;:[&quot;MNL&quot;,&quot;SYD&quot;],&quot;distance&quot;:6243},{&quot;ports&quot;:[&quot;SYD&quot;,&quot;MNL&quot;],&quot;distance&quot;:6243},{&quot;ports&quot;:[&quot;MNL&quot;,&quot;SGN&quot;],&quot;distance&quot;:1613},{&quot;ports&quot;:[&quot;SGN&quot;,&quot;MNL&quot;],&quot;distance&quot;:1613},{&quot;ports&quot;:[&quot;SGN&quot;,&quot;JKT&quot;],&quot;distance&quot;:1878},{&quot;ports&quot;:[&quot;JKT&quot;,&quot;SGN&quot;],&quot;distance&quot;:1878},{&quot;ports&quot;:[&quot;JKT&quot;,&quot;SYD&quot;],&quot;distance&quot;:5502},{&quot;ports&quot;:[&quot;SYD&quot;,&quot;JKT&quot;],&quot;distance&quot;:5502},{&quot;ports&quot;:[&quot;SYD&quot;,&quot;LAX&quot;],&quot;distance&quot;:12051},{&quot;ports&quot;:[&quot;LAX&quot;,&quot;SYD&quot;],&quot;distance&quot;:12051},{&quot;ports&quot;:[&quot;LAX&quot;,&quot;SFO&quot;],&quot;distance&quot;:543},{&quot;ports&quot;:[&quot;SFO&quot;,&quot;LAX&quot;],&quot;distance&quot;:543},{&quot;ports&quot;:[&quot;LAX&quot;,&quot;CHI&quot;],&quot;distance&quot;:2828},{&quot;ports&quot;:[&quot;CHI&quot;,&quot;LAX&quot;],&quot;distance&quot;:2828},{&quot;ports&quot;:[&quot;SFO&quot;,&quot;CHI&quot;],&quot;distance&quot;:2994},{&quot;ports&quot;:[&quot;CHI&quot;,&quot;SFO&quot;],&quot;distance&quot;:2994},{&quot;ports&quot;:[&quot;CHI&quot;,&quot;YYZ&quot;],&quot;distance&quot;:684},{&quot;ports&quot;:[&quot;YYZ&quot;,&quot;CHI&quot;],&quot;distance&quot;:684},{&quot;ports&quot;:[&quot;CHI&quot;,&quot;ATL&quot;],&quot;distance&quot;:958},{&quot;ports&quot;:[&quot;ATL&quot;,&quot;CHI&quot;],&quot;distance&quot;:958},{&quot;ports&quot;:[&quot;ATL&quot;,&quot;WAS&quot;],&quot;distance&quot;:883},{&quot;ports&quot;:[&quot;WAS&quot;,&quot;ATL&quot;],&quot;distance&quot;:883},{&quot;ports&quot;:[&quot;ATL&quot;,&quot;MIA&quot;],&quot;distance&quot;:957},{&quot;ports&quot;:[&quot;MIA&quot;,&quot;ATL&quot;],&quot;distance&quot;:957},{&quot;ports&quot;:[&quot;MIA&quot;,&quot;WAS&quot;],&quot;distance&quot;:1483},{&quot;ports&quot;:[&quot;WAS&quot;,&quot;MIA&quot;],&quot;distance&quot;:1483},{&quot;ports&quot;:[&quot;WAS&quot;,&quot;YYZ&quot;],&quot;distance&quot;:575},{&quot;ports&quot;:[&quot;YYZ&quot;,&quot;WAS&quot;],&quot;distance&quot;:575},{&quot;ports&quot;:[&quot;WAS&quot;,&quot;NYC&quot;],&quot;distance&quot;:334},{&quot;ports&quot;:[&quot;NYC&quot;,&quot;WAS&quot;],&quot;distance&quot;:334},{&quot;ports&quot;:[&quot;NYC&quot;,&quot;YYZ&quot;],&quot;distance&quot;:568},{&quot;ports&quot;:[&quot;YYZ&quot;,&quot;NYC&quot;],&quot;distance&quot;:568},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;LAX&quot;],&quot;distance&quot;:2736},{&quot;ports&quot;:[&quot;LAX&quot;,&quot;CMI&quot;],&quot;distance&quot;:2736},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;SFO&quot;],&quot;distance&quot;:2955},{&quot;ports&quot;:[&quot;SFO&quot;,&quot;CMI&quot;],&quot;distance&quot;:2955},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;MEX&quot;],&quot;distance&quot;:2518},{&quot;ports&quot;:[&quot;MEX&quot;,&quot;CMI&quot;],&quot;distance&quot;:2518},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;MIA&quot;],&quot;distance&quot;:1757},{&quot;ports&quot;:[&quot;MIA&quot;,&quot;CMI&quot;],&quot;distance&quot;:1757},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;ATL&quot;],&quot;distance&quot;:785},{&quot;ports&quot;:[&quot;ATL&quot;,&quot;CMI&quot;],&quot;distance&quot;:785},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;WAS&quot;],&quot;distance&quot;:975},{&quot;ports&quot;:[&quot;WAS&quot;,&quot;CMI&quot;],&quot;distance&quot;:975},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;YYZ&quot;],&quot;distance&quot;:831},{&quot;ports&quot;:[&quot;YYZ&quot;,&quot;CMI&quot;],&quot;distance&quot;:831},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;NYC&quot;],&quot;distance&quot;:1208},{&quot;ports&quot;:[&quot;NYC&quot;,&quot;CMI&quot;],&quot;distance&quot;:1208},{&quot;ports&quot;:[&quot;CMI&quot;,&quot;CHI&quot;],&quot;distance&quot;:198},{&quot;ports&quot;:[&quot;CHI&quot;,&quot;CMI&quot;],&quot;distance&quot;:198}]}&#39;</span>, <span class="ruby-ivar">@map</span>.<span class="ruby-identifier">json_encode_map</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_map_merge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_map_merge-method -->
+
+    
+      <div id="method-i-test_remove_node" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_remove_node</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test graph vertex deletion</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_remove_node-source">
+            <pre><span class="ruby-comment"># File test/graphTest.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_remove_node</span>
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">add_edge</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-string">&#39;b&#39;</span>, <span class="ruby-value">100</span>)
+  <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">remove_node</span>(<span class="ruby-string">&#39;a&#39;</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">get_edge</span>(<span class="ruby-string">&#39;a&#39;</span>, <span class="ruby-string">&#39;b&#39;</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_remove_node-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_remove_node-method -->
+
+    
+      <div id="method-i-test_route_cost" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_route_cost</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test route cost</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_route_cost-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 59</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_route_cost</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4833.599999999999</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">get_route_cost</span>([<span class="ruby-string">&quot;MNL&quot;</span>, <span class="ruby-string">&quot;SFO&quot;</span>, <span class="ruby-string">&quot;CHI&quot;</span>]))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_route_cost-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_route_cost-method -->
+
+    
+      <div id="method-i-test_route_distance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_route_distance</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test route distance</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_route_distance-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 54</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_route_distance</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">14238</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">get_route_distance</span>([<span class="ruby-string">&quot;MNL&quot;</span>, <span class="ruby-string">&quot;SFO&quot;</span>, <span class="ruby-string">&quot;CHI&quot;</span>]))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_route_distance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_route_distance-method -->
+
+    
+      <div id="method-i-test_route_flying_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_route_flying_time</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test route flying_time</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_route_flying_time-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_route_flying_time</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">19</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">get_route_flying_time</span>([<span class="ruby-string">&quot;MNL&quot;</span>, <span class="ruby-string">&quot;SFO&quot;</span>, <span class="ruby-string">&quot;CHI&quot;</span>]))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_route_flying_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_route_flying_time-method -->
+
+    
+      <div id="method-i-test_route_layover_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_route_layover_time</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test route layover_time</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_route_layover_time-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_route_layover_time</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">6</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">get_route_layover_time</span>([<span class="ruby-string">&quot;MNL&quot;</span>, <span class="ruby-string">&quot;SFO&quot;</span>, <span class="ruby-string">&quot;CHI&quot;</span>]))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_route_layover_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_route_layover_time-method -->
+
+    
+      <div id="method-i-test_route_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_route_time</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test total route time</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_route_time-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 74</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_route_time</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">25</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">get_route_time</span>([<span class="ruby-string">&quot;MNL&quot;</span>, <span class="ruby-string">&quot;SFO&quot;</span>, <span class="ruby-string">&quot;CHI&quot;</span>]))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_route_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_route_time-method -->
+
+    
+      <div id="method-i-test_shortest_flight" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_shortest_flight</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_shortest_flight</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_shortest_flight-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_shortest_flight</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;between WAS and NYC - with distance 334&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_shortest_flight</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_shortest_flight-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_shortest_flight-method -->
+
+    
+      <div id="method-i-test_smallest_city" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_smallest_city</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test statistic_smallest_city</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_smallest_city-source">
+            <pre><span class="ruby-comment"># File test/queryTest.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_smallest_city</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;Essen - with population 589900&quot;</span>, <span class="ruby-ivar">@info</span>.<span class="ruby-identifier">statistic_smallest_city</span>())
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_smallest_city-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_smallest_city-method -->
 
     
     </section><!-- public-instance-method-details -->

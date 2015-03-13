@@ -81,6 +81,8 @@
     
     <li ><a href="#method-i-clear">#clear</a>
     
+    <li ><a href="#method-i-exist_edge">#exist_edge</a>
+    
     <li ><a href="#method-i-exist_nodes">#exist_nodes</a>
     
     <li ><a href="#method-i-get_edge">#get_edge</a>
@@ -106,9 +108,77 @@
 
   <ul>
   
+    <li class="file"><a href="./data/cmi_hub_json.html">cmi_hub.json</a>
+  
     <li class="file"><a href="./data/map_data_json.html">map_data.json</a>
   
+    <li class="file"><a href="./data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="./doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="./doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="./doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="./doc/TEST_Main_html.html">TEST_Main.html</a>
+  
     <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="./doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="./doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="./doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="./doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="./doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="./doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="./doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="./doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="./doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="./doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="./doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="./doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="./doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="./doc/table_of_contents_html.html">table_of_contents.html</a>
   
   </ul>
 </nav>
@@ -221,7 +291,7 @@ value set</p>
 
           
           <div class="method-source-code" id="add_edge-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 66</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 72</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>, <span class="ruby-identifier">value</span>)
   <span class="ruby-identifier">edge_key</span> = [<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>]
   <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">exist_nodes</span>(<span class="ruby-identifier">edge_key</span>)
@@ -294,7 +364,7 @@ value set</p>
 
           
           <div class="method-source-code" id="clear-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 107</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 122</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">clear</span>()
   <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">clear</span>
   <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">clear</span>
@@ -307,6 +377,43 @@ value set</p>
 
         
       </div><!-- clear-method -->
+
+    
+      <div id="method-i-exist_edge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">exist_edge</span><span
+            class="method-args">(node_from_key, node_to_key)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exist edge</p>
+
+<p>@param [Object, node_from_key] the from node key</p>
+
+<p>@param [Object, node_to_key] the to node key</p>
+          
+          
+
+          
+          <div class="method-source-code" id="exist_edge-source">
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 117</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exist_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
+  <span class="ruby-keyword">return</span> (<span class="ruby-identifier">get_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>) <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- exist_edge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- exist_edge-method -->
 
     
       <div id="method-i-exist_nodes" class="method-detail ">
@@ -332,7 +439,7 @@ keys have nodes in the graph</p>
 
           
           <div class="method-source-code" id="exist_nodes-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 51</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 57</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">exist_nodes</span>(<span class="ruby-identifier">key_arr</span>)
   <span class="ruby-identifier">key_arr</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
     <span class="ruby-keyword">if</span> <span class="ruby-keyword">not</span> <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">key</span>)
@@ -374,7 +481,7 @@ keys have nodes in the graph</p>
 
           
           <div class="method-source-code" id="get_edge-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 101</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 107</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">get_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
   <span class="ruby-identifier">edge_key</span> = [<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>]
   <span class="ruby-keyword">return</span> <span class="ruby-ivar">@edges</span>[<span class="ruby-identifier">edge_key</span>]
@@ -410,7 +517,7 @@ keys have nodes in the graph</p>
 
           
           <div class="method-source-code" id="get_node-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 41</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">get_node</span>(<span class="ruby-identifier">key</span>)
   <span class="ruby-keyword">return</span> <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">key</span>]
 <span class="ruby-keyword">end</span></pre>
@@ -447,7 +554,7 @@ keys have nodes in the graph</p>
 
           
           <div class="method-source-code" id="remove_edge-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 80</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 86</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">remove_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
   <span class="ruby-identifier">edge_key</span> = [<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>]
   <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">edge_key</span>)
@@ -475,7 +582,7 @@ keys have nodes in the graph</p>
 
         <div class="method-description">
           
-          <p>Remove a node by key</p>
+          <p>Remove a node by key and it will also remove edge with an end on it</p>
 
 <p>@param [Object, key] node key @param [Object, value] node value</p>
           
@@ -483,9 +590,14 @@ keys have nodes in the graph</p>
 
           
           <div class="method-source-code" id="remove_node-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 23</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">remove_node</span>(<span class="ruby-identifier">key</span>)
   <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">edge_key</span>, <span class="ruby-identifier">edge_value</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">edge_key</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">key</span>)
+      <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">edge_key</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div><!-- remove_node-source -->
           
@@ -521,7 +633,7 @@ value set</p>
 
           
           <div class="method-source-code" id="update_edge-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 91</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 97</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">update_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>, <span class="ruby-identifier">value</span>)
   <span class="ruby-identifier">remove_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>)
   <span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">node_from_key</span>, <span class="ruby-identifier">node_to_key</span>, <span class="ruby-identifier">value</span>)
@@ -557,7 +669,7 @@ value set</p>
 
           
           <div class="method-source-code" id="update_node-source">
-            <pre><span class="ruby-comment"># File src/Graph.rb, line 32</span>
+            <pre><span class="ruby-comment"># File src/Graph.rb, line 38</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">update_node</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
   <span class="ruby-identifier">remove_node</span>(<span class="ruby-identifier">key</span>)
   <span class="ruby-identifier">add_node</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)

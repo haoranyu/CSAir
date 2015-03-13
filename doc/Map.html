@@ -77,13 +77,27 @@
     
     <li ><a href="#method-i-add_route">#add_route</a>
     
+    <li ><a href="#method-i-data_source">#data_source</a>
+    
     <li ><a href="#method-i-initialize_metros">#initialize_metros</a>
     
     <li ><a href="#method-i-initialize_routes">#initialize_routes</a>
     
+    <li ><a href="#method-i-json_encode_map">#json_encode_map</a>
+    
+    <li ><a href="#method-i-json_encode_metros">#json_encode_metros</a>
+    
+    <li ><a href="#method-i-json_encode_routes">#json_encode_routes</a>
+    
+    <li ><a href="#method-i-merge">#merge</a>
+    
     <li ><a href="#method-i-metros">#metros</a>
     
+    <li ><a href="#method-i-output_json_map">#output_json_map</a>
+    
     <li ><a href="#method-i-routes">#routes</a>
+    
+    <li ><a href="#method-i-update_metro_attibute">#update_metro_attibute</a>
     
   </ul>
 </nav>
@@ -96,9 +110,77 @@
 
   <ul>
   
+    <li class="file"><a href="./data/cmi_hub_json.html">cmi_hub.json</a>
+  
     <li class="file"><a href="./data/map_data_json.html">map_data.json</a>
   
+    <li class="file"><a href="./data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="./doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="./doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="./doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="./doc/TEST_Main_html.html">TEST_Main.html</a>
+  
     <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="./doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="./doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="./doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="./doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="./doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="./doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="./doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="./doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="./doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="./doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="./doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="./doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="./doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="./doc/table_of_contents_html.html">table_of_contents.html</a>
   
   </ul>
 </nav>
@@ -166,13 +248,14 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File src/Map.rb, line 16</span>
+            <pre><span class="ruby-comment"># File src/Map.rb, line 17</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">filename</span>)
   <span class="ruby-identifier">file</span> = <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-constant">IO</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>))
   <span class="ruby-ivar">@nodes</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
   <span class="ruby-ivar">@edges</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
   <span class="ruby-identifier">initialize_metros</span>(<span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;metros&#39;</span>])
   <span class="ruby-identifier">initialize_routes</span>(<span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;routes&#39;</span>])
+  <span class="ruby-ivar">@data_source</span> = <span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;data sources&#39;</span>]
 <span class="ruby-keyword">end</span></pre>
           </div><!-- new-source -->
           
@@ -213,10 +296,12 @@ distance between two metros</p>
 
           
           <div class="method-source-code" id="add_route-source">
-            <pre><span class="ruby-comment"># File src/Map.rb, line 52</span>
+            <pre><span class="ruby-comment"># File src/Map.rb, line 62</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">add_route</span>(<span class="ruby-identifier">metro1</span>, <span class="ruby-identifier">metro2</span>, <span class="ruby-identifier">distance</span>)
-  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">metro1</span>, <span class="ruby-identifier">metro2</span>, <span class="ruby-identifier">distance</span>)
-  <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">metro1</span>][<span class="ruby-string">&#39;flight_to&#39;</span>].<span class="ruby-identifier">push</span>(<span class="ruby-identifier">metro2</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">exist_nodes</span>([<span class="ruby-identifier">metro1</span>, <span class="ruby-identifier">metro2</span>])
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_edge</span>(<span class="ruby-identifier">metro1</span>, <span class="ruby-identifier">metro2</span>, <span class="ruby-identifier">distance</span>)
+    <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">metro1</span>][<span class="ruby-string">&#39;flight_to&#39;</span>].<span class="ruby-identifier">push</span>(<span class="ruby-identifier">metro2</span>)
+  <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div><!-- add_route-source -->
           
@@ -226,6 +311,39 @@ distance between two metros</p>
 
         
       </div><!-- add_route-method -->
+
+    
+      <div id="method-i-data_source" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">data_source</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return all data source</p>
+          
+          
+
+          
+          <div class="method-source-code" id="data_source-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">data_source</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@data_source</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- data_source-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- data_source-method -->
 
     
       <div id="method-i-initialize_metros" class="method-detail ">
@@ -250,7 +368,7 @@ metros information</p>
 
           
           <div class="method-source-code" id="initialize_metros-source">
-            <pre><span class="ruby-comment"># File src/Map.rb, line 28</span>
+            <pre><span class="ruby-comment"># File src/Map.rb, line 38</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize_metros</span>(<span class="ruby-identifier">metros</span>)
   <span class="ruby-identifier">metros</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">metro</span><span class="ruby-operator">|</span>
     <span class="ruby-identifier">metro</span>[<span class="ruby-string">&#39;flight_to&#39;</span>] = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
@@ -289,7 +407,7 @@ routes information</p>
 
           
           <div class="method-source-code" id="initialize_routes-source">
-            <pre><span class="ruby-comment"># File src/Map.rb, line 39</span>
+            <pre><span class="ruby-comment"># File src/Map.rb, line 49</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize_routes</span>(<span class="ruby-identifier">routes</span>)
   <span class="ruby-identifier">routes</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">route</span><span class="ruby-operator">|</span>
     <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_route</span>(<span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>][<span class="ruby-value">0</span>], <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>][<span class="ruby-value">1</span>], <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;distance&#39;</span>])
@@ -304,6 +422,156 @@ routes information</p>
 
         
       </div><!-- initialize_routes-method -->
+
+    
+      <div id="method-i-json_encode_map" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">json_encode_map</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Using json to encode the map</p>
+          
+          
+
+          
+          <div class="method-source-code" id="json_encode_map-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 99</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">json_encode_map</span>
+  <span class="ruby-identifier">map</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">map</span>[<span class="ruby-string">&#39;data source&#39;</span>] = <span class="ruby-ivar">@data_source</span>
+  <span class="ruby-identifier">map</span>[<span class="ruby-string">&#39;metros&#39;</span>] = <span class="ruby-identifier">json_encode_metros</span>
+  <span class="ruby-identifier">map</span>[<span class="ruby-string">&#39;routes&#39;</span>] = <span class="ruby-identifier">json_encode_routes</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">map</span>.<span class="ruby-identifier">to_json</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- json_encode_map-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- json_encode_map-method -->
+
+    
+      <div id="method-i-json_encode_metros" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">json_encode_metros</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Obtain the array of metros for json to encode</p>
+          
+          
+
+          
+          <div class="method-source-code" id="json_encode_metros-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 108</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">json_encode_metros</span>
+  <span class="ruby-identifier">metros_array</span> = []
+  <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">metros_array</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">value</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">metros_array</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- json_encode_metros-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- json_encode_metros-method -->
+
+    
+      <div id="method-i-json_encode_routes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">json_encode_routes</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Obtain the array of routes for json to encode</p>
+          
+          
+
+          
+          <div class="method-source-code" id="json_encode_routes-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 117</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">json_encode_routes</span>
+   <span class="ruby-identifier">routes_array</span> = []
+   <span class="ruby-ivar">@edges</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+     <span class="ruby-identifier">route</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+     <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;ports&#39;</span>] = <span class="ruby-identifier">key</span>
+     <span class="ruby-identifier">route</span>[<span class="ruby-string">&#39;distance&#39;</span>] = <span class="ruby-identifier">value</span>
+     <span class="ruby-identifier">routes_array</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">route</span>)
+   <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">return</span> <span class="ruby-identifier">routes_array</span>
+ <span class="ruby-keyword">end</span></pre>
+          </div><!-- json_encode_routes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- json_encode_routes-method -->
+
+    
+      <div id="method-i-merge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">merge</span><span
+            class="method-args">(filename)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Merge a json file for a new map into the old one</p>
+          
+          
+
+          
+          <div class="method-source-code" id="merge-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">merge</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-identifier">file</span> = <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-constant">IO</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>))
+  <span class="ruby-identifier">initialize_metros</span>(<span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;metros&#39;</span>])
+  <span class="ruby-identifier">initialize_routes</span>(<span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;routes&#39;</span>])
+  <span class="ruby-ivar">@data_source</span> = <span class="ruby-ivar">@data_source</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">file</span>[<span class="ruby-string">&#39;data sources&#39;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- merge-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- merge-method -->
 
     
       <div id="method-i-metros" class="method-detail ">
@@ -325,9 +593,9 @@ routes information</p>
 
           
           <div class="method-source-code" id="metros-source">
-            <pre><span class="ruby-comment"># File src/Map.rb, line 58</span>
+            <pre><span class="ruby-comment"># File src/Map.rb, line 70</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">metros</span>
-  <span class="ruby-ivar">@nodes</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@nodes</span>
 <span class="ruby-keyword">end</span></pre>
           </div><!-- metros-source -->
           
@@ -337,6 +605,39 @@ routes information</p>
 
         
       </div><!-- metros-method -->
+
+    
+      <div id="method-i-output_json_map" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">output_json_map</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Output a json map to the disk</p>
+          
+          
+
+          
+          <div class="method-source-code" id="output_json_map-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 129</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">output_json_map</span>
+  <span class="ruby-constant">IO</span>.<span class="ruby-identifier">write</span>(<span class="ruby-string">&quot;data/map_data_output.json&quot;</span>, <span class="ruby-identifier">json_encode_map</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- output_json_map-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- output_json_map-method -->
 
     
       <div id="method-i-routes" class="method-detail ">
@@ -358,9 +659,9 @@ routes information</p>
 
           
           <div class="method-source-code" id="routes-source">
-            <pre><span class="ruby-comment"># File src/Map.rb, line 63</span>
+            <pre><span class="ruby-comment"># File src/Map.rb, line 75</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">routes</span>
-  <span class="ruby-ivar">@edges</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@edges</span>
 <span class="ruby-keyword">end</span></pre>
           </div><!-- routes-source -->
           
@@ -370,6 +671,48 @@ routes information</p>
 
         
       </div><!-- routes-method -->
+
+    
+      <div id="method-i-update_metro_attibute" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_metro_attibute</span><span
+            class="method-args">(metro, attibute, new_value)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Edit attribute of a metro</p>
+          
+          
+
+          
+          <div class="method-source-code" id="update_metro_attibute-source">
+            <pre><span class="ruby-comment"># File src/Map.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_metro_attibute</span>(<span class="ruby-identifier">metro</span>, <span class="ruby-identifier">attibute</span>, <span class="ruby-identifier">new_value</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">attibute</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;code&#39;</span>, <span class="ruby-string">&#39;name&#39;</span>, <span class="ruby-string">&#39;country&#39;</span>, <span class="ruby-string">&#39;continent&#39;</span>, <span class="ruby-string">&#39;timezone&#39;</span>, <span class="ruby-string">&#39;coordinates&#39;</span>, <span class="ruby-string">&#39;region&#39;</span>
+    <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">metro</span>][<span class="ruby-identifier">attibute</span>] = <span class="ruby-identifier">new_value</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;population&#39;</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">new_value</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">0</span>
+      <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">metro</span>][<span class="ruby-identifier">attibute</span>] = <span class="ruby-identifier">new_value</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Error: population can not be negative&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_metro_attibute-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_metro_attibute-method -->
 
     
     </section><!-- public-instance-method-details -->

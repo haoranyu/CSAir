@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>map_data_json_html.html - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../../index.html">Home</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../../data/cmi_hub_json.html">cmi_hub.json</a>
+  
+    <li class="file"><a href="../../../data/map_data_json.html">map_data.json</a>
+  
+    <li class="file"><a href="../../../data/map_data_output_json.html">map_data_output.json</a>
+  
+    <li class="file"><a href="../../../doc/Graph_html.html">Graph.html</a>
+  
+    <li class="file"><a href="../../../doc/Info_html.html">Info.html</a>
+  
+    <li class="file"><a href="../../../doc/Map_html.html">Map.html</a>
+  
+    <li class="file"><a href="../../../doc/TEST_Main_html.html">TEST_Main.html</a>
+  
+    <li class="file"><a href="../../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../../doc/data/cmi_hub_json_html.html">cmi_hub_json.html</a>
+  
+    <li class="file"><a href="../../../doc/data/map_data_json_html.html">map_data_json.html</a>
+  
+    <li class="file"><a href="../../../doc/data/map_data_output_json_html.html">map_data_output_json.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/Graph_html_html.html">Graph_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/Info_html_html.html">Info_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/Map_html_html.html">Map_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/TEST_Main_html_html.html">TEST_Main_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/data/map_data_json_html_html.html">map_data_json_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="../../../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="../../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Graph.html">Graph</a>
+  
+    <li><a href="../../../Info.html">Info</a>
+  
+    <li><a href="../../../Map.html">Map</a>
+  
+    <li><a href="../../../TEST_Main.html">TEST_Main</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta content=“text/html; charset=UTF-8”
+http-equiv=“Content-Type”&gt;</p>
+
+<p>&lt;title&gt;map_data_json.html - RDoc Documentation&lt;/title&gt;</p>
+
+<p>&lt;link type=“text/css” media=“screen” href=“../../rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;../../&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script type=“text/javascript” charset=“utf-8”
+src=“../../js/jquery.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/navigation.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/search_index.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/search.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/searcher.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../../js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body class=“file”&gt; &lt;nav id=“metadata”&gt;</p>
+
+<pre>&lt;nav id=&quot;home-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;
+  &lt;a href=&quot;../../index.html&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;../../table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;../../table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/h3&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;nav id=&quot;search-section&quot; class=&quot;section project-section&quot; class=&quot;initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/h3&gt;
+&lt;/form&gt;
+
+&lt;ul id=&quot;search-results&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;div id=&quot;project-metadata&quot;&gt;
+  &lt;nav id=&quot;fileindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Pages&lt;/h3&gt;
+
+&lt;ul&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../data/cmi_hub_json.html&quot;&gt;cmi_hub.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../data/map_data_json.html&quot;&gt;map_data.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../data/map_data_output_json.html&quot;&gt;map_data_output.json&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/Graph_html.html&quot;&gt;Graph.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/Info_html.html&quot;&gt;Info.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/Map_html.html&quot;&gt;Map.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/TEST_Main_html.html&quot;&gt;TEST_Main.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/created_rid.html&quot;&gt;created.rid&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/data/map_data_json_html.html&quot;&gt;map_data_json.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/doc/created_rid_html.html&quot;&gt;created_rid.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/index_html.html&quot;&gt;index.html&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/darkfish_js.html&quot;&gt;darkfish.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/jquery_js.html&quot;&gt;jquery.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/navigation_js.html&quot;&gt;navigation.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/search_js.html&quot;&gt;search.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/search_index_js.html&quot;&gt;search_index.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/js/searcher_js.html&quot;&gt;searcher.js&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/rdoc_css.html&quot;&gt;rdoc.css&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../../doc/table_of_contents_html.html&quot;&gt;table_of_contents.html&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>  &lt;nav id=&quot;classindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Class and Module Index&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../Graph.html&quot;&gt;Graph&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../Info.html&quot;&gt;Info&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../Map.html&quot;&gt;Map&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../../TEST_Main.html&quot;&gt;TEST_Main&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;div id=“documentation” class=“description”&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta
+content=“text/html; charset=UTF-8”
+http-equiv=“Content-Type”&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;title&amp;gt;map_data.json - RDoc
+Documentation&amp;lt;/title&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;link type=“text/css” media=“screen” href=“../rdoc.css”
+rel=“stylesheet”&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;script type=“text/javascript”&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;var rdoc_rel_prefix = &amp;quot;../&amp;quot;;&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/script&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;script type=“text/javascript” charset=“utf-8”
+src=“../js/jquery.js”&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/navigation.js”&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/search_index.js”&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/search.js”&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/searcher.js”&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/darkfish.js”&amp;gt;&amp;lt;/script&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;body class=“file”&amp;gt; &amp;lt;nav
+id=“metadata”&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;&amp;lt;nav id=&amp;quot;home-section&amp;quot;
+class=&amp;quot;section&amp;quot;&amp;gt; &amp;lt;h3
+class=&amp;quot;section-header&amp;quot;&amp;gt;</p>
+
+<pre>&amp;lt;a href=&amp;quot;../index.html&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;
+&amp;lt;a href=&amp;quot;../table_of_contents.html#classes&amp;quot;&amp;gt;Classes&amp;lt;/a&amp;gt;
+&amp;lt;a href=&amp;quot;../table_of_contents.html#methods&amp;quot;&amp;gt;Methods&amp;lt;/a&amp;gt;</pre>
+
+<p>&amp;lt;/h3&amp;gt;&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/nav&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;&amp;lt;nav id=&amp;quot;search-section&amp;quot;
+class=&amp;quot;section project-section&amp;quot;
+class=&amp;quot;initially-hidden&amp;quot;&amp;gt; &amp;lt;form
+action=&amp;quot;#&amp;quot; method=&amp;quot;get&amp;quot;
+accept-charset=&amp;quot;utf-8&amp;quot;&amp;gt;</p>
+
+<pre>&amp;lt;h3 class=&amp;quot;section-header&amp;quot;&amp;gt;
+  &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;search&amp;quot; placeholder=&amp;quot;Search&amp;quot; id=&amp;quot;search-field&amp;quot;
+         title=&amp;quot;Type to search, Up and Down to navigate, Enter to load&amp;quot;&amp;gt;
+&amp;lt;/h3&amp;gt;</pre>
+
+<p>&amp;lt;/form&amp;gt;</p>
+
+<p>&amp;lt;ul id=&amp;quot;search-results&amp;quot;
+class=&amp;quot;initially-hidden&amp;quot;&amp;gt;&amp;lt;/ul&amp;gt;&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/nav&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;&amp;lt;div id=&amp;quot;project-metadata&amp;quot;&amp;gt;</p>
+
+<pre>&amp;lt;nav id=&amp;quot;fileindex-section&amp;quot; class=&amp;quot;section project-section&amp;quot;&amp;gt;</pre>
+
+<p>&amp;lt;h3
+class=&amp;quot;section-header&amp;quot;&amp;gt;Pages&amp;lt;/h3&amp;gt;</p>
+
+<p>&amp;lt;ul&amp;gt;</p>
+
+<pre>&amp;lt;li class=&amp;quot;file&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../data/map_data_json.html&amp;quot;&amp;gt;map_data.json&amp;lt;/a&amp;gt;
+
+&amp;lt;li class=&amp;quot;file&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../doc/created_rid.html&amp;quot;&amp;gt;created.rid&amp;lt;/a&amp;gt;</pre>
+
+<p>&amp;lt;/ul&amp;gt;&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/nav&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;  &amp;lt;nav id=&amp;quot;classindex-section&amp;quot;
+class=&amp;quot;section project-section&amp;quot;&amp;gt; &amp;lt;h3
+class=&amp;quot;section-header&amp;quot;&amp;gt;Class and Module
+Index&amp;lt;/h3&amp;gt;</p>
+
+<p>&amp;lt;ul class=&amp;quot;link-list&amp;quot;&amp;gt;</p>
+
+<pre>&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../Graph.html&amp;quot;&amp;gt;Graph&amp;lt;/a&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../Info.html&amp;quot;&amp;gt;Info&amp;lt;/a&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../Map.html&amp;quot;&amp;gt;Map&amp;lt;/a&amp;gt;
+
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../TEST_Main.html&amp;quot;&amp;gt;TEST_Main&amp;lt;/a&amp;gt;</pre>
+
+<p>&amp;lt;/ul&amp;gt;&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/nav&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;&amp;lt;/div&amp;gt;&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/nav&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;div id=“documentation”
+class=“description”&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;p&amp;gt;{&amp;lt;/p&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;pre&amp;gt;&amp;amp;quot;data sources&amp;amp;quot; :
+[&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;&amp;amp;quot;<a
+href="http://www.gcmap.com/&amp;quot">www.gcmap.com/&amp;quot</a>; ,
+&amp;amp;quot;<a
+href="http://www.theodora.com/country_digraphs.html&amp;quot">www.theodora.com/country_digraphs.html&amp;quot</a>;
+, &amp;amp;quot;<a
+href="http://www.citypopulation.de/world/Agglomerations.html&amp;quot">www.citypopulation.de/world/Agglomerations.html&amp;quot</a>;
+, &amp;amp;quot;<a
+href="http://www.mongabay.com/cities_urban_01.htm&amp;quot">www.mongabay.com/cities_urban_01.htm&amp;quot</a>;
+, &amp;amp;quot;<a
+href="http://en.wikipedia.org/wiki/Urban_agglomeration&amp;quot">en.wikipedia.org/wiki/Urban_agglomeration&amp;quot</a>;
+, &amp;amp;quot;<a
+href="http://www.worldtimezone.com/standard.html&amp;quot;</pre">www.worldtimezone.com/standard.html&amp;quot;</pre</a>&gt;</p>
+
+<p>&lt;p&gt;] , &amp;amp;quot;metros&amp;amp;quot; : [&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;{</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;SCL&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Santiago&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CL&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;South America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -4 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 33, &amp;amp;quot;W&amp;amp;quot; : 71} ,
+&amp;amp;quot;population&amp;amp;quot; : 6000000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;LIM&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Lima&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;PE&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;South America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 12, &amp;amp;quot;W&amp;amp;quot; : 77} ,
+&amp;amp;quot;population&amp;amp;quot; : 9050000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MEX&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Mexico City&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;MX&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -6 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 19, &amp;amp;quot;W&amp;amp;quot; : 99} ,
+&amp;amp;quot;population&amp;amp;quot; : 23400000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;BOG&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Bogota&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CO&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;South America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 5, &amp;amp;quot;W&amp;amp;quot; : 74} ,
+&amp;amp;quot;population&amp;amp;quot; : 8600000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;BUE&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Buenos Aires&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;AR&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;South America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -3 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 35, &amp;amp;quot;W&amp;amp;quot; : 58} ,
+&amp;amp;quot;population&amp;amp;quot; : 13300000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;SAO&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Sao Paulo&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;BR&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;South America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -3 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 24, &amp;amp;quot;W&amp;amp;quot; : 47} ,
+&amp;amp;quot;population&amp;amp;quot; : 20900000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;LOS&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Lagos&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;NG&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Africa&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 7, &amp;amp;quot;E&amp;amp;quot; : 19} ,
+&amp;amp;quot;population&amp;amp;quot; : 11800000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;FIH&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Kinshasa&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CD&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Africa&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 4, &amp;amp;quot;E&amp;amp;quot; : 15} ,
+&amp;amp;quot;population&amp;amp;quot; : 8900000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;JNB&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Johannesburg&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;ZA&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Africa&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 2 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 26, &amp;amp;quot;E&amp;amp;quot; : 28} ,
+&amp;amp;quot;population&amp;amp;quot; : 7550000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;KRT&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Khartoum&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;SD&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Africa&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 3 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 16, &amp;amp;quot;E&amp;amp;quot; : 33} ,
+&amp;amp;quot;population&amp;amp;quot; : 4975000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;CAI&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Cairo&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;EG&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Africa&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 2 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 30, &amp;amp;quot;E&amp;amp;quot; : 31} ,
+&amp;amp;quot;population&amp;amp;quot; : 15200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;ALG&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Algiers&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;DZ&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Africa&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 37, &amp;amp;quot;E&amp;amp;quot; : 3} ,
+&amp;amp;quot;population&amp;amp;quot; : 3175000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MAD&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Madrid&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;ES&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 40, &amp;amp;quot;W&amp;amp;quot; : 4} ,
+&amp;amp;quot;population&amp;amp;quot; : 6200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;LON&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;London&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;UK&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 0 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 52, &amp;amp;quot;W&amp;amp;quot; : 0} ,
+&amp;amp;quot;population&amp;amp;quot; : 12400000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;PAR&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Paris&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;FR&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 49, &amp;amp;quot;E&amp;amp;quot; : 2} ,
+&amp;amp;quot;population&amp;amp;quot; : 10400000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MIL&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Milan&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IT&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 45, &amp;amp;quot;E&amp;amp;quot; : 9} ,
+&amp;amp;quot;population&amp;amp;quot; : 3575000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;ESS&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Essen&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;DE&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 1 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 51, &amp;amp;quot;E&amp;amp;quot; : 7} ,
+&amp;amp;quot;population&amp;amp;quot; : 589900 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;LED&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;St. Petersburg&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;RU&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 3 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 60, &amp;amp;quot;E&amp;amp;quot; : 30} ,
+&amp;amp;quot;population&amp;amp;quot; : 4775000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MOW&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Moscow&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;RU&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 3 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 56, &amp;amp;quot;E&amp;amp;quot; : 38} ,
+&amp;amp;quot;population&amp;amp;quot; : 13600000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;IST&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Istanbul&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;TR&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Europe&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 2 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 41, &amp;amp;quot;E&amp;amp;quot; : 29} ,
+&amp;amp;quot;population&amp;amp;quot; : 12800000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;BGW&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Bagdad&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IQ&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 3.5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 33, &amp;amp;quot;E&amp;amp;quot; : 44} ,
+&amp;amp;quot;population&amp;amp;quot; : 6600000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;THR&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Tehrah&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IR&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 4.5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 36, &amp;amp;quot;E&amp;amp;quot; : 51} ,
+&amp;amp;quot;population&amp;amp;quot; : 12800000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;RUH&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Riyadh&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;SA&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 3 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 25, &amp;amp;quot;E&amp;amp;quot; : 47} ,
+&amp;amp;quot;population&amp;amp;quot; : 5100000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;KHI&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Karachi&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;PK&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 25, &amp;amp;quot;E&amp;amp;quot; : 67} ,
+&amp;amp;quot;population&amp;amp;quot; : 16200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;DEL&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Delhi&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IN&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 5.5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 29, &amp;amp;quot;E&amp;amp;quot; : 77} ,
+&amp;amp;quot;population&amp;amp;quot; : 23200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;BOM&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Mumbai&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IN&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 5.5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 19, &amp;amp;quot;E&amp;amp;quot; : 73} ,
+&amp;amp;quot;population&amp;amp;quot; : 22800000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MAA&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Chennai&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IN&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 5.5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 13, &amp;amp;quot;E&amp;amp;quot; : 80} ,
+&amp;amp;quot;population&amp;amp;quot; : 8200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;CCU&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Calcutta&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;IN&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 5.5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 24, &amp;amp;quot;E&amp;amp;quot; : 88} ,
+&amp;amp;quot;population&amp;amp;quot; : 16300000 ,
+&amp;amp;quot;region&amp;amp;quot; : 2</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;BKK&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Bangkok&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;TH&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 7 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 14, &amp;amp;quot;E&amp;amp;quot; : 101} ,
+&amp;amp;quot;population&amp;amp;quot; : 8900000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;HKG&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Hong Kong&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CH&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 22, &amp;amp;quot;E&amp;amp;quot; : 114} ,
+&amp;amp;quot;population&amp;amp;quot; : 7050000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;SHA&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Shanghai&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CH&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 31, &amp;amp;quot;E&amp;amp;quot; : 121} ,
+&amp;amp;quot;population&amp;amp;quot; : 18400000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;PEK&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Beijing&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CH&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 40, &amp;amp;quot;E&amp;amp;quot; : 117} ,
+&amp;amp;quot;population&amp;amp;quot; : 13600000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;ICN&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Seoul&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;KR&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 9 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 37, &amp;amp;quot;E&amp;amp;quot; : 126} ,
+&amp;amp;quot;population&amp;amp;quot; : 24200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;TYO&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Tokyo&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;JP&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 9 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 36, &amp;amp;quot;E&amp;amp;quot; : 140} ,
+&amp;amp;quot;population&amp;amp;quot; : 34000000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;OSA&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Osaka&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;JP&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 9 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 35, &amp;amp;quot;E&amp;amp;quot; : 135} ,
+&amp;amp;quot;population&amp;amp;quot; : 16800000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;TPE&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Taipei&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;TW&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 25, &amp;amp;quot;E&amp;amp;quot; : 121} ,
+&amp;amp;quot;population&amp;amp;quot; : 6800000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MNL&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Manila&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;PH&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 15, &amp;amp;quot;E&amp;amp;quot; : 121} ,
+&amp;amp;quot;population&amp;amp;quot; : 19600000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;SGN&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Ho Chi Minh City&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;VN&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 7 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 11, &amp;amp;quot;E&amp;amp;quot; : 107} ,
+&amp;amp;quot;population&amp;amp;quot; : 6100000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;JKT&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Jakarta&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;ID&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Asia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 7 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 6, &amp;amp;quot;E&amp;amp;quot; : 107} ,
+&amp;amp;quot;population&amp;amp;quot; : 15400000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;SYD&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Sydney&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;AU&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;Australia&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : 10 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;S&amp;amp;quot; : 34, &amp;amp;quot;E&amp;amp;quot; : 151} ,
+&amp;amp;quot;population&amp;amp;quot; : 4475000 ,
+&amp;amp;quot;region&amp;amp;quot; : 4</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;LAX&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Los Angeles&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 34, &amp;amp;quot;W&amp;amp;quot; : 118} ,
+&amp;amp;quot;population&amp;amp;quot; : 17900000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;SFO&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;San Francisco&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -8 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 38, &amp;amp;quot;W&amp;amp;quot; : 122} ,
+&amp;amp;quot;population&amp;amp;quot; : 7450000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;CHI&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Chicago&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -6 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 42, &amp;amp;quot;W&amp;amp;quot; : 88} ,
+&amp;amp;quot;population&amp;amp;quot; : 9850000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;ATL&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Atlanta&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 34, &amp;amp;quot;W&amp;amp;quot; : 84} ,
+&amp;amp;quot;population&amp;amp;quot; : 5700000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;MIA&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Miami&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 26, &amp;amp;quot;W&amp;amp;quot; : 80} ,
+&amp;amp;quot;population&amp;amp;quot; : 5400000 ,
+&amp;amp;quot;region&amp;amp;quot; : 1</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;WAS&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Washington&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 39, &amp;amp;quot;W&amp;amp;quot; : 77} ,
+&amp;amp;quot;population&amp;amp;quot; : 8250000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;NYC&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;New York&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;US&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 41, &amp;amp;quot;W&amp;amp;quot; : 74} ,
+&amp;amp;quot;population&amp;amp;quot; : 22200000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;code&amp;amp;quot; : &amp;amp;quot;YYZ&amp;amp;quot; ,
+&amp;amp;quot;name&amp;amp;quot; : &amp;amp;quot;Toronto&amp;amp;quot; ,
+&amp;amp;quot;country&amp;amp;quot; : &amp;amp;quot;CA&amp;amp;quot; ,
+&amp;amp;quot;continent&amp;amp;quot; : &amp;amp;quot;North America&amp;amp;quot; ,
+&amp;amp;quot;timezone&amp;amp;quot; : -5 ,
+&amp;amp;quot;coordinates&amp;amp;quot; : {&amp;amp;quot;N&amp;amp;quot; : 44, &amp;amp;quot;W&amp;amp;quot; : 80} ,
+&amp;amp;quot;population&amp;amp;quot; : 5750000 ,
+&amp;amp;quot;region&amp;amp;quot; : 3</pre>
+
+<p>}&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;] , &amp;amp;quot;routes&amp;amp;quot; : [&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;{</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SCL&amp;amp;quot; , &amp;amp;quot;LIM&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2453</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LIM&amp;amp;quot; , &amp;amp;quot;MEX&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 4231</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LIM&amp;amp;quot; , &amp;amp;quot;BOG&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1879</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MEX&amp;amp;quot; , &amp;amp;quot;LAX&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2499</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MEX&amp;amp;quot; , &amp;amp;quot;CHI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2714</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MEX&amp;amp;quot; , &amp;amp;quot;MIA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2053</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MEX&amp;amp;quot; , &amp;amp;quot;BOG&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 3158</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BOG&amp;amp;quot; , &amp;amp;quot;MIA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2425</pre>
+
+<p>} ,     {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BOG&amp;amp;quot; , &amp;amp;quot;SAO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 4323</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BOG&amp;amp;quot; , &amp;amp;quot;BUE&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 4651</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BUE&amp;amp;quot; , &amp;amp;quot;SAO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1680</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SAO&amp;amp;quot; , &amp;amp;quot;MAD&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 8373</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SAO&amp;amp;quot; , &amp;amp;quot;LOS&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 6367</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LOS&amp;amp;quot; , &amp;amp;quot;KRT&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 3341</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LOS&amp;amp;quot; , &amp;amp;quot;FIH&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1812</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;FIH&amp;amp;quot; , &amp;amp;quot;KRT&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2904</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;FIH&amp;amp;quot; , &amp;amp;quot;JNB&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2767</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;JNB&amp;amp;quot; , &amp;amp;quot;KRT&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 4640</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;KRT&amp;amp;quot; , &amp;amp;quot;CAI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1614</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CAI&amp;amp;quot; , &amp;amp;quot;ALG&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2710</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CAI&amp;amp;quot; , &amp;amp;quot;IST&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1227</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CAI&amp;amp;quot; , &amp;amp;quot;BGW&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1264</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CAI&amp;amp;quot; , &amp;amp;quot;RUH&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1614</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ALG&amp;amp;quot; , &amp;amp;quot;MAD&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 726</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ALG&amp;amp;quot; , &amp;amp;quot;PAR&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1354</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ALG&amp;amp;quot; , &amp;amp;quot;IST&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1354</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MAD&amp;amp;quot; , &amp;amp;quot;NYC&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 5786</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MAD&amp;amp;quot; , &amp;amp;quot;LON&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 5786</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MAD&amp;amp;quot; , &amp;amp;quot;PAR&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1041</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LON&amp;amp;quot; , &amp;amp;quot;NYC&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 5579</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LON&amp;amp;quot; , &amp;amp;quot;ESS&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 494</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LON&amp;amp;quot; , &amp;amp;quot;PAR&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 343</pre>
+
+<p>} ,     {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;PAR&amp;amp;quot; , &amp;amp;quot;ESS&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 433</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;PAR&amp;amp;quot; , &amp;amp;quot;MIL&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 643</pre>
+
+<p>} ,  {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MIL&amp;amp;quot; , &amp;amp;quot;ESS&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 681</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MIL&amp;amp;quot; , &amp;amp;quot;IST&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1665</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ESS&amp;amp;quot; , &amp;amp;quot;LED&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1728</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LED&amp;amp;quot; , &amp;amp;quot;MOW&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 626</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LED&amp;amp;quot; , &amp;amp;quot;IST&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2096</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MOW&amp;amp;quot; , &amp;amp;quot;THR&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2462</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MOW&amp;amp;quot; , &amp;amp;quot;IST&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1763</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;IST&amp;amp;quot; , &amp;amp;quot;BGW&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1612</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BGW&amp;amp;quot; , &amp;amp;quot;THR&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 704</pre>
+
+<p>} ,     {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BGW&amp;amp;quot; , &amp;amp;quot;KHI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2410</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BGW&amp;amp;quot; , &amp;amp;quot;RUH&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 951</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;THR&amp;amp;quot; , &amp;amp;quot;DEL&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2550</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;THR&amp;amp;quot; , &amp;amp;quot;KHI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1933</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;THR&amp;amp;quot; , &amp;amp;quot;RUH&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1269</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;RUH&amp;amp;quot; , &amp;amp;quot;KHI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2065</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;KHI&amp;amp;quot; , &amp;amp;quot;DEL&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1069</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;KHI&amp;amp;quot; , &amp;amp;quot;BOM&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 873</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;DEL&amp;amp;quot; , &amp;amp;quot;CCU&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1313</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;DEL&amp;amp;quot; , &amp;amp;quot;MAA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1753</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;DEL&amp;amp;quot; , &amp;amp;quot;BOM&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1135</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BOM&amp;amp;quot; , &amp;amp;quot;MAA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1033</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MAA&amp;amp;quot; , &amp;amp;quot;CCU&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1382</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MAA&amp;amp;quot; , &amp;amp;quot;BKK&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2229</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MAA&amp;amp;quot; , &amp;amp;quot;JKT&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 3627</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CCU&amp;amp;quot; , &amp;amp;quot;HKG&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2618</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CCU&amp;amp;quot; , &amp;amp;quot;BKK&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1636</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BKK&amp;amp;quot; , &amp;amp;quot;HKG&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1688</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BKK&amp;amp;quot; , &amp;amp;quot;SGN&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 716</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;BKK&amp;amp;quot; , &amp;amp;quot;JKT&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2295</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;HKG&amp;amp;quot; , &amp;amp;quot;SHA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1230</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;HKG&amp;amp;quot; , &amp;amp;quot;TPE&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 807</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;HKG&amp;amp;quot; , &amp;amp;quot;MNL&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1144</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;HKG&amp;amp;quot; , &amp;amp;quot;SGN&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1488</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SHA&amp;amp;quot; , &amp;amp;quot;PEK&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1075</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SHA&amp;amp;quot; , &amp;amp;quot;ICN&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 840</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SHA&amp;amp;quot; , &amp;amp;quot;TYO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1782</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SHA&amp;amp;quot; , &amp;amp;quot;TPE&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 678</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;PEK&amp;amp;quot; , &amp;amp;quot;ICN&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 904</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ICN&amp;amp;quot; , &amp;amp;quot;TYO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1207</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;TYO&amp;amp;quot; , &amp;amp;quot;SFO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 8296</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;TYO&amp;amp;quot; , &amp;amp;quot;OSA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 407</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;OSA&amp;amp;quot; , &amp;amp;quot;TPE&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1740</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;TPE&amp;amp;quot; , &amp;amp;quot;MNL&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1170</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MNL&amp;amp;quot; , &amp;amp;quot;SFO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 11244</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MNL&amp;amp;quot; , &amp;amp;quot;SYD&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 6243</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MNL&amp;amp;quot; , &amp;amp;quot;SGN&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1613</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SGN&amp;amp;quot; , &amp;amp;quot;JKT&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1878</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;JKT&amp;amp;quot; , &amp;amp;quot;SYD&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 5502</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SYD&amp;amp;quot; , &amp;amp;quot;LAX&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 12051</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LAX&amp;amp;quot; , &amp;amp;quot;SFO&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 543</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;LAX&amp;amp;quot; , &amp;amp;quot;CHI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2828</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;SFO&amp;amp;quot; , &amp;amp;quot;CHI&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 2994</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CHI&amp;amp;quot; , &amp;amp;quot;YYZ&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 684</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;CHI&amp;amp;quot; , &amp;amp;quot;ATL&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 958</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ATL&amp;amp;quot; , &amp;amp;quot;WAS&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 883</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;ATL&amp;amp;quot; , &amp;amp;quot;MIA&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 957</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;MIA&amp;amp;quot; , &amp;amp;quot;WAS&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 1483</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;WAS&amp;amp;quot; , &amp;amp;quot;YYZ&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 575</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;WAS&amp;amp;quot; , &amp;amp;quot;NYC&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 334</pre>
+
+<p>} , {</p>
+
+<pre>&amp;amp;quot;ports&amp;amp;quot; : [&amp;amp;quot;NYC&amp;amp;quot; , &amp;amp;quot;YYZ&amp;amp;quot;] ,
+&amp;amp;quot;distance&amp;amp;quot; : 568</pre>
+
+<p>}&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;]&amp;lt;/pre&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;p&amp;gt;}&amp;lt;/p&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;footer id=“validator-badges”&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;pre&gt;&amp;lt;p&amp;gt;&amp;lt;a <a
+href="http://Validate">href=“http://validator.w3.org/check/referer”&gt;</a>;
+&amp;lt;p&amp;gt;Generated by &amp;lt;a href=&amp;quot;<a
+href="https://github.com/rdoc/rdoc&quot;&gt;RDoc&lt;/a&gt">github.com/rdoc/rdoc“&gt;RDoc&lt;/a&gt</a>;
+4.0.0. &amp;lt;p&amp;gt;Generated with the &amp;lt;a href=&amp;quot;<a
+href="http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish">deveiate.org/projects/Darkfish-Rdoc/”&gt;Darkfish</a>
+Rdoc Generator&amp;lt;/a&amp;gt; 3.&lt;/pre&gt;</p>
+
+<p>&lt;p&gt;&amp;lt;/footer&amp;gt;&lt;/p&gt;</p>
+
+<p>&lt;/div&gt;</p>
+
+<p>&lt;footer id=“validator-badges”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;[Validate]&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;https://github.com/rdoc/rdoc&quot;&gt;RDoc&lt;/a&gt; 4.0.0.
+&lt;p&gt;Generated with the &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish Rdoc Generator&lt;/a&gt; 3.</pre>
+
+<p>&lt;/footer&gt;</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

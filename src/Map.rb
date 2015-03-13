@@ -1,4 +1,5 @@
 require 'src/Graph'
+
 class Map < Graph
   
   require 'json'
@@ -23,6 +24,7 @@ class Map < Graph
     @data_source = file['data sources']
   end
   
+  # Merge a json file for a new map into the old one
   def merge(filename)
     file = JSON.parse(IO.read(filename))
     initialize_metros(file['metros'])
@@ -129,5 +131,45 @@ class Map < Graph
      IO.write("data/map_data_output.json", json_encode_map)
    end
    
-  # def get_shorest_path(metro1, metro2)
+  def get_shorest_path(metro1, metro2)
+    distance = Hash.new # vertex - dist
+    previous = Hash.new
+    frontier = Hash.new
+    
+    @nodes.each do |key, value|
+      if key != metro1
+        distance[key] = Float::INFINITY
+      else
+        distance[metro1] = 0
+      end
+      previous[key] = nil
+      frontier[key] = distance[key]
+    end
+
+    while not frontier.empty?
+      u = frontier.min_by{|key, value| value}
+      frontier.delete(u[0])
+      if u[0] == metro2
+        break
+      end
+      
+      self.get_node(u[0])['flight_to'].each do |v|
+        alt = distance[u[0]] + self.get_route(u[0], v)
+        if alt < distance[v]
+          distance[v] = alt
+          previous[v] = u[0]
+        end
+      end
+    end
+    
+    current_metro = metro2
+    expect_route = []
+    while current_metro != nil
+      expect_route.insert(0, current_metro)
+      current_metro = previous[current_metro]
+    end
+    return expect_route
+  end
+  
+  
 end
