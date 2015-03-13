@@ -12,20 +12,20 @@ class Info
   def query(query)
     case query[0]
       when 'list'
-        list
+        print_metro_list
       when 'metro'
-        metro(query[1])
+        print_metro_info(query[1])
       when 'statistic'
-        statistic
+        print_statistics
       when 'map'
-        show_map
+        print_map
       else
         puts "You have to follow the instruction"
     end
   end
   
   # List all metros' information
-  def list
+  def print_metro_list
     puts "<code>\t<name>"
     @map.metros.each do |metro|
       puts metro[1]['code'] << "\t" << metro[1]['name']
@@ -36,7 +36,7 @@ class Info
   # Get information for specified metro
   # 
   # @param [String, #code] the code of the metro from query
-  def metro(code)
+  def print_metro_info(code)
     if @map.exist_metros([code])
       metro = @map.get_metro(code)
       puts "==== " << metro['name'] << '(' << metro['code'] << ') ===='
@@ -56,10 +56,10 @@ class Info
   end
   
   # Output all statistic information
-  def statistic()
+  def print_statistics()
     puts '==== Statistic ===='
-    puts 'longest single flight: ' << statistic_longest
-    puts 'shortest single flight: ' << statistic_shortest
+    puts 'longest single flight: ' << statistic_longest_flight
+    puts 'shortest single flight: ' << statistic_shortest_flight
     puts 'average distance: ' << statistic_average_distance
     puts 'biggest city: ' << statistic_biggest_city
     puts 'smallest city: ' << statistic_smallest_city
@@ -73,7 +73,7 @@ class Info
   # Return the longest single flight in the network
   #
   # @return [String] the longest single flight in the network
-  def statistic_longest
+  def statistic_longest_flight
     max = @map.routes.max_by{|key, value| value}
     return 'between ' << max[0][0] << ' and ' << max[0][1].dup << ' - with distance ' << max[1].to_s
   end
@@ -82,7 +82,7 @@ class Info
   # Return the shortest single flight in the network
   #
   # @return [String] the shortest single flight in the network
-  def statistic_shortest
+  def statistic_shortest_flight
     min = @map.routes.min_by{|key, value| value}
     return 'between ' << min[0][0] << ' and ' << min[0][1].dup << ' - with distance ' << min[1].to_s
   end
@@ -160,7 +160,7 @@ class Info
   end
   
   # Show the routes map
-  def show_map
+  def print_map
     routes = Array.new
     @map.routes.each do |key, value|
       routes.push(key.join('-'))
