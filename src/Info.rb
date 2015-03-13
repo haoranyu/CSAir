@@ -168,5 +168,74 @@ class Info
     puts 'Check map at: http://www.gcmap.com/map?P=' << routes.join(',') << '&MS=wls&MR=800&MX=800x800&PM=*'
   end
   
+  def route_information(metro_list)
+    if is_route(metro_list)
+      puts "The total distance of this route is: " << self.get_route_distance(metro_list)
+      puts "The total cost of this route is: " << self.get_route_cost(metro_list)
+    else
+      puts "Error: There is no such route possible"
+      return false
+    end
+  end
+  
+  def is_route(metro_list)
+    metro_list.each_cons(2) do |metro1, metro2|
+      if not @map.exist_route(metro1, metro2)
+        return false
+      end
+    end
+    return true
+  end
+  
+  def get_route_distance(metro_list)
+    distance_sum = 0
+    metro_list.each_cons(2) do |metro1, metro2|
+      distance_sum += @map.get_route(metro1, metro2)
+    end
+    return distance_sum
+  end
+  
+  def get_route_cost(metro_list)
+    unit_cost = 0.35
+    cost_sum = 0
+    
+    metro_list.each_cons(2) do |metro1, metro2|
+      cost_sum += unit_cost * @map.get_route(metro1, metro2)
+      unit_cost -= 0.05
+      if unit_cost < 0
+        unit_cost = 0
+      end
+    end
+    return cost_sum
+  end
 
+  def get_route_time(metro_list)
+    return self.get_route_layover_time(metro_list) + self.get_route_flying_time(metro_list)
+  end
+  
+  def get_route_layover_time(metro_list)
+    time_sum = 0
+    metro_list.each do |metro|
+      time = 2 - (1 / 6) * @map.get_metro(metro)['flight_to'].length
+      if time < 0
+        time = 0
+      end
+      time_sum += time
+    end
+    return time_sum
+  end
+  
+  def get_route_flying_time(metro_list)
+    time_sum = 0
+    metro_list.each_cons(2) do |metro1, metro2|
+      flight_distance = @map.get_route(metro1, metro2)
+      if flight_distance > 400
+        time = (flight_distance + 400) / 750
+      else
+        time = sqrt(flight_distance) / 37.5
+      end
+      time_sum += time
+    end
+    return time_sum
+  end
 end

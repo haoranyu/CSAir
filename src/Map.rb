@@ -11,6 +11,7 @@ class Map < Graph
   alias remove_route remove_edge
   alias update_route update_edge
   alias get_route get_edge
+  alias exist_route exist_edge
   
   # Constructor for Map
   def initialize(filename)

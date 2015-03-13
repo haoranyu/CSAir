@@ -109,6 +109,15 @@ class Graph
     return @edges[edge_key]
   end
   
+  ##
+  # Exist edge
+  # 
+  # @param [Object, #node_from_key] the from node key  
+  # @param [Object, #node_to_key] the to node key 
+  def exist_edge(node_from_key, node_to_key)
+    return (get_edge(node_from_key, node_to_key) != nil)
+  end
+  
   # Clear every thing in the graph
   def clear()
     @edges.clear

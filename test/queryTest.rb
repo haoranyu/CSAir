@@ -44,4 +44,28 @@ class TEST_Main < Test::Unit::TestCase
   def test_hub_city
     assert_equal("Istanbul - with number of direct connections 6", @info.statistic_hub_city())
   end
+  
+  def test_is_route
+    assert_equal(true, @info.is_route(["MNL", "SFO", "CHI"]))
+  end
+  
+  def test_route_distance
+    assert_equal(14238, @info.get_route_distance(["MNL", "SFO", "CHI"]))
+  end
+  
+  def test_route_cost
+    assert_equal(4833.599999999999, @info.get_route_cost(["MNL", "SFO", "CHI"]))
+  end
+  
+  def test_route_flying_time
+    assert_equal(19, @info.get_route_flying_time(["MNL", "SFO", "CHI"]))
+  end
+  
+  def test_route_layover_time
+    assert_equal(6, @info.get_route_layover_time(["MNL", "SFO", "CHI"]))
+  end
+  
+  def test_route_time
+    assert_equal(25, @info.get_route_time(["MNL", "SFO", "CHI"]))
+  end
 end
