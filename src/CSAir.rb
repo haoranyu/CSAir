@@ -9,9 +9,10 @@ puts "statistic       #Show all statistic informations"
 puts "map             #Show the route map"
 puts "-------- PLEASE QUERY --------"
 
+map = Map.new('data/map_data.json')
+info = Info.new(map)
+
 while true
   query = gets.split(' ')
-  map = Map.new('data/map_data.json')
-  info = Info.new(map)
   info.query(query)
 end
