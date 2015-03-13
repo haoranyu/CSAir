@@ -23,6 +23,13 @@ class Map < Graph
     @data_source = file['data sources']
   end
   
+  def merge(filename)
+    file = JSON.parse(IO.read(filename))
+    initialize_metros(file['metros'])
+    initialize_routes(file['routes'])
+    @data_source = @data_source | file['data sources']
+  end
+  
   ##
   # Add metros to the map
   # 
@@ -52,18 +59,25 @@ class Map < Graph
   # @param [String, #metro2] the abbreviation of ending matro
   # @param [Integer, #distance] the distance between two metros
   def add_route(metro1, metro2, distance)
-    self.add_edge(metro1, metro2, distance)
-    @nodes[metro1]['flight_to'].push(metro2)
+    if exist_nodes([metro1, metro2])
+      self.add_edge(metro1, metro2, distance)
+      @nodes[metro1]['flight_to'].push(metro2)
+    end
   end
   
   # Return all metro objects
   def metros
-    @nodes
+    return @nodes
   end
   
   # Return all route objects
   def routes
-    @edges
+    return @edges
+  end
+  
+  # Return all data source
+  def data_source
+    return @data_source
   end
   
   #  Edit attribute of a metro
@@ -80,7 +94,7 @@ class Map < Graph
     end
   end
   
-
+  # Using json to encode the map
   def json_encode_map
     map = Hash.new
     map['data source'] = @data_source
@@ -89,6 +103,7 @@ class Map < Graph
     return map.to_json
   end
   
+  # Obtain the array of metros for json to encode
   def json_encode_metros
     metros_array = []
     @nodes.each do |key, value|
@@ -97,6 +112,7 @@ class Map < Graph
     return metros_array
   end
   
+  # Obtain the array of routes for json to encode
   def json_encode_routes
      routes_array = []
      @edges.each do |key, value|
@@ -108,7 +124,10 @@ class Map < Graph
      return routes_array
    end
    
+   # Output a json map to the disk
    def output_json_map
      IO.write("data/map_data_output.json", json_encode_map)
    end
+   
+  # def get_shorest_path(metro1, metro2)
 end

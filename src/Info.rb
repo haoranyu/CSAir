@@ -168,6 +168,7 @@ class Info
     puts 'Check map at: http://www.gcmap.com/map?P=' << routes.join(',') << '&MS=wls&MR=800&MX=800x800&PM=*'
   end
   
+  
   def route_information(metro_list)
     if is_route(metro_list)
       puts "The total distance of this route is: " << self.get_route_distance(metro_list)
