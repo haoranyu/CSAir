@@ -63,4 +63,18 @@ class Map < Graph
   def routes
     @edges
   end
+  
+  #  Edit attribute of a metro
+  def update_metro_attibute(metro, attibute, new_value)
+    case attibute
+    when 'code', 'name', 'country', 'continent', 'timezone', 'coordinates', 'region'
+      @nodes[metro][attibute] = new_value
+    when 'population'
+      if new_value >= 0
+        @nodes[metro][attibute] = new_value
+      else
+        puts "Error: population can not be negative"
+      end
+    end
+  end
 end
