@@ -123,5 +123,38 @@ class Graph
     @edges.clear
     @nodes.clear
   end
+  
+  def dijkstra(s, t)
+    distance = Hash.new
+    previous = Hash.new
+    frontier = Hash.new
+    
+    @nodes.each do |key, value|
+      if key != s
+        distance[key] = Float::INFINITY
+      else
+        distance[s] = 0
+      end
+      previous[key] = nil
+      frontier[key] = distance[key]
+    end
+
+    while not frontier.empty?
+      u = frontier.min_by{|key, value| value}
+      frontier.delete(u[0])
+      if u[0] == t
+        break
+      end
+      
+      self.get_node(u[0])['flight_to'].each do |v|
+        alt = distance[u[0]] + self.get_route(u[0], v)
+        if alt < distance[v]
+          distance[v] = alt
+          previous[v] = u[0]
+        end
+      end
+    end
+    return previous
+  end
 end
 

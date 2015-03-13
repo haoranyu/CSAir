@@ -132,35 +132,7 @@ class Map < Graph
    end
    
   def get_shorest_path(metro1, metro2)
-    distance = Hash.new # vertex - dist
-    previous = Hash.new
-    frontier = Hash.new
-    
-    @nodes.each do |key, value|
-      if key != metro1
-        distance[key] = Float::INFINITY
-      else
-        distance[metro1] = 0
-      end
-      previous[key] = nil
-      frontier[key] = distance[key]
-    end
-
-    while not frontier.empty?
-      u = frontier.min_by{|key, value| value}
-      frontier.delete(u[0])
-      if u[0] == metro2
-        break
-      end
-      
-      self.get_node(u[0])['flight_to'].each do |v|
-        alt = distance[u[0]] + self.get_route(u[0], v)
-        if alt < distance[v]
-          distance[v] = alt
-          previous[v] = u[0]
-        end
-      end
-    end
+    previous = self.dijkstra(metro1, metro2)
     
     current_metro = metro2
     expect_route = []
@@ -170,6 +142,5 @@ class Map < Graph
     end
     return expect_route
   end
-  
-  
+
 end
